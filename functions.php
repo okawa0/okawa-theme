@@ -1,6 +1,5 @@
 <?php
-function okawa_theme_scripts()
+function my_theme_enqueue_styles()
 {
-  wp_enqueue_style('okawa-style', get_template_directory_uri() . '/assets/css/style.css');
+  wp_enqueue_style('main-style', get_template_directory_uri() . '/style.css');
 }
-add_action('wp_enqueue_scripts', 'okawa_theme_scripts');
