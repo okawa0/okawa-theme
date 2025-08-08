@@ -1,5 +1,4 @@
 @use "../base/variables" as *;
-
 .site-header {
   position: fixed;
   top: 0;
@@ -7,7 +6,7 @@
   width: 100%;
   height: $header-height;
   background-color: $bg-color;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) !important;
   z-index: 999;
 
   .container {
