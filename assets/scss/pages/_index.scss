@@ -24,3 +24,16 @@ background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('../imag
   }
   }
 }
+.works-section{
+  background-image: url('../images/washi-1920x1080.png');
+.works-contents{
+  width: 70%;
+  margin:0 auto;
+  padding:5rem 0;
+  .works-title{
+    color: #ddd;
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+  }
+}
+}
