@@ -1,5 +1,5 @@
 .mainvisual {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/mainvisual-autumnleaves.webp");
   width: 100%;
   height: 100vh;
@@ -8,22 +8,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position:relative;
   @media screen and (max-width: 768px) {
     height: 100dvh;
     // position: absolute;
   }
-  .mainvisual-title {
+  .title-wrap{
+    text-align: center;
+  .mainvisual-title,.mainvisual-subtitle {
     color: #ddd;
     font-size: 128px;
-    text-align: center;
     font-family: "Playfair Display", serif;
     letter-spacing: 0.2em;
     font-weight: bold;
-    text-shadow: 2px 2px 4px #000;
+    text-shadow: 0 0 12px rgba(0,0,0,0.75);
     @media screen and (max-width: 768px) {
-      font-size: 40px;
+      font-size: 50px;
     }
   }
+  .mainvisual-subtitle{
+    font-size: 60px;
+  letter-spacing: 0.05em;
+    white-space: nowrap;
+    @media screen and (max-width:768px){
+      font-size: 25px;
+    }
+  }
+}
 }
 .works-section {
   background-image: url("../images/washi-1920x1080.png");
@@ -37,4 +48,39 @@
       font-size: 36px;
     }
   }
+}
+.fade-zoom {
+  position: relative;
+  overflow: hidden;
+}
+
+.fade-zoom img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: scale(1);
+  animation: fadeZoom 8s ease-in-out forwards;
+}
+
+.fade-zoom::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.8;
+  animation: fadeOverlay 2s ease forwards;
+  z-index: 100;
+}
+
+/* 画像のフェード＋ズーム */
+@keyframes fadeZoom {
+  0%   { opacity: 0.8; transform: scale(1); }
+  30%  { opacity: 1;   }
+  100% { opacity: 1;   transform: scale(1.05); }
+}
+
+/* 黒レイヤーが消えていく */
+@keyframes fadeOverlay {
+  0%   { opacity: 1; }
+  100% { opacity: 0; }
 }
