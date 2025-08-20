@@ -7,7 +7,7 @@
       <h2 class="mainvisual-subtitle">by web coder Okawa</h2>
     </div>
   </div>
-  <div class="works-section">
+  <div class="works-section fade-zoom">
     <div class="works-contents">
       <h2 class="works-title">Works</h2>
     </div>

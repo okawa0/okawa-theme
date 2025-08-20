@@ -1,43 +1,52 @@
 .mainvisual {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0,0,0,0.5)30%,
+      rgba(0, 0, 0, 0.5) 60%,   /* 上は透明 */
+      rgba(54, 86, 60, 1) 100% /* 下に行くほど深緑っぽく */
+    ),
     url("../images/mainvisual-autumnleaves.webp");
   width: 100%;
-  height: 100vh;
+  height: 120vh;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  position:relative;
+  position: relative;
   @media screen and (max-width: 768px) {
     height: 100dvh;
     // position: absolute;
   }
-  .title-wrap{
+  .title-wrap {
     text-align: center;
-  .mainvisual-title,.mainvisual-subtitle {
-    color: #ddd;
-    font-size: 128px;
-    font-family: "Playfair Display", serif;
-    letter-spacing: 0.2em;
-    font-weight: bold;
-    text-shadow: 0 0 12px rgba(0,0,0,0.75);
-    @media screen and (max-width: 768px) {
-      font-size: 50px;
+    transform: translateY(-30%);
+    .mainvisual-title,
+    .mainvisual-subtitle {
+      color: #ddd;
+      font-size: 128px;
+      font-family: "Playfair Display", serif;
+      letter-spacing: 0.2em;
+      font-weight: bold;
+      text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
+      @media screen and (max-width: 768px) {
+        font-size: 50px;
+      }
+    }
+    .mainvisual-subtitle {
+      font-size: 60px;
+      letter-spacing: 0.05em;
+      white-space: nowrap;
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+      }
     }
   }
-  .mainvisual-subtitle{
-    font-size: 60px;
-  letter-spacing: 0.05em;
-    white-space: nowrap;
-    @media screen and (max-width:768px){
-      font-size: 25px;
-    }
-  }
-}
 }
 .works-section {
-  background-image: url("../images/washi-1920x1080.png");
+  background-color: #36563c;
+background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+margin-top: -0.8px;
   .works-contents {
     width: 70%;
     margin: 0 auto;
@@ -74,13 +83,25 @@
 
 /* 画像のフェード＋ズーム */
 @keyframes fadeZoom {
-  0%   { opacity: 0.8; transform: scale(1); }
-  30%  { opacity: 1;   }
-  100% { opacity: 1;   transform: scale(1.05); }
+  0% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
 }
 
 /* 黒レイヤーが消えていく */
 @keyframes fadeOverlay {
-  0%   { opacity: 1; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
