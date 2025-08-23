@@ -12,7 +12,7 @@
   <header class="site-header">
     <div class="container">
       <h1 class="logo">
-        <a href="/">Okawa Web</a>
+        <a href="#">Okawa Web</a>
       </h1>
       <nav class="main-nav">
         <ul>

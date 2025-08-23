@@ -10,6 +10,10 @@
   <div class="works-section fade-zoom">
     <div class="works-contents">
       <h2 class="works-title">Works</h2>
+      <div class="work-image">
+        <img src="assets/images/work-mywork.png" alt="">
+        <img src="assets/images/work-mywork-sp.png" alt="">
+      </div>
     </div>
   </div>
 </main>
