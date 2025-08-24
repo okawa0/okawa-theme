@@ -11,8 +11,8 @@
     <div class="works-contents">
       <h2 class="works-title">Works</h2>
       <div class="work-image">
-        <img src="assets/images/work-mywork.png" alt="">
-        <img src="assets/images/work-mywork-sp.png" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork.png" alt="" class="work-image-mywork">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork-sp.png" alt="" class="work-image-mywork-sp">
       </div>
     </div>
   </div>
