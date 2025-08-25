@@ -65,6 +65,9 @@ margin-top: -0.8px;
       .work-image-mywork{
           width: 700px;
           height:fit-content;
+          @media screen and (max-width:768px){
+            height: auto;
+          }
       }
       .work-image-mywork-sp{
         width: 200px;
