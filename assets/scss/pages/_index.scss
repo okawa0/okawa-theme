@@ -62,22 +62,28 @@ margin-top: -0.8px;
       justify-content:space-around;
       width:100%;
       align-items: center;
+      @media screen and (max-width:768px){
+        flex-direction: column;
+      }
       .work-image-mywork{
           width: 700px;
           height:fit-content;
           @media screen and (max-width:768px){
-            .work-image-mywork{
             height: auto;
+            margin-bottom: 2rem;
             }
           }
       }
       .work-image-mywork-sp{
         width: 200px;
         height: fit-content;
+                @media screen and (max-width:768px){
+            width: 100px;
+            }
       }
     }
   }
-}
+
 .fade-zoom {
   position: relative;
   overflow: hidden;
