@@ -57,16 +57,21 @@
       gap: 1rem;
       .works-title {
         color: #ddd;
-        font-family:"Shippori Mincho","Zen Old Mincho", 'Noto Serif JP', "Playfair Display", serif;
-        font-size: 30px;
-        @media screen and (max-width: 768px) {font-size: 20px;}
+        font-family: "Shippori Mincho", "Zen Old Mincho", "Noto Serif JP",
+          "Playfair Display", serif;
+        font-size: 50px;
+        @media screen and (max-width: 768px) {
+          font-size: 26px;
+        }
       }
       .works-subtitle {
         color: #ddd;
         font-family: "Playfair Display", serif;
         font-size: 24px;
         margin-bottom: 3rem;
-        @media screen and (max-width: 768px) {font-size: 18px;}
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
       }
     }
     .work-image {
@@ -96,19 +101,6 @@
   }
 }
 
-.fade-zoom {
-  position: relative;
-  overflow: hidden;
-}
-
-.fade-zoom img {
-  display: block;
-  width: 100%;
-  height: auto;
-  transform: scale(1);
-  animation: fadeZoom 8s ease-in-out forwards;
-}
-
 .fade-zoom::before {
   content: "";
   position: absolute;
@@ -119,21 +111,6 @@
   z-index: 100;
 }
 
-/* 画像のフェード＋ズーム */
-@keyframes fadeZoom {
-  0% {
-    opacity: 0.8;
-    transform: scale(1);
-  }
-  30% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.05);
-  }
-}
-
 /* 黒レイヤーが消えていく */
 @keyframes fadeOverlay {
   0% {
@@ -141,5 +118,6 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }

@@ -14,8 +14,8 @@
         <h3 class="works-subtitle">Works</h3>
       </div>
       <div class="work-image">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork.png" alt="" class="work-image-mywork">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork-sp.png" alt="" class="work-image-mywork-sp">
+        <a href="https://okawa0.github.io/mywork/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork.png" alt="" class="work-image-mywork"></a>
+        <a href="https://okawa0.github.io/mywork/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork-sp.png" alt="" class="work-image-mywork-sp"></a>
       </div>
     </div>
   </div>
