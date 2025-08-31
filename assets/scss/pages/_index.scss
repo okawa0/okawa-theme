@@ -60,8 +60,10 @@
         font-family: "Shippori Mincho", "Zen Old Mincho", "Noto Serif JP",
           "Playfair Display", serif;
         font-size: 50px;
+        margin-right: 1rem;
         @media screen and (max-width: 768px) {
           font-size: 26px;
+          margin-right: 0.5rem;
         }
       }
       .works-subtitle {
