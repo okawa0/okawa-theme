@@ -45,7 +45,10 @@
 }
 .works-section {
   background-color: #36563c;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  background-image: url("../images/26411284.webp");
+  background-repeat: repeat;        /* 繰り返して敷き詰め */
+  background-size: cover;            /* そのままのサイズで */
+  background-attachment: fixed;
   margin-top: -0.8px;
   .works-contents {
     width: 70%;
