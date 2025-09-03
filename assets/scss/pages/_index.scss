@@ -45,10 +45,7 @@
 }
 .works-section {
   background-color: #36563c;
-  background-image: url("../images/26411284.webp");
-  background-repeat: repeat;        /* 繰り返して敷き詰め */
-  background-size: cover;            /* そのままのサイズで */
-  background-attachment: fixed;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   margin-top: -0.8px;
   .works-contents {
     width: 70%;
@@ -125,5 +122,50 @@
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+
+.skills-section {
+  background-color: #36563c;
+  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  margin-top: -0.8px;
+    .skills-contents {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5rem 0;
+    .skills-titles {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      .skills-title {
+        color: #ddd;
+        font-family: "Shippori Mincho", "Zen Old Mincho", "Noto Serif JP",
+          "Playfair Display", serif;
+        font-size: 50px;
+        margin-right: 1rem;
+        @media screen and (max-width: 768px) {
+          font-size: 26px;
+          margin-right: 0.5rem;
+        }
+      }
+      .skills-subtitle {
+        color: #ddd;
+        font-family: "Playfair Display", serif;
+        font-size: 24px;
+        margin-bottom: 3rem;
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+    .skill-images{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1rem;
+      img{
+        width: 180px;
+        height: 180px;
+      }
+    }
   }
 }
