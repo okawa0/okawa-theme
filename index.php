@@ -33,9 +33,13 @@
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/figma-logo.png" alt="figmaのロゴ">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/github-logo.png" alt="githubのロゴ">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wordpress-logo.png" alt="wordpressのロゴ">
-          </div>
       </div>
     </div>
+    <div class="skills-qualification">ITパスポート</div>
+    <div class="skills-qualification">ウェブデザイン技能検定2級</div>
+    <div class="skills-qualification">色彩検定3級</div>
+  </div>
+  
 </main>
 
 <?php get_footer(); ?>
