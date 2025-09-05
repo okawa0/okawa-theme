@@ -1,17 +1,16 @@
-@use "../base/variables" as *;
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: $header-height;
-  background-color: $bg-color;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1) ;
   z-index: 99;
   font-family: 'Playfair Display', serif;
 
   .container {
-    max-width: $max-width;
+    max-width:1200px;
     margin: 0 auto;
     padding: 0 20px;
     height: 100%;
@@ -24,7 +23,7 @@
     a {
       font-size: 20px;
       text-decoration: none;
-      color: $main-color;
+      color: #333;
       display: flex;
     }
   }
@@ -41,7 +40,7 @@
       display: block;
       width: 25px;
       height: 2px;
-      background: $main-color;
+      background:#333;
     }
   }
 
@@ -55,7 +54,7 @@
 
       a {
         text-decoration: none;
-        color: $main-color;
+        color:#333;
       }
     }
   }
@@ -68,11 +67,11 @@
 
     .main-nav {
       position: fixed;
-      top: $header-height;
+      top: 60px;
       right: 0;
       width: 70%;
-      height: calc(100% - #{$header-height});
-      background: $bg-color;
+      height: calc(100% - 60px);
+      background: rgba(255, 255, 255, 0.5);
       transform: translateX(100%);
       transition: transform 0.3s ease;
 

@@ -1,171 +1,111 @@
-.mainvisual {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0.5) 30%,
-      rgba(0, 0, 0, 0.5) 60%,
-      /* 上は透明 */ rgba(54, 86, 60, 1) 100% /* 下に行くほど深緑っぽく */
-    ),
-    url("../images/mainvisual-autumnleaves.webp");
-  width: 100%;
-  height: 120vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* ---- Tokens ---- */
+:root {
+  --bg-green: #36563c;
+  --text-light: #ddd;
+  --container-w: 1100px;
+}
+/* ---- Hero ---- */
+.hero {
   position: relative;
-  @media screen and (max-width: 768px) {
-    height: 100dvh;
-    // position: absolute;
-  }
-  .title-wrap {
+  min-height: 120vh;
+  display: grid;
+  place-items: center;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5) 60%, rgba(54,86,60,1) 100%),
+    url("../images/hero.webp") center / cover no-repeat;
+
+  @media (max-width: 768px) { min-height: 100dvh; }
+
+  &__title {
+    color: var(--text-light);
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    letter-spacing: .2em;
+    font-size: clamp(2.5rem, 8vw, 8rem);
+    text-shadow: 0 0 12px rgba(0,0,0,.75);
     text-align: center;
-    transform: translateY(-30%);
-    .mainvisual-title,
-    .mainvisual-subtitle {
-      color: #ddd;
-      font-size: 128px;
-      font-family: "Playfair Display", serif;
-      letter-spacing: 0.2em;
-      font-weight: bold;
-      text-shadow: 0 0 12px rgba(0, 0, 0, 0.75);
-      @media screen and (max-width: 768px) {
-        font-size: 50px;
-      }
-    }
-    .mainvisual-subtitle {
-      font-size: 60px;
-      letter-spacing: 0.05em;
-      white-space: nowrap;
-      @media screen and (max-width: 768px) {
-        font-size: 25px;
-      }
-    }
+    margin: 0;
   }
-}
-.works-section {
-  background-color: #36563c;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  margin-top: -0.8px;
-  .works-contents {
-    width: 70%;
-    margin: 0 auto;
-    padding: 5rem 0;
-    .works-titles {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      .works-title {
-        color: #ddd;
-        font-family: "Shippori Mincho", "Zen Old Mincho", "Noto Serif JP",
-          "Playfair Display", serif;
-        font-size: 50px;
-        margin-right: 1rem;
-        @media screen and (max-width: 768px) {
-          font-size: 26px;
-          margin-right: 0.5rem;
-        }
-      }
-      .works-subtitle {
-        color: #ddd;
-        font-family: "Playfair Display", serif;
-        font-size: 24px;
-        margin-bottom: 3rem;
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-        }
-      }
-    }
-    .work-image {
-      display: flex;
-      justify-content: space-around;
-      width: 100%;
-      align-items: center;
-      @media screen and (max-width: 768px) {
-        flex-direction: column;
-      }
-      .work-image-mywork {
-        width: 700px;
-        height: fit-content;
-        @media screen and (max-width: 768px) {
-          height: auto;
-          margin-bottom: 2rem;
-        }
-      }
-    }
-    .work-image-mywork-sp {
-      width: 200px;
-      height: fit-content;
-      @media screen and (max-width: 768px) {
-        width: 100px;
-        height: auto;
-      }
-    }
+  &__subtitle {
+    color: var(--text-light);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1rem, 3vw, 3.75rem);
+    letter-spacing: .05em;
+    text-align: center;
+    margin-top: .5rem;
+    white-space: nowrap;
   }
 }
 
-.fade-zoom::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: #000;
-  opacity: 0.8;
-  animation: fadeOverlay 2s ease forwards;
-  z-index: 100;
+/* 初回ロードの黒フェード */
+.reveal-on-load::before{
+  content:"";
+  position:absolute; inset:0;
+  background:#000; opacity: .8; z-index: 0;
+  animation: fadeOut 1.6s ease forwards;
+  pointer-events: none;
+}
+@keyframes fadeOut { to { opacity:0; } }
+@media (prefers-reduced-motion: reduce){
+  .reveal-on-load::before{ animation: none; opacity: 0; }
 }
 
-/* 黒レイヤーが消えていく */
-@keyframes fadeOverlay {
-  0% {
-    opacity: 1;
+/* ---- Section ---- */
+.section {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+  &--texture {
+    background-color: var(--bg-green);
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   }
-  100% {
-    opacity: 0;
-    z-index: -1;
+  &__head {
+    display:flex; align-items: baseline; gap: 1rem; margin-bottom: 2rem;
+  }
+  &__title {
+    color: var(--text-light);
+    font-family: "Shippori Mincho","Zen Old Mincho","Noto Serif JP","Playfair Display",serif;
+    font-size: clamp(1.75rem, 4vw, 3.125rem); /* 28–50px */
+    margin: 0;
+  }
+  &__subtitle {
+    color: var(--text-light);
+    font-family: "Playfair Display", serif;
+    font-size: clamp(.875rem, 2vw, 1.5rem); /* 14–24px */
+    margin: 0 0 1rem;
   }
 }
 
-.skills-section {
-  background-color: #36563c;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  margin-top: -0.8px;
-    .skills-contents {
-    width: 70%;
-    margin: 0 auto;
-    padding: 5rem 0;
-    .skills-titles {
-      display: flex;
-      align-items: baseline;
-      gap: 1rem;
-      .skills-title {
-        color: #ddd;
-        font-family: "Shippori Mincho", "Zen Old Mincho", "Noto Serif JP",
-          "Playfair Display", serif;
-        font-size: 50px;
-        margin-right: 1rem;
-        @media screen and (max-width: 768px) {
-          font-size: 26px;
-          margin-right: 0.5rem;
-        }
-      }
-      .skills-subtitle {
-        color: #ddd;
-        font-family: "Playfair Display", serif;
-        font-size: 24px;
-        margin-bottom: 3rem;
-        @media screen and (max-width: 768px) {
-          font-size: 14px;
-        }
-      }
-    }
-    .skill-images{
-      display: flex;
-      justify-content: space-between;
-      margin-top: 1rem;
-      img{
-        width: 180px;
-        height: 180px;
-      }
-    }
+/* ---- Works ---- */
+.works {
+  display: grid;
+  justify-items: center;
+  .works__item { display: block; }
+  .works__image {
+    width: min(100%, 900px);
+    height: auto;
+    border-radius: .5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+  }
+}
+
+/* ---- Skills ---- */
+.logos{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: clamp(.75rem, 2.5vw, 1.25rem);
+  margin-top: 1rem;
+  &__item{
+    display:grid; place-items:center;
+    img{ width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
+  }
+}
+
+.qualifications{
+  display:flex; flex-wrap: wrap; gap:.5rem .75rem;
+  margin-top: 1.25rem;
+  &__item{
+    background: #fff3; color: var(--text-light);
+    padding: .4rem .7rem; border-radius: 9999px;
+    font-size: .9rem; line-height: 1;
+    backdrop-filter: blur(2px);
   }
 }

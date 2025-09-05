@@ -1,17 +1,13 @@
-
+// メディアクエリ
 $breakpoints: (
-  sp: 768px,
-  pc: 1024px,
-  wide: 1366px,
-  full: 1920px
+  sp: "max-width:768px",
+  tb: "max-width:1024px",
+  pc: "max-width:1366px"
 );
-
-@mixin mq($point, $rule: min) {
-  $size: map-get($breakpoints, $point);
-
-  @if $size {
-    @media screen and (#{$rule}-width: $size) {
-      @content;
-    }
+@mixin media($breakpoint){
+  @media #{map-get($breakpoints,$breakpoint)}{
+    @content;
   }
 }
+// 呼び出し方：@include media(sp){}
+

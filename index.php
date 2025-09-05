@@ -1,45 +1,81 @@
-<?php get_header(); ?>
+<?php
+/* Template: Front Page (refactor) */
+get_header(); ?>
 
-<main>
-  <div class="mainvisual fade-zoom">
-    <div class="title-wrap">
-      <h1 class="mainvisual-title">Portfolio</h1>
-      <h2 class="mainvisual-subtitle">by web coder Okawa</h2>
+<main id="main">
+  <!-- Hero -->
+  <section class="hero reveal-on-load" aria-labelledby="hero-title">
+    <div class="hero__inner container">
+      <h1 id="hero-title" class="hero__title">Portfolio</h1>
+      <p class="hero__subtitle">by web coder Okawa</p>
     </div>
-  </div>
-  <div class="works-section fade-zoom">
-    <div class="works-contents">
-      <div class="works-titles">
-        <h2 class="works-title">作品</h2>
-        <h3 class="works-subtitle">Works</h3>
-      </div>
-      <div class="work-image">
-        <a href="https://okawa0.github.io/mywork/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork.png" alt="" class="work-image-mywork"></a>
-        <a href="https://okawa0.github.io/mywork/"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/work-mywork-sp.png" alt="" class="work-image-mywork-sp"></a>
-      </div>
-    </div>
-  </div>
-  <div class="skills-section">
-    <div class="skills-contents">
-      <div class="skills-titles">
-        <h2 class="skills-title">技術</h2>
-        <h3 class="skills-subtitle">Skills</h3>
-      </div>
-      <div class="skill-images">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/html-logo.png" alt="htmlのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/css-logo.png" alt="cssのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/JavaScript-logo.png" alt="javascriptのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/vscode-logo.png" alt="vscodeのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/figma-logo.png" alt="figmaのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/github-logo.png" alt="githubのロゴ">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/wordpress-logo.png" alt="wordpressのロゴ">
+  </section>
+
+  <!-- Works -->
+  <section class="section section--texture" aria-labelledby="works-title">
+    <div class="container">
+      <header class="section__head">
+        <h2 id="works-title" class="section__title jp">作品</h2>
+        <p class="section__subtitle en">Works</p>
+      </header>
+
+      <div class="works">
+        <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+          <picture>
+            <!-- SP優先 -->
+            <source
+              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>"
+              media="(max-width: 768px)">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.png')); ?>"
+              alt="模写・個人制作まとめ（GitHub Pages）"
+              loading="lazy" decoding="async" width="1200" height="750">
+          </picture>
+        </a>
       </div>
     </div>
-    <div class="skills-qualification">ITパスポート</div>
-    <div class="skills-qualification">ウェブデザイン技能検定2級</div>
-    <div class="skills-qualification">色彩検定3級</div>
-  </div>
-  
+  </section>
+
+  <!-- Skills -->
+  <section class="section section--texture" aria-labelledby="skills-title">
+    <div class="container">
+      <header class="section__head">
+        <h2 id="skills-title" class="section__title jp">技術</h2>
+        <p class="section__subtitle en">Skills</p>
+      </header>
+
+      <ul class="logos" role="list">
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt="HTML" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>" alt="CSS" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/JavaScript-logo.png')); ?>" alt="JavaScript" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/vscode-logo.png')); ?>" alt="Visual Studio Code" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>" alt="Figma" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" loading="lazy" width="180" height="180">
+        </li>
+        <li class="logos__item">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt="WordPress" loading="lazy" width="180" height="180">
+        </li>
+      </ul>
+
+      <ul class="qualifications" role="list">
+        <li class="qualifications__item">ITパスポート</li>
+        <li class="qualifications__item">ウェブデザイン技能検定2級</li>
+        <li class="qualifications__item">色彩検定3級</li>
+      </ul>
+    </div>
+  </section>
 </main>
 
 <?php get_footer(); ?>
