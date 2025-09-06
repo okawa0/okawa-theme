@@ -10,9 +10,12 @@
 
 <body>
   <header class="site-header">
-    <div class="container">
-      <h1 class="logo">
-        <a href="#">Okawa Web</a>
+    <div class="site-header__inner container">
+      <h1 class="site-header__logo">
+        <a href="/" class="site-header__logo-link">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="サイトのロゴ" class="site-header__logo-image">
+          <span class="site-header__logo-title">Okawa Web</span>
+        </a>
       </h1>
       <nav class="main-nav">
         <ul>

@@ -18,17 +18,15 @@
 
   &__title {
     color: var(--text-light);
-    font-family: "Playfair Display", serif;
-    font-weight: 700;
+    // font-weight: 700;
     letter-spacing: .2em;
     font-size: clamp(2.5rem, 8vw, 8rem);
-    text-shadow: 0 0 12px rgba(0,0,0,.75);
+    text-shadow: 1px 1px 12px rgba(0,0,0,1);
     text-align: center;
     margin: 0;
   }
   &__subtitle {
     color: var(--text-light);
-    font-family: "Playfair Display", serif;
     font-size: clamp(1rem, 3vw, 3.75rem);
     letter-spacing: .05em;
     text-align: center;
@@ -62,13 +60,11 @@
   }
   &__title {
     color: var(--text-light);
-    font-family: "Shippori Mincho","Zen Old Mincho","Noto Serif JP","Playfair Display",serif;
     font-size: clamp(1.75rem, 4vw, 3.125rem); /* 28–50px */
     margin: 0;
   }
   &__subtitle {
     color: var(--text-light);
-    font-family: "Playfair Display", serif;
     font-size: clamp(.875rem, 2vw, 1.5rem); /* 14–24px */
     margin: 0 0 1rem;
   }
