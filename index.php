@@ -12,7 +12,7 @@ get_header(); ?>
   </section>
 
   <!-- Works -->
-  <section class="section section--texture" aria-labelledby="works-title">
+  <section class="section section--texture" aria-labelledby="works-title" id="works">
     <div class="container">
       <header class="section__head">
         <h2 id="works-title" class="section__title jp">作品</h2>

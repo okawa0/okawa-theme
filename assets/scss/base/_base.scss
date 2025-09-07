@@ -1,9 +1,37 @@
-body{
-  font-family:"Playfair Display","Shippori Mincho";
+body {
+  font-family: "Playfair Display", "Shippori Mincho";
   color: #333;
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.u-underline {
+  position: relative;
+  display: inline-block;
+  &:hover{
+    text-shadow: 2px 2px 3px #111 !important;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .3s ease;
+    box-shadow: 2px 2px 3px #111 !important;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}
+
+.u-underline--whiteshadow:hover{
+  text-shadow:1px 1px 2px #fff !important;
 }
