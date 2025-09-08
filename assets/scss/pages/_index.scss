@@ -7,45 +7,74 @@
 /* ---- Hero ---- */
 .hero {
   position: relative;
-  min-height: 120vh;
+  min-height: 100vh;
   display: grid;
   place-items: center;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,.5) 30%, rgba(0,0,0,.5) 60%, rgba(54,86,60,1) 100%),
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(0, 0, 0, 0.5) 60%,
+      rgba(54, 86, 60, 1) 100%
+    ),
     url("../images/hero.webp") center / cover no-repeat;
 
-  @media (max-width: 768px) { min-height: 100dvh; }
+  @media (max-width: 768px) {
+    min-height: 100dvh;
+  }
 
   &__title {
     color: var(--text-light);
     // font-weight: 700;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     font-size: clamp(2.5rem, 8vw, 8rem);
-    text-shadow:4px 4px 8px #111,-4px -4px 8px #111;
+    text-shadow: 2px 2px 2px #111;
     text-align: center;
     margin: 0;
+    color: #ccc;
+    text-transform: uppercase;
+    --opacity:0;
+    &.is-active {
+      --opacity: 1;
+    }
+    .char {
+      display: inline-block;
+      opacity: var(--opacity, 0);
+      transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+      transition-delay: calc(0.05s * var(--char-index));
+      
+    }
   }
   &__subtitle {
     color: var(--text-light);
     font-size: clamp(1rem, 3vw, 3.75rem);
-    letter-spacing: .05em;
+    letter-spacing: 0.05em;
     text-align: center;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     white-space: nowrap;
   }
 }
 
 /* 初回ロードの黒フェード */
-.reveal-on-load::before{
-  content:"";
-  position:absolute; inset:0;
-  background:#000; opacity: .8; z-index: 0;
+.reveal-on-load::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #000;
+  opacity: 0.8;
+  z-index: 0;
   animation: fadeOut 1.6s ease forwards;
   pointer-events: none;
 }
-@keyframes fadeOut { to { opacity:0; } }
-@media (prefers-reduced-motion: reduce){
-  .reveal-on-load::before{ animation: none; opacity: 0; }
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-load::before {
+    animation: none;
+    opacity: 0;
+  }
 }
 
 /* ---- Section ---- */
@@ -56,7 +85,10 @@
     background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   }
   &__head {
-    display:flex; align-items: baseline; gap: 1rem; margin-bottom: 2rem;
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 2rem;
   }
   &__title {
     color: var(--text-light);
@@ -65,7 +97,7 @@
   }
   &__subtitle {
     color: var(--text-light);
-    font-size: clamp(.875rem, 2vw, 1.5rem); /* 14–24px */
+    font-size: clamp(0.875rem, 2vw, 1.5rem); /* 14–24px */
     margin: 0 0 1rem;
   }
 }
@@ -74,34 +106,47 @@
 .works {
   display: grid;
   justify-items: center;
-  .works__item { display: block; }
+  .works__item {
+    display: block;
+  }
   .works__image {
     width: min(100%, 900px);
     height: auto;
-    border-radius: .5rem;
-    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 
 /* ---- Skills ---- */
-.logos{
+.logos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: clamp(.75rem, 2.5vw, 1.25rem);
+  gap: clamp(0.75rem, 2.5vw, 1.25rem);
   margin-top: 1rem;
-  &__item{
-    display:grid; place-items:center;
-    img{ width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; }
+  &__item {
+    display: grid;
+    place-items: center;
+    img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+    }
   }
 }
 
-.qualifications{
-  display:flex; flex-wrap: wrap; gap:.5rem .75rem;
+.qualifications {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.75rem;
   margin-top: 1.25rem;
-  &__item{
-    background: #fff3; color: var(--text-light);
-    padding: .4rem .7rem; border-radius: 9999px;
-    font-size: .9rem; line-height: 1;
+  &__item {
+    background: #fff3;
+    color: var(--text-light);
+    padding: 0.4rem 0.7rem;
+    border-radius: 9999px;
+    font-size: 0.9rem;
+    line-height: 1;
     backdrop-filter: blur(2px);
   }
 }
