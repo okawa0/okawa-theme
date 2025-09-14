@@ -25,13 +25,15 @@
 .hero__title {
   color: #ccc;
   letter-spacing: 0.1em;
-  font-size: clamp(2.5rem, 8vw, 8rem);
+  font-size: clamp(2.5rem, 8vw, 6rem);
   text-shadow: 2px 2px 2px #111;
   text-align: center;
   margin: 0;
   text-transform: uppercase;
   --opacity: 0; // 初期は非表示
-
+  @media (max-width:768px){
+    font-size:2rem;
+  }
   .char {
     display: inline-block;
     opacity: var(--opacity, 0);

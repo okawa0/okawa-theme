@@ -7,15 +7,15 @@ get_header(); ?>
   <section class="hero reveal-on-load" aria-labelledby="hero-title">
     <div class="hero__inner container">
       <div id="hero-title" class="hero__title">
-        <span class="char" style="--char-index: 0"> P </span>
-        <span class="char" style="--char-index: 1"> o </span>
-        <span class="char" style="--char-index: 2"> r </span>
-        <span class="char" style="--char-index: 3"> t </span>
-        <span class="char" style="--char-index: 4"> f </span>
-        <span class="char" style="--char-index: 5"> o </span>
-        <span class="char" style="--char-index: 6"> l </span>
-        <span class="char" style="--char-index: 7"> i </span>
-        <span class="char" style="--char-index: 8"> o </span>
+        <span class="char" style="--char-index: 0">P</span>
+        <span class="char" style="--char-index: 1">o</span>
+        <span class="char" style="--char-index: 2">r</span>
+        <span class="char" style="--char-index: 3">t</span>
+        <span class="char" style="--char-index: 4">f</span>
+        <span class="char" style="--char-index: 5">o</span>
+        <span class="char" style="--char-index: 6">l</span>
+        <span class="char" style="--char-index: 7">i</span>
+        <span class="char" style="--char-index: 8">o</span>
 </div>
       <p class="hero__subtitle">by web coder Okawa</p>
     </div>
