@@ -104,16 +104,16 @@
 
 /* ---- Works ---- */
 .works {
-  display: grid;
+  display:flex;
   justify-items: center;
   .works__item {
-    display: block;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
   .works__image {
     width: min(100%, 900px);
     height: auto;
-    border-radius: 0.5rem;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   }
 }
 

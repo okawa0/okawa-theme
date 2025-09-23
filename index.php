@@ -16,7 +16,7 @@ get_header(); ?>
         <span class="char" style="--char-index: 6">l</span>
         <span class="char" style="--char-index: 7">i</span>
         <span class="char" style="--char-index: 8">o</span>
-</div>
+      </div>
       <p class="hero__subtitle">by web coder Okawa</p>
     </div>
   </section>
@@ -31,17 +31,13 @@ get_header(); ?>
 
       <div class="works">
         <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
-          <picture>
-            <!-- SP優先 -->
-            <source
-              srcset="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>"
-              media="(max-width: 768px)">
             <img
               class="works__image"
               src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.png')); ?>"
               alt="模写・個人制作まとめ（GitHub Pages）"
               loading="lazy" decoding="async" width="1200" height="750">
-          </picture>
+            <img
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400">
         </a>
       </div>
     </div>
