@@ -37,7 +37,7 @@ get_header(); ?>
               alt="模写・個人制作まとめ（GitHub Pages）"
               loading="lazy" decoding="async" width="1200" height="750">
             <img
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400">
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400" class="works__image-sp">
         </a>
       </div>
     </div>

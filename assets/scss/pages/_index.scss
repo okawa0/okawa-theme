@@ -110,10 +110,17 @@
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    @media (max-width:768px){
+      display: block;
+    }
   }
   .works__image {
     width: min(100%, 900px);
     height: auto;
+  }
+  .works__image-sp{
+    height: 30%;
+    margin: 1rem auto;
   }
 }
 
