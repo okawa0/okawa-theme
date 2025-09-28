@@ -18,6 +18,11 @@
         </a>
       </h1>
       <nav class="main-nav">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <ul>
           <li class="u-underline u-underline--whiteshadow"><a href="#works">Works</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#skills">Skills</a></li>
