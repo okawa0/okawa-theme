@@ -31,13 +31,13 @@ get_header(); ?>
 
       <div class="works">
         <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.png')); ?>"
-              alt="模写・個人制作まとめ（GitHub Pages）"
-              loading="lazy" decoding="async" width="1200" height="750">
-            <img
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400" class="works__image-sp">
+          <img
+            class="works__image"
+            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.png')); ?>"
+            alt="模写・個人制作まとめ（GitHub Pages）"
+            loading="lazy" decoding="async" width="1200" height="750">
+          <img
+            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400" class="works__image-sp">
         </a>
       </div>
     </div>
@@ -82,6 +82,15 @@ get_header(); ?>
       </ul>
     </div>
   </section>
+
+  <!-- Skills -->
+  <section class="section section--texture" aria-labelledby="skills-title">
+    <div class="container">
+      <header class="section__head">
+        <h2 id="skills-title" class="section__title jp">自己紹介</h2>
+        <p class="section__subtitle en">About</p>
+      </header>
+
 </main>
 
 <?php get_footer(); ?>
