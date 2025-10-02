@@ -24,10 +24,10 @@ get_header(); ?>
   <!-- Works -->
   <section class="section section--texture" aria-labelledby="works-title" id="works">
     <div class="container">
-      <header class="section__head">
+      <div class="section__head">
         <h2 id="works-title" class="section__title jp">作品</h2>
         <p class="section__subtitle en">Works</p>
-      </header>
+      </div>
 
       <div class="works">
         <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
@@ -46,10 +46,10 @@ get_header(); ?>
   <!-- Skills -->
   <section class="section section--texture" aria-labelledby="skills-title">
     <div class="container">
-      <header class="section__head">
+      <div class="section__head">
         <h2 id="skills-title" class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
-      </header>
+      </div>
 
       <ul class="logos" role="list">
         <li class="logos__item">
@@ -86,10 +86,10 @@ get_header(); ?>
   <!-- Skills -->
   <section class="section section--texture" aria-labelledby="skills-title">
     <div class="container">
-      <header class="section__head">
+      <div class="section__head">
         <h2 id="skills-title" class="section__title jp">自己紹介</h2>
         <p class="section__subtitle en">About</p>
-      </header>
+    </div>
 
 </main>
 
