@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php bloginfo('name'); ?></title>
+  <title>
+    <?php wp_title('|', true, 'right'); ?>
+    <?php bloginfo('name'); ?>
+  </title>
+  <!-- CSSやJSをhead内に挿入するWordPressのフック関数 -->
   <?php wp_head(); ?>
 </head>
 
@@ -13,12 +17,12 @@
     <div class="site-header__inner container">
       <h1 class="site-header__logo">
         <a href="/" class="site-header__logo-link">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="サイトのロゴ" class="site-header__logo-image">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="" class="site-header__logo-image">
           <span class="site-header__logo-title u-underline">Okawa Web</span>
         </a>
       </h1>
-      <nav class="main-nav">
-        <div class="hamburger">
+      <nav class="site-header__main-nav">
+        <div class="site-header__hamburger">
           <span></span>
           <span></span>
           <span></span>

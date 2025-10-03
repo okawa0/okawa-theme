@@ -74,7 +74,7 @@ get_header(); ?>
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt="WordPress" loading="lazy" width="180" height="180">
         </li>
       </ul>
-
+  
       <ul class="qualifications" role="list">
         <li class="qualifications__item">ITパスポート</li>
         <li class="qualifications__item">ウェブデザイン技能検定2級</li>

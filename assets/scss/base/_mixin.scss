@@ -1,8 +1,8 @@
 // メディアクエリ
 $breakpoints: (
-  sp: "max-width:768px",
-  tb: "max-width:1024px",
-  pc: "max-width:1366px"
+  sp: "(max-width:768px)",
+  tb: "(max-width:1024px)",
+  pc: "(max-width:1366px)"
 );
 @mixin media($breakpoint){
   @media #{map-get($breakpoints,$breakpoint)}{
@@ -10,4 +10,3 @@ $breakpoints: (
   }
 }
 // 呼び出し方：@include media(sp){}
-
