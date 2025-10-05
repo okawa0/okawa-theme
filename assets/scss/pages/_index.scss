@@ -55,7 +55,7 @@
 }
 
 /* 初回ロードの黒フェード */
-.reveal-on-load::before {
+.hero.reveal-on-load::before {
   content: "";
   position: absolute;
   inset: 0;
