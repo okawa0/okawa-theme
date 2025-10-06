@@ -33,11 +33,9 @@ get_header(); ?>
         <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
           <img
             class="works__image"
-            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.png')); ?>"
-            alt="模写・個人制作まとめ（GitHub Pages）"
-            loading="lazy" decoding="async" width="1200" height="750">
-          <img
-            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork-sp.png')); ?>" height="400" class="works__image-sp">
+            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+            alt="模写サイトmyworkのモックアップ"
+            loading="lazy" decoding="async" width="600" height="340">
         </a>
       </div>
     </div>

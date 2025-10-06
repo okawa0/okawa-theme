@@ -1,9 +1,17 @@
-@use 'base/reset';
-@use 'base/variables';
-@use 'base/mixin';
-@use 'base/base';
+@use "base/reset";
+@use "base/variables";
+@use "base/mixin";
+@use "base/base";
 
-@use 'components/header';
-@use 'components/footer';
+@use "components/header";
+@use "components/footer";
 
-@use 'pages/index';
+@use "pages/index";
+
+// 管理バー非表示
+#wpadminbar {
+  display: none !important;
+}
+html {
+  margin-top: 0 !important;
+}

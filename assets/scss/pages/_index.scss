@@ -117,17 +117,10 @@
     }
   }
   .works__image {
-    width: min(100%, 900px);
+    width: 600px;
     height: auto;
     @media (max-width: 768px) {
       margin-right: 3rem;
-    }
-  }
-  .works__image-sp {
-    height: 70%;
-    margin: 1rem auto;
-    @media (max-width: 768px) {
-      height: 60%;
     }
   }
 }
