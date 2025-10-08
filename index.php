@@ -32,13 +32,13 @@ get_header(); ?>
 
   <section class="section section--texture" id="works">
     <div class="container">
-      <div class="section__head">
+      <div class="section__head reveal">
         <h2 id="works-title" class="section__title jp">作品</h2>
         <p class="section__subtitle en">Works</p>
       </div>
 
       <div class="works">
-        <a class="works__item" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+        <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
           <img
             class="works__image"
             src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
@@ -60,12 +60,12 @@ get_header(); ?>
 
   <section class="section section--texture" aria-labelledby="skills-title">
     <div class="container">
-      <div class="section__head">
+      <div class="section__head reveal">
         <h2 id="skills-title" class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
       </div>
 
-      <ul class="logos" role="list">
+      <ul class="logos reveal" role="list">
         <li class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt="HTML" loading="lazy" width="180" height="180">
         </li>
@@ -89,7 +89,7 @@ get_header(); ?>
         </li>
       </ul>
 
-      <ul class="qualifications" role="list">
+      <ul class="qualifications reveal" role="list">
         <li class="qualifications__item">ITパスポート</li>
         <li class="qualifications__item">ウェブデザイン技能検定2級</li>
         <li class="qualifications__item">色彩検定3級</li>
@@ -108,7 +108,7 @@ get_header(); ?>
 
   <section class="section section--texture" aria-labelledby="skills-title">
     <div class="container">
-      <div class="section__head">
+      <div class="section__head reveal">
         <h2 id="skills-title" class="section__title jp">自己紹介</h2>
         <p class="section__subtitle en">About</p>
       </div>
