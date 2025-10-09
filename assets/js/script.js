@@ -11,11 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-inview');
-        obs.unobserve(entry.target); // ←繰り返し表示したいならこの行を消す
       }
     });
   }, {
     threshold: 0.15,           // 15%見えたら
     rootMargin: '0px 0px -10% 0px' // 少し早めに発火
   });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el)); 

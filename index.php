@@ -44,6 +44,9 @@ get_header(); ?>
             src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
             alt="模写サイトmyworkのモックアップ"
             loading="lazy" decoding="async" width="600" height="340">
+          <ul class="works__tags">
+            <li class="works__tag">HTML</li>
+            <li class="works__tag">CSS</li>
         </a>
       </div>
     </div>

@@ -118,7 +118,7 @@
   display: flex;
   justify-items: center;
   .works__item {
-    display: flex;
+    display:block ;
     align-items: baseline;
     justify-content: space-between;
     height: 450px;
@@ -179,7 +179,7 @@
   }
 }
 
-// 下からふわっとアニメーション
+// 下からふわっとアニメーション 
 .reveal {
   opacity: 0;
   translate: 0 13%;
