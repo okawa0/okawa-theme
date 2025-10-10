@@ -6,6 +6,14 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const title = document.getElementById('hero-subtitle');
+  // 描画が一度走ってからクラス付与（iOSの取りこぼし回避）
+  requestAnimationFrame(() => {
+    title.classList.add('is-active');
+  });
+});
+
 // 下からふわっと表示
   const io = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
