@@ -1,5 +1,7 @@
 <?php
-/* Template: Front Page (refactor) */
+/*
+Template Name: Front Page (refactor)
+*/
 get_header(); ?>
 
 <main id="main">

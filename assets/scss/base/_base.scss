@@ -11,7 +11,7 @@ body {
 .u-underline {
   position: relative;
   display: inline-block;
-  &:hover{
+  &:hover {
     text-shadow: 2px 2px 3px #111 !important;
   }
   &::after {
@@ -24,7 +24,7 @@ body {
     background-color: #fff;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform .3s ease;
+    transition: transform 0.3s ease;
     box-shadow: 2px 2px 3px #111 !important;
   }
   &:hover::after {
@@ -32,6 +32,6 @@ body {
   }
 }
 
-.u-underline--whiteshadow:hover{
-  text-shadow:1px 1px 2px #fff !important;
+.u-underline--whiteshadow:hover {
+  text-shadow: 1px 1px 2px #fff !important;
 }

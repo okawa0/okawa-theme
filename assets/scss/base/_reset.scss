@@ -1,16 +1,21 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 body {
   margin: 0;
   line-height: 1.5;
 }
-img{
+img {
   display: block;
   max-width: 100%;
 }
 //フォーム系はフォントを継承（見た目の統一）
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
 }
 a {

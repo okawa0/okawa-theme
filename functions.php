@@ -4,7 +4,8 @@
 function my_theme_enqueue_styles()
 {
   wp_enqueue_style(
-    'main-style',get_template_directory_uri() . '/assets/css/style.css',
+    'main-style',
+    get_template_directory_uri() . '/assets/css/style.css',
     // キャッシュクリア
     filemtime(get_template_directory() . '/assets/css/style.css')
   );

@@ -7,7 +7,13 @@
   min-height: 100vh;
   display: grid;
   place-items: center;
-  background: linear-gradient(to bottom,rgba(0, 0, 0, 0.5) 30%,rgba(0, 0, 0, 0.6) 70%,rgba(220, 231, 232) 100%),url("../images/hero.webp") center/cover no-repeat;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 30%,
+      rgba(0, 0, 0, 0.6) 70%,
+      rgba(220, 231, 232) 100%
+    ),
+    url("../images/hero.webp") center/cover no-repeat;
   z-index: 0;
   @include media(sp) {
     // min-height: 100dvh;
@@ -75,10 +81,10 @@
       opacity: 1; // 親にis-activeが付いたら全charが1に
     }
   }
-// 墨跡
+  // 墨跡
   .hero__brush-image {
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 40%;
     transform: translate(-50%, -20%);
     z-index: 1;
@@ -87,10 +93,6 @@
     @include media(pc) {
       display: none;
     }
-    @include media(sp) {
-      top: 45%;
-      height: 160px;
-    }
   }
   // 墨跡(1366px以下)
   .hero__brush-image--sp {
@@ -98,7 +100,7 @@
     @include media(pc) {
       display: block;
       position: absolute;
-      top: 37%;
+      top: 36%;
       left: 35%;
       transform: translate(-50%, -20%);
       z-index: 1;
@@ -106,8 +108,12 @@
       height: 300px;
     }
     @include media(sp) {
-      top: 40%;
-      height: 300px;
+      top: 41%;
+      height: 240px;
+    }
+    @include media(sp-mini) {
+      top: 43%;
+      height: 140px;
     }
   }
 }
