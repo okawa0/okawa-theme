@@ -1,5 +1,8 @@
 <?php
 
+// タイトルタグの自動生成
+add_theme_support('title-tag');
+
 // CSSの読み込み
 function my_theme_enqueue_styles()
 {
@@ -12,12 +15,8 @@ function my_theme_enqueue_styles()
 }
 // フック
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
-
 // サムネイル
 add_theme_support('/assets/images/thumbnail.webp');
-
-// 管理バー非表示
-// add_filter('show_admin_bar', '__return_false');
 
 // Googleフォントの読み込み
 function my_theme_enqueue_fonts()
@@ -30,7 +29,7 @@ function my_theme_enqueue_fonts()
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_fonts');
 
-
+// JSの読み込み
 function mytheme_enqueue_scripts()
 {
   wp_enqueue_script(
@@ -38,14 +37,14 @@ function mytheme_enqueue_scripts()
     get_template_directory_uri() . '/assets/js/script.js',
     array(),
     '1.0.0',
-    true // フッターで読み込み
+    true
   );
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_scripts');
 
+// ページ読み込み後スクリプト実行
 function add_defer_attribute($tag, $handle, $src)
 {
-  // 対象のハンドル名だけに適用
   if ($handle === 'mytheme-script') {
     return '<script src="' . esc_url($src) . '" defer></script>';
   }
