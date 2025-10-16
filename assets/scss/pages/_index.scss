@@ -115,7 +115,7 @@
   // 墨跡
   .hero__brush-image {
     position: absolute;
-    top: 50%;
+    top: 28%;
     left: 40%;
     transform: translate(-50%, -20%);
     z-index: 1;
@@ -139,14 +139,14 @@
       height: 300px;
     }
     @include media(sp) {
-      top: 30%;
+      top: 42%;
       height: 240px;
       left:39%;
     }
     @include media(sp-mini) {
-      top: 40%;
+      top: 44%;
       left: 37%;
-      height: 103px;
+      height: 110px;
     }
   }
 }
