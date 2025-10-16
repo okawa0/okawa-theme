@@ -44,11 +44,11 @@
   </div>
 
   <!-- 作品セクション -->
-  <section class="section section--texture" id="works">
+  <section class="section section--texture">
     <div class="container">
       <div class="section__head reveal">
-        <h2 id="works-title" class="section__title jp">作品</h2>
-        <p class="section__subtitle en">Works</p>
+        <h2 class="section__title">作品</h2>
+        <p class="section__subtitle">Works</p>
       </div>
       <div class="works">
         <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
@@ -57,9 +57,6 @@
             src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
             alt="模写サイトmyworkのモックアップ"
             loading="lazy" decoding="async" width="600" height="340">
-          <ul class="works__tags">
-            <li class="works__tag">HTML</li>
-            <li class="works__tag">CSS</li>
         </a>
       </div>
     </div>
