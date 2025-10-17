@@ -56,6 +56,9 @@
     text-transform: uppercase;
     z-index: 2;
     position: relative;
+    @media (min-width: 1367px) and (max-width: 1919px) {
+      font-size: 5rem;
+    }
     @include media(pc) {
       font-size: 4rem;
     }
@@ -115,12 +118,19 @@
   // 墨跡
   .hero__brush-image {
     position: absolute;
-    top: 28%;
+    top: 20%;
     left: 40%;
     transform: translate(-50%, -20%);
     z-index: 1;
     opacity: 1;
     height: 560px;
+    position: block;
+    @media (min-width: 1920px) {
+      top: 30%;
+    }
+    @media (min-width: 1536px) and (max-width: 1919px) {
+      top: 25%;
+    }
     @include media(pc) {
       display: none;
     }
@@ -131,12 +141,15 @@
     @include media(pc) {
       display: block;
       position: absolute;
-      top: 36%;
+      top: 34%;
       left: 35%;
       transform: translate(-50%, -20%);
       z-index: 1;
       opacity: 1;
       height: 300px;
+    }
+    @include media(tb) {
+      top: 36%;
     }
     @include media(sp) {
       top: 42%;
@@ -181,31 +194,31 @@
       }
     }
     // .grid {
-      // display: grid;
-      // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      .works {
-        // display: flex;
-        // justify-items: center;
-          display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));    
-  gap: 2rem;
-        .works__item {
-          display: block;
-          // align-items: baseline;
-          // justify-content: space-between;
-          height: 250px;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    .works {
+      // display: flex;
+      // justify-items: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      .works__item {
+        display: block;
+        // align-items: baseline;
+        // justify-content: space-between;
+        height: 250px;
+        @include media(sp) {
+          height: 350px;
+        }
+        .works__image {
+          width: 500px;
+          height: auto;
           @include media(sp) {
-            height: 350px;
-          }
-          .works__image {
-            width: 500px;
-            height: auto;
-            @include media(sp) {
-              margin-right: 3rem;
-            }
+            margin-right: 3rem;
           }
         }
       }
+    }
     // }
     .logos {
       display: grid;
