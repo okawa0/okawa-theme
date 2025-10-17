@@ -50,15 +50,45 @@
         <h2 class="section__title">作品</h2>
         <p class="section__subtitle">Works</p>
       </div>
-      <div class="works">
-        <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
-          <img
-            class="works__image"
-            src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-            alt="模写サイトmyworkのモックアップ"
-            loading="lazy" decoding="async" width="600" height="340">
-        </a>
-      </div>
+      <!-- <div class="grid"> -->
+        <div class="works"> 
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+              alt="模写サイトmyworkのモックアップ"
+              loading="lazy" decoding="async" width="600" height="340">
+          </a>
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+              alt="模写サイトmyworkのモックアップ"
+              loading="lazy" decoding="async" width="600" height="340">
+          </a>
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+              alt="模写サイトmyworkのモックアップ"
+              loading="lazy" decoding="async" width="600" height="340">
+          </a>
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+              alt="模写サイトmyworkのモックアップ"
+              loading="lazy" decoding="async" width="600" height="340">
+          </a>
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+            <img
+              class="works__image"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+              alt="模写サイトmyworkのモックアップ"
+              loading="lazy" decoding="async" width="600" height="340">
+          </a>
+        </div>
+      <!-- </div> -->
     </div>
   </section>
 
