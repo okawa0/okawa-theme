@@ -59,32 +59,18 @@
               alt="模写サイトmyworkのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>">
             <img
               class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-              alt="模写サイトmyworkのモックアップ"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design.webp')); ?>"
+              alt="模写サイトfurniture designのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+          <a class="works__item reveal" href="<?php echo esc_url('https://okawa-web.com/'); ?>">
             <img
               class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-              alt="模写サイトmyworkのモックアップ"
-              loading="lazy" decoding="async" width="600" height="340">
-          </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-              alt="模写サイトmyworkのモックアップ"
-              loading="lazy" decoding="async" width="600" height="340">
-          </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-              alt="模写サイトmyworkのモックアップ"
+              src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio.webp')); ?>"
+              alt="ポートフォリオサイトのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
         </div>
