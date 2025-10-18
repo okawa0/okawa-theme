@@ -18,17 +18,28 @@
         </a>
       </h1>
       <nav class="site-header__main-nav">
-        <div class="site-header__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
         <ul>
           <li class="u-underline u-underline--whiteshadow"><a href="#works">Works</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#skills">Skills</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#about">About</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+      <!-- SP用ナビゲーション -->
+      <button class="hamburger-overlay">
+        <span class="hamburger-overlay__line"></span>
+        <span class="hamburger-overlay__line"></span>
+        <span class="hamburger-overlay__line"></span>
+      </button>
+      <nav id="overlay-menu" class="nav-overlay">
+        <div class="nav-overlay__content">
+          <ul class="nav-overlay__list">
+            <li class="nav-overlay__item"><a href="#works" class="nav-overlay__link">Works</a></li>
+            <li class="nav-overlay__item"><a href="#skills" class="nav-overlay__link">Skills</a></li>
+            <li class="nav-overlay__item"><a href="#about" class="nav-overlay__link">About</a></li>
+            <li class="nav-overlay__item"><a href="#contact" class="nav-overlay__link">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>

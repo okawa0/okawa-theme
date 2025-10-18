@@ -44,7 +44,7 @@
   </div>
 
   <!-- 作品セクション -->
-  <section class="section section--texture">
+  <section class="section section--texture" id="works">
     <div class="container">
       <div class="section__head reveal">
         <h2 class="section__title">作品</h2>
@@ -101,7 +101,7 @@
   </div>
 
   <!-- 技術セクション -->
-  <section class="section section--texture" aria-labelledby="skills-title">
+  <section class="section section--texture" id="skills">
     <div class="container">
       <div class="section__head reveal">
         <h2 id="skills-title" class="section__title jp">技術</h2>
@@ -148,7 +148,7 @@
   </div>
 
   <!-- 自己紹介セクション -->
-  <section class="section section--texture" aria-labelledby="skills-title">
+  <section class="section section--texture" id="about">
     <div class="container">
       <div class="section__head reveal">
         <h2 id="skills-title" class="section__title jp">自己紹介</h2>
