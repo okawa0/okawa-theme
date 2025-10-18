@@ -51,22 +51,34 @@
         <p class="section__subtitle">Works</p>
       </div>
       <!-- <div class="grid"> -->
-        <div class="works"> 
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>">
+      <div class="works">
+        <div class="works__item reveal">
+          <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
             <img
               class="works__image"
               src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
               alt="模写サイトmyworkのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>">
+          <div class="works__info">
+            <p><strong>My Work</strong><br>フォトグラファーのポートフォリオサイト</p>
+            <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
+            <p>使用スキル：HTML / Sass<br>ツール：VS Code / Figma / GitHub</p>
+            <p>制作期間：1日(約8時間)<br>制作時期：2025年6月</p>
+            <p>
+          </div>
+        </div>
+        <div class="works__item reveal">
+          <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer">
             <img
               class="works__image"
               src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design.webp')); ?>"
               alt="模写サイトfurniture designのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
-          <a class="works__item reveal" href="<?php echo esc_url('https://okawa-web.com/'); ?>">
+        </div>
+        <div class="works__item reveal">
+          <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer">
             <img
               class="works__image"
               src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio.webp')); ?>"
@@ -74,6 +86,7 @@
               loading="lazy" decoding="async" width="600" height="340">
           </a>
         </div>
+      </div>
       <!-- </div> -->
     </div>
   </section>

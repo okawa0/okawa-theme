@@ -23,7 +23,7 @@ function my_theme_enqueue_fonts()
 {
   wp_enqueue_style(
     'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Shippori+Mincho&display=swap',
+    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Shippori+Mincho:wght@400;700&display=swap',
     false
   );
 }
