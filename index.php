@@ -76,6 +76,13 @@
               alt="模写サイトfurniture designのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
+          <div class="works__info">
+            <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
+            <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
+            <p>使用スキル：HTML / Sass / JavaScript<br>ツール：VS Code / Figma / GitHub</p>
+            <p>制作期間：4日(約30時間)<br>制作時期：2025年7月</p>
+            <p>
+          </div>
         </div>
         <div class="works__item reveal">
           <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer">
@@ -85,6 +92,13 @@
               alt="ポートフォリオサイトのモックアップ"
               loading="lazy" decoding="async" width="600" height="340">
           </a>
+          <div class="works__info">
+            <p><strong>Okawa Web</strong><br>自身のポートフォリオサイト</p>
+            <p>デザインとコーディングを担当</p>
+            <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
+            <p>制作期間：8日(約60時間)<br>制作時期：2025年9月</p>
+            <p>
+          </div>
         </div>
       </div>
       <!-- </div> -->
