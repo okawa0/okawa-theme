@@ -1,10 +1,23 @@
 // ローディングアニメーション
 window.addEventListener("load", () => {
   const loading = document.getElementById("loading");
+  const video = document.getElementById("loading-video");
+  //動画の再生補助
+  if (video) {
+    const playPromise = video.play();
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {
+        // 自動再生がブロックされたときの保険
+        video.muted = true;
+        video.play();
+      });
+    }
+  }
   setTimeout(() => {
     loading.classList.add("loaded");
   }, 200);
 });
+
 
 // ハンバーガーメニュー
 document.addEventListener('DOMContentLoaded', () => {
@@ -74,3 +87,16 @@ document.addEventListener('DOMContentLoaded', () => {
     rootMargin: '0px 0px -10% 0px'
   });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el)); 
+
+  // スキルセクション
+  // スマホでタップしたとき説明文をトグル表示
+document.querySelectorAll('.skill-tree__item').forEach(item => {
+  item.addEventListener('click', e => {
+    // 他のactiveを消す
+    document.querySelectorAll('.skill-tree__item').forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+    // 自分のactiveを切り替え
+    item.classList.toggle('active');
+  });
+});

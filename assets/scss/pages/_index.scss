@@ -56,6 +56,7 @@
     text-transform: uppercase;
     z-index: 2;
     position: relative;
+
     @media (min-width: 1367px) and (max-width: 1919px) {
       font-size: 5rem;
     }
@@ -167,7 +168,9 @@
 .section {
   padding: 5rem 0;
   color: $color-ink;
-
+  @include media(sp) {
+    padding: 3rem 0;
+  }
   &--texture {
     background-image: url("../images/washi.webp");
     background-size: 500px 500px;
@@ -184,6 +187,9 @@
       gap: 1rem;
       margin-bottom: 5rem;
       justify-content: center;
+      @include media(sp) {
+        margin-bottom: 2rem;
+      }
       .section__title {
         font-size: clamp(1.75rem, 4vw, 3.125rem); /* 28–50px */
         margin: 0;
@@ -197,48 +203,164 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
+      @include media(sp) {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
       .works__item {
         display: block;
         height: fit-content;
-        a{
+        a {
           transition: opacity 0.5s ease;
-          &:hover{
-          opacity: 0.5;
+          &:hover {
+            opacity: 0.5;
           }
           .works__image {
-          width: 500px;
-          height: auto;
-          @include media(sp) {
-            margin-right: 3rem;
+            width: 500px;
+            height: auto;
+            @include media(sp) {
+              margin-right: 3rem;
+            }
           }
         }
-      }
-        .works__info{
+        .works__info {
           margin-top: 2rem;
           margin-left: 2rem;
           @include media(sp) {
-            margin-top: 0;
+            margin-left: 1rem;
           }
-          strong{
+          strong {
             font-weight: 700;
             font-size: 1.2em;
           }
         }
       }
     }
-    .logos {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: clamp(0.75rem, 2.5vw, 1.25rem);
-      margin-top: 1rem;
+    .skill-tree {
+      position: relative;
+      width: 400px;
+      height: 400px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10rem;
+
+      &__center {
+        position: relative;
+        z-index: 2;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      &__branches {
+        position: absolute;
+        inset: 0;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
       &__item {
-        display: grid;
-        place-items: center;
-        img {
-          width: 100%;
-          height: auto;
-          aspect-ratio: 1 / 1;
-          object-fit: contain;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        // background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, background 0.3s ease;
+
+        &:hover {
+          background: #f0f0f0;
+          transform: scale(1.05);
+        }
+
+        .skill-tree__desc {
+          display: none;
+          position: absolute;
+          top: 110%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 160px;
+          padding: 8px;
+          background: #fff;
+          border-radius: 8px;
+          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+          font-size: 12px;
+          line-height: 1.4;
+          z-index: 10;
+        }
+
+        &.active .skill-tree__desc,
+        &:hover .skill-tree__desc {
+          display: block;
+        }
+      }
+
+      // 円配置（6個例）
+      .html {
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .css {
+        top: 25%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+      }
+      .js {
+        top: 75%;
+        left: 90%;
+        transform: translate(-50%, -50%);
+      }
+      .wp {
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .figma {
+        top: 75%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+      }
+      .github {
+        top: 25%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .skill-tree {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+
+        &__item {
+          // position: static;
+          transform: none;
+          margin: 10px 0;
+        }
+
+        .skill-tree__desc {
+          position: static;
+          transform: none;
+          width: auto;
+          display: none;
+        }
+
+        &.active .skill-tree__desc {
+          display: block;
         }
       }
     }

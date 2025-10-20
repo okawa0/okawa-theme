@@ -3,7 +3,7 @@
 
 <!-- ローディング -->
 <div id="loading">
-  <video id="loading-video" autoplay muted playsinline>
+  <video id="loading-video" autoplay muted playsinline preload="auto">
     <source
       src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves--sp.mp4')); ?>"
       type="video/mp4"
@@ -119,37 +119,46 @@
         <h2 class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
       </div>
-      <p>言語</p>
-      <div class="logos reveal" role="list">
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt="HTML" loading="lazy" width="180" height="180">
+      <section class="skill-tree">
+        <div class="skill-tree__center">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="Okawa">
         </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>" alt="CSS" loading="lazy" width="180" height="180">
-        </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/JavaScript-logo.png')); ?>" alt="JavaScript" loading="lazy" width="180" height="180">
-        </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/vscode-logo.png')); ?>" alt="Visual Studio Code" loading="lazy" width="180" height="180">
-        </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>" alt="Figma" loading="lazy" width="180" height="180">
-        </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" loading="lazy" width="180" height="180">
-        </div>
-        <div class="logos__item">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt="WordPress" loading="lazy" width="180" height="180">
-        </div>
-      </ul>
 
-      <ul class="qualifications reveal" role="list">
-        <li class="qualifications__item">ITパスポート</li>
-        <li class="qualifications__item">ウェブデザイン技能検定2級</li>
-        <li class="qualifications__item">色彩検定3級</li>
-      </ul>
-    </div>
+        <ul class="skill-tree__branches">
+          <li class="skill-tree__item html">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt=""></span>
+            <p class="skill-tree__desc">セマンティックなマークアップを意識し、BEM設計で構造を整理。</p>
+          </li>
+          <li class="skill-tree__item css">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>" alt="">
+            </span>
+            <p class="skill-tree__desc">変数・mixin・パーシャル管理で効率的なスタイル設計を実践。</p>
+          </li>
+          <li class="skill-tree__item js">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>" alt=""></span>
+            <p class="skill-tree__desc">フェード演出やハンバーガーメニューなど、UI改善に使用。</p>
+          </li>
+          <li class="skill-tree__item wp">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt=""></span>
+            <p class="skill-tree__desc">オリジナルテーマ開発、functions.phpカスタマイズ対応。</p>
+          </li>
+          <li class="skill-tree__item figma">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>" alt=""></span>
+            <p class="skill-tree__desc">デザイン構造を読み取り、実装に反映。SP版調整経験あり。</p>
+          </li>
+          <li class="skill-tree__item github">
+            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt=""></span>
+            <p class="skill-tree__desc">Gitでバージョン管理し、GitHub Pagesへ公開経験あり。</p>
+          </li>
+        </ul>
+      </section>
+
+        <ul class="qualifications reveal" role="list">
+          <li class="qualifications__item">ITパスポート</li>
+          <li class="qualifications__item">ウェブデザイン技能検定2級</li>
+          <li class="qualifications__item">色彩検定3級</li>
+        </ul>
+      </div>
   </section>
 
   <!-- 区切り -->
