@@ -50,7 +50,6 @@
         <h2 class="section__title">作品</h2>
         <p class="section__subtitle">Works</p>
       </div>
-      <!-- <div class="grid"> -->
       <div class="works">
         <div class="works__item reveal">
           <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
@@ -117,31 +116,32 @@
   <section class="section section--texture" id="skills">
     <div class="container">
       <div class="section__head reveal">
-        <h2 id="skills-title" class="section__title jp">技術</h2>
+        <h2 class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
       </div>
-      <ul class="logos reveal" role="list">
-        <li class="logos__item">
+      <p>言語</p>
+      <div class="logos reveal" role="list">
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt="HTML" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>" alt="CSS" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/JavaScript-logo.png')); ?>" alt="JavaScript" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/vscode-logo.png')); ?>" alt="Visual Studio Code" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>" alt="Figma" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" loading="lazy" width="180" height="180">
-        </li>
-        <li class="logos__item">
+        </div>
+        <div class="logos__item">
           <img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt="WordPress" loading="lazy" width="180" height="180">
-        </li>
+        </div>
       </ul>
 
       <ul class="qualifications reveal" role="list">

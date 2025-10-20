@@ -200,9 +200,6 @@
       .works__item {
         display: block;
         height: fit-content;
-        @include media(sp) {
-          height: 350px;
-        }
         a{
           transition: opacity 0.5s ease;
           &:hover{
@@ -229,7 +226,6 @@
         }
       }
     }
-    // }
     .logos {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

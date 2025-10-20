@@ -51,3 +51,23 @@ function add_defer_attribute($tag, $handle, $src)
   return $tag;
 }
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 3);
+
+// キャッシュの無効化
+function my_theme_enqueue_scripts()
+{
+  wp_enqueue_style(
+    'my-style',
+    get_theme_file_uri('/assets/css/style.css'),
+    array(),
+    filemtime(get_theme_file_path('/assets/css/style.css'))
+  );
+
+  wp_enqueue_script(
+    'my-script',
+    get_theme_file_uri('/assets/js/script.js'),
+    array(),
+    filemtime(get_theme_file_path('/assets/js/script.js')),
+    true
+  );
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_scripts');
