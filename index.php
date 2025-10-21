@@ -60,7 +60,7 @@
               loading="lazy" decoding="async" width="600" height="340">
           </a>
           <div class="works__info">
-            <p><strong>My Work</strong><br>フォトグラファーのポートフォリオサイト</p>
+            <p><strong>My Work</strong><br>フォトグラファーのポートフォリオ</p>
             <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
             <p>使用スキル：HTML / Sass<br>ツール：VS Code / Figma / GitHub</p>
             <p>制作期間：1日(約8時間)<br>制作時期：2025年6月</p>
@@ -92,7 +92,7 @@
               loading="lazy" decoding="async" width="600" height="340">
           </a>
           <div class="works__info">
-            <p><strong>Okawa Web</strong><br>自身のポートフォリオサイト</p>
+            <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
             <p>デザインとコーディングを担当</p>
             <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
             <p>制作期間：8日(約60時間)<br>制作時期：2025年9月</p>
