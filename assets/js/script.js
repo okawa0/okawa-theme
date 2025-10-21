@@ -9,13 +9,14 @@ window.addEventListener("load", () => {
       playPromise.catch(() => {
         // 自動再生がブロックされたときの保険
         video.muted = true;
+        video.load();
         video.play();
       });
     }
   }
   setTimeout(() => {
     loading.classList.add("loaded");
-  }, 200);
+  }, 400);
 });
 
 
@@ -89,14 +90,31 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.reveal').forEach(el => io.observe(el)); 
 
   // スキルセクション
-  // スマホでタップしたとき説明文をトグル表示
-document.querySelectorAll('.skill-tree__item').forEach(item => {
-  item.addEventListener('click', e => {
-    // 他のactiveを消す
-    document.querySelectorAll('.skill-tree__item').forEach(i => {
-      if (i !== item) i.classList.remove('active');
-    });
-    // 自分のactiveを切り替え
-    item.classList.toggle('active');
+const items = document.querySelectorAll('.skill-tree__item');
+const infoBox = document.querySelector('.skill-info');
+const skillName = document.querySelector('.skill-info__name');
+const skillDesc = document.querySelector('.skill-info__desc');
+
+items.forEach(item => {
+  item.addEventListener('mouseenter', () => {
+    skillName.textContent = item.dataset.skill;
+    skillDesc.textContent = item.dataset.desc;
+    infoBox.classList.add('visible');
   });
+
+  item.addEventListener('mouseleave', () => {
+    infoBox.classList.remove('visible');
+  });
+
+  // スマホ用：タップで表示
+  item.addEventListener('click', e => {
+    e.stopPropagation();
+    skillName.textContent = item.dataset.skill;
+    skillDesc.textContent = item.dataset.desc;
+    infoBox.classList.add('visible');
+  });
+});
+
+document.addEventListener('click', () => {
+  infoBox.classList.remove('visible');
 });

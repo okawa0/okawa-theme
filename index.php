@@ -119,46 +119,36 @@
         <h2 class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
       </div>
-      <section class="skill-tree">
-        <div class="skill-tree__center">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="Okawa">
-        </div>
 
-        <ul class="skill-tree__branches">
-          <li class="skill-tree__item html">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt=""></span>
-            <p class="skill-tree__desc">セマンティックなマークアップを意識し、BEM設計で構造を整理。</p>
-          </li>
-          <li class="skill-tree__item css">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>" alt="">
-            </span>
-            <p class="skill-tree__desc">変数・mixin・パーシャル管理で効率的なスタイル設計を実践。</p>
-          </li>
-          <li class="skill-tree__item js">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>" alt=""></span>
-            <p class="skill-tree__desc">フェード演出やハンバーガーメニューなど、UI改善に使用。</p>
-          </li>
-          <li class="skill-tree__item wp">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>" alt=""></span>
-            <p class="skill-tree__desc">オリジナルテーマ開発、functions.phpカスタマイズ対応。</p>
-          </li>
-          <li class="skill-tree__item figma">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>" alt=""></span>
-            <p class="skill-tree__desc">デザイン構造を読み取り、実装に反映。SP版調整経験あり。</p>
-          </li>
-          <li class="skill-tree__item github">
-            <span class="skill-tree__label"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt=""></span>
-            <p class="skill-tree__desc">Gitでバージョン管理し、GitHub Pagesへ公開経験あり。</p>
-          </li>
-        </ul>
+      <section class="skill-section">
+        <div class="skill-section__inner">
+
+          <div class="skill-tree">
+            <div class="skill-tree__circle">
+              <ul class="skill-tree__branches">
+                <li class="skill-tree__item" data-skill="HTML" data-desc="セマンティックなマークアップを意識し、BEM設計で構造を整理。">HTML</li>
+                <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="変数・mixin・パーシャル管理で効率的なスタイル設計を実践。">CSS / Sass</li>
+                <li class="skill-tree__item" data-skill="JavaScript" data-desc="フェード演出やハンバーガーメニューなど、UI改善に使用。">JavaScript</li>
+                <li class="skill-tree__item" data-skill="WordPress" data-desc="オリジナルテーマ開発、functions.phpカスタマイズ対応。">WordPress</li>
+                <li class="skill-tree__item" data-skill="Figma" data-desc="デザイン構造を読み取り、実装に反映。SP版調整経験あり。">Figma</li>
+                <li class="skill-tree__item" data-skill="GitHub" data-desc="Gitでバージョン管理し、GitHub Pagesへ公開経験あり。">GitHub</li>
+              </ul>
+              <!-- 右：説明パネル -->
+            </div>
+            <div class="skill-info">
+              <h3 class="skill-info__name">スキル名</h3>
+              <p class="skill-info__desc">ここに説明文が表示されます。</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-        <ul class="qualifications reveal" role="list">
-          <li class="qualifications__item">ITパスポート</li>
-          <li class="qualifications__item">ウェブデザイン技能検定2級</li>
-          <li class="qualifications__item">色彩検定3級</li>
-        </ul>
-      </div>
+      <ul class="qualifications reveal" role="list">
+        <li class="qualifications__item">ITパスポート</li>
+        <li class="qualifications__item">ウェブデザイン技能検定2級</li>
+        <li class="qualifications__item">色彩検定3級</li>
+      </ul>
+    </div>
   </section>
 
   <!-- 区切り -->
