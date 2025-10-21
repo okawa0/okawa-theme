@@ -9,13 +9,14 @@ window.addEventListener("load", () => {
       playPromise.catch(() => {
         // 自動再生がブロックされたときの保険
         video.muted = true;
+        video.load();
         video.play();
       });
     }
   }
   setTimeout(() => {
     loading.classList.add("loaded");
-  }, 200);
+  }, 400);
 });
 
 
