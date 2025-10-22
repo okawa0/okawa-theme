@@ -120,7 +120,7 @@
         <p class="section__subtitle en">Skills</p>
       </div>
 
-      <section class="skill-section">
+      <section class="skill-section reveal">
         <div class="skill-section__inner">
           <div class="skill-tree">
             <div class="skill-tree__wrapper">
@@ -129,7 +129,7 @@
                 <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="SassやBEM設計を使って、保守性の高いCSSを書ける。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="JavaScript" data-desc="DOM操作やイベント処理を使って簡単な動きを実装できる。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="WordPress" data-desc="パーマリンク設定やメニュー、ウィジェットを操作できる。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="Figma" data-desc="デザイン構造を読み取り、実装に反映。SP版調整経験あり。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="Figma / XD" data-desc="デザイン構造を読み取り、実装に反映。SP版調整経験あり。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="GitHub" data-desc="デザインデータを正確に読み取り、構造やスタイルを理解してHTML/CSSに落とし込める。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>"></li>
               </ul>
             </div>
