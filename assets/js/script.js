@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el)); 
 
-  // スキルセクション
+// スキルセクション
 const items = document.querySelectorAll('.skill-tree__item');
 const infoBox = document.querySelector('.skill-info');
 const skillName = document.querySelector('.skill-info__name');
