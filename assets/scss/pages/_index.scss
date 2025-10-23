@@ -411,19 +411,14 @@
         text-align: center;
       }
     }
-    .qualifications {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem 0.75rem;
-      margin-top: 1.25rem;
-      &__item {
-        color: var(--text-light);
-        padding: 0.4rem 0.7rem;
-        border-radius: 9999px;
-        font-size: 0.9rem;
-        line-height: 1;
+    .skill-qualification{
+      display:flex;
+      justify-content: center;
+      align-items: flex-end;
+      max-width: 1200px;
+      .qualifications{
         list-style: none;
       }
-    }
+  }
   }
 }

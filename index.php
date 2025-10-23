@@ -141,11 +141,14 @@
           </div>
       </section>
 
-      <ul class="qualifications reveal" role="list">
-        <li class="qualifications__item">ITパスポート</li>
-        <li class="qualifications__item">ウェブデザイン技能検定2級</li>
-        <li class="qualifications__item">色彩検定3級</li>
-      </ul>
+      <div class="skill-qualification">
+        <p>取得資格</p>
+        <ul class="qualifications reveal" role="list">
+          <li class="qualifications__item">ITパスポート</li>
+          <li class="qualifications__item">ウェブデザイン技能検定2級</li>
+          <li class="qualifications__item">色彩検定3級</li>
+        </ul>
+      </div>
     </div>
   </section>
 
