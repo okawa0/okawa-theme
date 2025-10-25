@@ -141,14 +141,23 @@
           </div>
       </section>
 
-      <div class="skill-qualification">
-        <p>取得資格</p>
-        <ul class="qualifications reveal" role="list">
-          <li class="qualifications__item">ITパスポート</li>
-          <li class="qualifications__item">ウェブデザイン技能検定2級</li>
-          <li class="qualifications__item">色彩検定3級</li>
-        </ul>
-      </div>
+        <table class="skill-qualification">
+          <tr>
+            <th>資格</th>
+            <td>2024年8月</td>
+            <td>ITパスポート試験 合格</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>2025年7月</td>
+            <td>文部科学省後援 色彩検定3級 合格</td>
+          </tr>
+          <tr>
+            <th></th>
+            <td>2025年9月</td>
+            <td>2級ウェブデザイン技能士 合格</td>
+          </tr>
+        </table>
     </div>
   </section>
 

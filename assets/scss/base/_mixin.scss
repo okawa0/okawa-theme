@@ -1,10 +1,14 @@
 // メディアクエリファイル
 
 $breakpoints: (
-  sp-mini: "(max-width:480px)",
-  sp: "(max-width:768px)",
-  tb: "(max-width:1024px)",
+  pc-l: "(min-width:1921px)",
   pc: "(max-width:1366px)",
+
+  tb: "(max-width:1024px)",
+
+  sp: "(max-width:899px)",
+  sp-b: "(max-height:500px)",
+  sp-mini: "(max-width:480px)",
 );
 @mixin media($breakpoint) {
   @media #{map-get($breakpoints,$breakpoint)} {

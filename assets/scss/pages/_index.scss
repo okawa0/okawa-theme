@@ -45,6 +45,10 @@
     ),
     url("../images/hero.webp") center/cover no-repeat;
   z-index: 0;
+  .hero__inner {
+        @include media(sp-b){
+      margin-top:7rem ;
+    }
   // タイトル"Portfolio"
   .hero__title {
     color: #ccc;
@@ -70,6 +74,9 @@
     @media (max-width: 540px) {
       font-size: 1.5rem;
     }
+            @include media(sp-b){
+      font-size:2.5rem ;
+    }
     // 文字のアニメーション
     .char {
       display: inline-block;
@@ -82,6 +89,7 @@
       opacity: 1;
     }
   }
+}
   // サブタイトル"by Web Coder Okawa"
   &__subtitle {
     color: #ccc;
@@ -102,6 +110,9 @@
     }
     @media (max-width: 540px) {
       font-size: 1rem;
+    }
+            @include media(sp-b){
+      font-size: 1.5rem ;
     }
     // 文字のアニメーション
     .char {
@@ -135,6 +146,9 @@
     @include media(pc) {
       display: none;
     }
+    @include media(pc-l){
+      top: 35%;
+    }
   }
   // 墨跡(1366px以下)
   .hero__brush-image--sp {
@@ -158,9 +172,9 @@
       left: 39%;
     }
     @include media(sp-mini) {
-      top: 44%;
+      top: 43%;
       left: 37%;
-      height: 110px;
+      height: 160px;
     }
   }
 }
@@ -412,13 +426,20 @@
       }
     }
     .skill-qualification{
-      display:flex;
-      justify-content: center;
-      align-items: flex-end;
-      max-width: 1200px;
-      .qualifications{
-        list-style: none;
-      }
+      width: 500px;
+      margin: 3rem auto 0;
+        table-layout: fixed;
+        th{
+          width: 20%;
+          text-align: left;
+          font-size: 1.2em;
+        }
+        td:nth-child(2){
+          width: 20%;
+        }
+        td:nth-child(3){
+          width: 60%;
+        }
   }
   }
 }
