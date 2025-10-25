@@ -3,6 +3,7 @@
       <p class="footer__logo">Okawa Web</p>
       <ul class="footer__nav">
         <li><a href="#works">Works</a></li>
+        <li><a href="#works">Skills</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>

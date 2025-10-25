@@ -141,23 +141,26 @@
           </div>
       </section>
 
-        <table class="skill-qualification">
+      <div class="skill-qualification">
+        <p class="pc-hidden">資格</p>
+        <table class="skill-qualification-table">
           <tr>
-            <th>資格</th>
+            <th class="mobile-hidden">資格</th>
             <td>2024年8月</td>
             <td>ITパスポート試験 合格</td>
           </tr>
           <tr>
-            <th></th>
+            <th class="mobile-hidden"></th>
             <td>2025年7月</td>
             <td>文部科学省後援 色彩検定3級 合格</td>
           </tr>
           <tr>
-            <th></th>
+            <th class="mobile-hidden"></th>
             <td>2025年9月</td>
             <td>2級ウェブデザイン技能士 合格</td>
           </tr>
         </table>
+      </div>
     </div>
   </section>
 
@@ -176,6 +179,8 @@
         <h2 id="skills-title" class="section__title jp">自己紹介</h2>
         <p class="section__subtitle en">About</p>
       </div>
+
+
 
 </main>
 

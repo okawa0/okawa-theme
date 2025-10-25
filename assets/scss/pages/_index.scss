@@ -46,50 +46,50 @@
     url("../images/hero.webp") center/cover no-repeat;
   z-index: 0;
   .hero__inner {
-        @include media(sp-b){
-      margin-top:7rem ;
+    @include media(sp-b) {
+      margin-top: 7rem;
     }
-  // タイトル"Portfolio"
-  .hero__title {
-    color: #ccc;
-    letter-spacing: 0.1em;
-    font-size: 6rem;
-    text-shadow: 2px 2px 2px #111;
-    text-align: center;
-    margin: 0;
-    text-transform: uppercase;
-    z-index: 2;
-    position: relative;
+    // タイトル"Portfolio"
+    .hero__title {
+      color: #ccc;
+      letter-spacing: 0.1em;
+      font-size: 6rem;
+      text-shadow: 2px 2px 2px #111;
+      text-align: center;
+      margin: 0;
+      text-transform: uppercase;
+      z-index: 2;
+      position: relative;
 
-    @media (min-width: 1367px) and (max-width: 1919px) {
-      font-size: 5rem;
-    }
-    @include media(pc) {
-      font-size: 4rem;
-    }
-    @include media(sp) {
-      font-size: 3rem;
-      letter-spacing: 0;
-    }
-    @media (max-width: 540px) {
-      font-size: 1.5rem;
-    }
-            @include media(sp-b){
-      font-size:2.5rem ;
-    }
-    // 文字のアニメーション
-    .char {
-      display: inline-block;
-      opacity: 0;
-      transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1);
-      transition-delay: calc(0.05s * var(--char-index));
-      margin-right: 0.2em;
-    }
-    &.is-active .char {
-      opacity: 1;
+      @media (min-width: 1367px) and (max-width: 1919px) {
+        font-size: 5rem;
+      }
+      @include media(pc) {
+        font-size: 4rem;
+      }
+      @include media(sp) {
+        font-size: 3rem;
+        letter-spacing: 0;
+      }
+      @media (max-width: 540px) {
+        font-size: 1.5rem;
+      }
+      @include media(sp-b) {
+        font-size: 2.5rem;
+      }
+      // 文字のアニメーション
+      .char {
+        display: inline-block;
+        opacity: 0;
+        transition: opacity 0.6s cubic-bezier(0.77, 0, 0.175, 1);
+        transition-delay: calc(0.05s * var(--char-index));
+        margin-right: 0.2em;
+      }
+      &.is-active .char {
+        opacity: 1;
+      }
     }
   }
-}
   // サブタイトル"by Web Coder Okawa"
   &__subtitle {
     color: #ccc;
@@ -111,8 +111,8 @@
     @media (max-width: 540px) {
       font-size: 1rem;
     }
-            @include media(sp-b){
-      font-size: 1.5rem ;
+    @include media(sp-b) {
+      font-size: 1.5rem;
     }
     // 文字のアニメーション
     .char {
@@ -146,7 +146,7 @@
     @include media(pc) {
       display: none;
     }
-    @include media(pc-l){
+    @include media(pc-l) {
       top: 35%;
     }
   }
@@ -218,8 +218,9 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: 2rem;
+      padding: 0 5%;
       @include media(sp) {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       }
       .works__item {
         display: block;
@@ -233,7 +234,9 @@
             width: 500px;
             height: auto;
             @include media(sp) {
-              margin-right: 3rem;
+              // margin-right: 3rem;
+              width: 80%;
+              margin: 0 auto;
             }
           }
         }
@@ -256,6 +259,9 @@
       display: flex;
       justify-content: center;
       margin-top: -3rem;
+      @include media(sp) {
+        padding: 80px 20px 0;
+      }
 
       &__inner {
         display: flex;
@@ -270,11 +276,18 @@
       align-items: center;
       gap: 60px;
       width: 100%;
+      @include media(sp) {
+        flex-direction: column;
+      }
 
       &__wrapper {
         position: relative;
         width: 350px;
         height: 350px;
+        @include media(sp) {
+          width: 240px;
+          height: 210px;
+        }
       }
       &__branches {
         position: absolute;
@@ -284,6 +297,9 @@
         padding: 0;
         width: 100%;
         height: 100%;
+        @include media(sp) {
+          margin: 0;
+        }
       }
 
       &__item {
@@ -299,6 +315,10 @@
         cursor: pointer;
         transition: transform 0.3s ease, background 0.3s ease,
           box-shadow 0.3s ease;
+        @include media(sp) {
+          width: 70px;
+          height: 70px;
+        }
         // 波紋アニメーション
         &::before {
           content: "";
@@ -395,7 +415,10 @@
       transform: translateY(10px);
       transition: all 0.3s ease;
       margin-left: auto;
-
+      @include media(sp) {
+        width: 100%;
+        margin: 0;
+      }
       &.visible {
         opacity: 1;
         transform: translateY(0);
@@ -419,27 +442,47 @@
         flex-direction: column;
         gap: 40px;
       }
-
-      .skill-info {
-        width: 100%;
-        text-align: center;
-      }
     }
-    .skill-qualification{
-      width: 500px;
-      margin: 3rem auto 0;
+    .skill-qualification {
+      @include media(sp) {
+        width: 350px;
+        margin: 0 auto;
+      }
+      .pc-hidden {
+        font-size: 1.2em;
+        margin-bottom: 0.4em;
+        @media (min-width: 900px) {
+          display: none;
+        }
+      }
+      .skill-qualification-table {
+        width: 500px;
+        margin: 3rem auto 0;
         table-layout: fixed;
-        th{
+        @include media(sp) {
+          width: 100%;
+          margin: 0 auto;
+        }
+        th {
           width: 20%;
           text-align: left;
           font-size: 1.2em;
         }
-        td:nth-child(2){
+        td:nth-child(2) {
           width: 20%;
+          @include media(sp) {
+            width: 20%;
+          }
         }
-        td:nth-child(3){
+        td:nth-child(3) {
           width: 60%;
         }
-  }
+        .mobile-hidden {
+          @include media(sp) {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
