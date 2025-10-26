@@ -22,7 +22,7 @@
           <li class="u-underline u-underline--whiteshadow"><a href="#works">Works</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#skills">Skills</a></li>
           <li class="u-underline u-underline--whiteshadow"><a href="#about">About</a></li>
-          <li class="u-underline u-underline--whiteshadow"><a href="#contact">Contact</a></li>
+          <!-- <li class="u-underline u-underline--whiteshadow"><a href="#contact">Contact</a></li> -->
         </ul>
       </nav>
       <!-- SP用ナビゲーション -->
