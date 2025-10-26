@@ -599,6 +599,20 @@
           font-size: 80px;
         }
       }
+      .social-links{
+          display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 1.5rem;
+  .social-links__icon{
+      width: 32px;
+  height: 32px;
+  transition: opacity 0.3s ease;
+  &:hover{
+      opacity: 0.7;
+  }
+      }
+    }
       .about__image {
         width: 30%;
         border-radius: 50%;

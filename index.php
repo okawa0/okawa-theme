@@ -50,7 +50,7 @@
         <h2 class="section__title">作品</h2>
         <p class="section__subtitle">Works</p>
       </div>
-      <div class="works">
+      <div class="works reveal">
         <div class="works__item reveal">
           <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
             <img
@@ -179,7 +179,7 @@
         <p class="section__subtitle">About</p>
       </div>
 
-      <div class="about">
+      <div class="about reveal">
         <img
           src="<?php echo esc_url(get_theme_file_uri('assets/images/profile.webp')); ?>"
           alt="自己紹介画像"
@@ -189,6 +189,14 @@
           <p>1992年10月生まれ。愛知県在住。趣味はハイキング。猫飼い。</p>
           <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
           <p>日々、より良いコードを書くために学びを重ね、模写を通して実装力を高めています。</p>
+          <div class="social-links">
+            <a href="https://github.com/okawa0" target="_blank">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" class="social-links__icon">
+            </a>
+            <a href="https://x.com/okawa_0" target="_blank">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.png')); ?>" alt="X" class="social-links__icon">
+            </a>
+          </div>
         </div>
       </div>
     </div>
