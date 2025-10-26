@@ -140,7 +140,7 @@
           </div>
       </section>
 
-      <div class="skill-qualification">
+      <div class="skill-qualification reveal">
         <p class="pc-hidden">資格</p>
         <table class="skill-qualification-table">
           <tr>
@@ -180,14 +180,15 @@
       </div>
 
       <div class="about">
-          <img
-            src="<?php echo esc_url(get_theme_file_uri('assets/images/profile.jpg')); ?>"
-            alt="自己紹介画像"
-            class="about__image">
+        <img
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/profile.webp')); ?>"
+          alt="自己紹介画像"
+          class="about__image reveal">
         <div class="about__info reveal">
-          <p class="about__info__name">大川誠 | Webコーダー</p>
+          <p class="about__info__name">大川 誠　|　Webコーダー</p>
           <p>1992年10月生まれ。愛知在住。趣味はハイキング。猫飼い。</p>
-          <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。<br>レスポンシブ対応やアニメーション実装にも柔軟に対応可能です。<br>今後は、WordPressテーマ開発やJavaScriptを活用した表現を強化し、<br>より幅広い案件に対応できるコーダーを目指しています。</p>
+          <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
+          <p>日々、より良いコードを書くために学びを重ね、模写を通して実装力を高めています。</p>
         </div>
       </div>
     </div>

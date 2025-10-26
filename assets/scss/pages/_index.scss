@@ -45,6 +45,19 @@
     ),
     url("../images/hero.webp") center/cover no-repeat;
   z-index: 0;
+  // 麻の葉模様
+  &::before {
+    content:"";
+    position: absolute;
+    inset: 0;
+    background: url("../images/hemp-leaf.webp")repeat;
+    background-size: 700px;
+    opacity: 0.2;
+    z-index: 1;
+    @include media(sp) {
+      background-size: 400px;
+    }
+  }
   .hero__inner {
     @include media(sp-b) {
       margin-top: 7rem;
@@ -195,6 +208,9 @@
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 16px;
+    @include media(pc-l) {
+      max-width: 1900px;
+    }
     .section__head {
       display: flex;
       align-items: baseline;
@@ -490,12 +506,33 @@
     .about {
       display: flex;
       align-items: center;
-      justify-content:space-around;
+      justify-content: space-around;
       width: 100%;
       margin-bottom: 3rem;
       flex-direction: row-reverse;
+      @include media(pc-l){
+        justify-content: space-evenly;
+      }
+      @include media(sp){
+        flex-direction: column;
+        margin-bottom: 1rem;
+      } 
       .about__image {
         width: 30%;
+        border-radius: 50%;
+        // リング
+        outline: 4px solid color-mix(in oklab, #111 10%, transparent);
+        outline-offset: 4px;
+        @include media(sp){
+          width: 50%;
+          margin-bottom: 2rem;
+        }
+      }
+      .about__info{
+        width: 50%;
+        @include media(sp){
+          width: 90%;
+        }
       }
     }
   }
