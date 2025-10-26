@@ -95,7 +95,7 @@
             <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
             <p>デザインとコーディングを担当</p>
             <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
-            <p>制作期間：8日(約60時間)<br>制作時期：2025年9月</p>
+            <p>制作期間：10日(約80時間)<br>制作時期：2025年9月</p>
             <p>
           </div>
         </div>
@@ -119,7 +119,6 @@
         <h2 class="section__title jp">技術</h2>
         <p class="section__subtitle en">Skills</p>
       </div>
-
       <section class="skill-section reveal">
         <div class="skill-section__inner">
           <div class="skill-tree">
@@ -173,14 +172,34 @@
   </div>
 
   <!-- 自己紹介セクション -->
-  <section class="section section--texture" id="about">
+  <section class="section section--texture">
     <div class="container">
       <div class="section__head reveal">
-        <h2 id="skills-title" class="section__title jp">自己紹介</h2>
-        <p class="section__subtitle en">About</p>
+        <h2 class="section__title">自己紹介</h2>
+        <p class="section__subtitle">About</p>
       </div>
 
+      <div class="about">
+          <img
+            src="<?php echo esc_url(get_theme_file_uri('assets/images/profile.jpg')); ?>"
+            alt="自己紹介画像"
+            class="about__image">
+        <div class="about__info reveal">
+          <p class="about__info__name">大川誠 | Webコーダー</p>
+          <p>1992年10月生まれ。愛知在住。趣味はハイキング。猫飼い。</p>
+          <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。<br>レスポンシブ対応やアニメーション実装にも柔軟に対応可能です。<br>今後は、WordPressテーマ開発やJavaScriptを活用した表現を強化し、<br>より幅広い案件に対応できるコーダーを目指しています。</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- 区切り -->
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
+      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
+    </svg>
+  </div>
 
 </main>
 
