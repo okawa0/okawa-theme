@@ -1,11 +1,11 @@
   <footer class="site-footer">
     <div class="footer__inner">
       <ul class="footer__nav">
-        <li><a href="#">Top</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
-        <!-- <li><a href="#contact">Contact</a></li> -->
+        <li><a href="#" class="u-underline u-underline--whiteshadow">Top</a></li>
+        <li><a href="#works" class="u-underline u-underline--whiteshadow">Works</a></li>
+        <li><a href=" #skills" class="u-underline u-underline--whiteshadow">Skills</a></li>
+        <li><a href=" #about" class="u-underline u-underline--whiteshadow">About</a></li>
+        <li><a href=" mailto:makoto.okawa.0418@gmail.com?subject=ポートフォリオサイトからのお問い合わせ&body=お名前：%0D%0Aご用件：%0D%0A" class="u-underline u-underline--whiteshadow">Contact</a></li>
       </ul>
       <p class="footer__copy">&copy; 2025 Okawa Web</p>
     </div>

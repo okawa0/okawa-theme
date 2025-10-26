@@ -172,7 +172,7 @@
   </div>
 
   <!-- 自己紹介セクション -->
-  <section class="section section--texture">
+  <section class="section section--texture" id="about">
     <div class="container">
       <div class="section__head reveal">
         <h2 class="section__title">自己紹介</h2>
