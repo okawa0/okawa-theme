@@ -50,7 +50,7 @@
         <h2 class="section__title">作品</h2>
         <p class="section__subtitle">Works</p>
       </div>
-      <div class="works reveal">
+      <div class="works">
         <div class="works__item reveal">
           <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
             <img
