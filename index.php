@@ -187,8 +187,9 @@
         <div class="about__info reveal">
           <p class="about__info__name">大川 誠　|　Webコーダー</p>
           <p>1992年10月生まれ。愛知県在住。趣味はハイキング。猫飼い。</p>
+          <p>現在Web制作の現場でコーディングを担当しています。</p>
           <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
-          <p>日々、より良いコードを書くために学びを重ね、模写を通して実装力を高めています。</p>
+          <p>日々、より良いコードを書くために学びを重ね、実案件や模写を通して実装力を高めています。</p>
           <div class="social-links">
             <a href="https://github.com/okawa0" target="_blank">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" class="social-links__icon">

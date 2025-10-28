@@ -257,6 +257,9 @@
         left: -248px;
         line-height: 1;
         z-index: 0;
+        @include media(pc-l) {
+          top:-240px ;
+        }
         @include media(pc-m) {
           font-size: 160px;
           left: -72px;
