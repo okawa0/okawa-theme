@@ -185,7 +185,7 @@
           alt="自己紹介画像"
           class="about__image reveal">
         <div class="about__info reveal">
-          <p class="about__info__name">大川 誠　|　Webコーダー</p>
+          <p class="about__info__name">大川 誠（Okawa Makoto）|　Webコーダー</p>
           <p>1992年10月生まれ。愛知県在住。趣味はハイキング。猫飼い。</p>
           <p>現在Web制作の現場でコーディングを担当しています。</p>
           <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
