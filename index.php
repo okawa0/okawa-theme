@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!-- ローディング -->
-<div id="loading">
+<section id="loading" aria-label="ローディングアニメーション">
   <video id="loading-video" autoplay muted playsinline preload="auto">
     <source
       src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves--sp.mp4')); ?>"
@@ -13,7 +13,7 @@
       type="video/mp4"
       media="(min-width: 769px)">
   </video>
-</div>
+</section>
 
 <main>
   <!-- ヒーロー -->
