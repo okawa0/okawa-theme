@@ -20,9 +20,9 @@
   <section class="hero">
     <div class="hero__inner">
       <!-- タイトル -->
-      <div id="hero-title" class="hero__title">
+      <h1 id="hero-title" class="hero__title">
         <span class="char" style="--char-index: 10">P</span><span class="char" style="--char-index: 11">o</span><span class="char" style="--char-index: 12">r</span><span class="char" style="--char-index: 13">t</span><span class="char" style="--char-index: 14">f</span><span class="char" style="--char-index: 15">o</span><span class="char" style="--char-index: 16">l</span><span class="char" style="--char-index: 17">i</span><span class="char" style="--char-index: 18">o</span>
-      </div>
+</h1>
       <!-- 墨跡 -->
       <img src="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>" alt="筆跡" class="hero__brush-image">
       <img src="<?php echo esc_url(get_theme_file_uri('assets/images/brush--sp.webp')); ?>" alt="筆跡" class="hero__brush-image--sp">
@@ -50,57 +50,62 @@
         <h2 class="section__title">作品</h2>
         <p class="section__subtitle">Works</p>
       </div>
-      <div class="works">
-        <div class="works__item reveal">
-          <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
-              alt="模写サイトmyworkのモックアップ"
-              loading="lazy" decoding="async" width="600" height="340">
-          </a>
-          <div class="works__info">
-            <p><strong>My Work</strong><br>フォトグラファーのポートフォリオ</p>
-            <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
-            <p>使用スキル：HTML / Sass<br>ツール：VS Code / Figma / GitHub</p>
-            <p>制作期間：1日(約8時間)<br>制作時期：2025年6月</p>
-            <p>
-          </div>
-        </div>
-        <div class="works__item reveal">
-          <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design.webp')); ?>"
-              alt="模写サイトfurniture designのモックアップ"
-              loading="lazy" decoding="async" width="600" height="340">
-          </a>
-          <div class="works__info">
-            <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
-            <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
-            <p>使用スキル：HTML / Sass / JavaScript<br>ツール：VS Code / Figma / GitHub</p>
-            <p>制作期間：4日(約30時間)<br>制作時期：2025年7月</p>
-            <p>
-          </div>
-        </div>
-        <div class="works__item reveal">
-          <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer">
-            <img
-              class="works__image"
-              src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio.webp')); ?>"
-              alt="ポートフォリオサイトのモックアップ"
-              loading="lazy" decoding="async" width="600" height="340">
-          </a>
-          <div class="works__info">
-            <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
-            <p>デザインとコーディングを担当</p>
-            <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
-            <p>制作期間：10日(約80時間)<br>制作時期：2025年9月</p>
-            <p>
-          </div>
-        </div>
-      </div>
-      <!-- </div> -->
+      <ul class="works">
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/mywork/'); ?>" target="_blank" rel="noopener noreferrer">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/work-mywork.webp')); ?>"
+                alt="模写サイトmyworkのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+            </a>
+            <div class="works__info">
+              <p><strong>My Work</strong><br>フォトグラファーのポートフォリオ</p>
+              <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
+              <p>使用スキル：HTML / Sass<br>ツール：VS Code / Figma / GitHub</p>
+              <p>制作期間：1日(約8時間)<br>制作時期：2025年6月</p>
+              <p>
+            </div>
+          </article>
+</li>
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design.webp')); ?>"
+                alt="模写サイトfurniture designのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+            </a>
+            <div class="works__info">
+              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
+              <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
+              <p>使用スキル：HTML / Sass / JavaScript<br>ツール：VS Code / Figma / GitHub</p>
+              <p>制作期間：4日(約30時間)<br>制作時期：2025年7月</p>
+              <p>
+            </div>
+          </article>
+</li>
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio.webp')); ?>"
+                alt="ポートフォリオサイトのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+            </a>
+            <div class="works__info">
+              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
+              <p>デザインとコーディングを担当</p>
+              <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
+              <p>制作期間：10日(約80時間)<br>制作時期：2025年9月</p>
+              <p>
+            </div>
+          </article>
+</li>
+      </ul>
     </div>
   </section>
 
