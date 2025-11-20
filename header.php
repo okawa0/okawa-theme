@@ -37,7 +37,7 @@
             <li class="nav-overlay__item"><a href="#works" class="nav-overlay__link">Works</a></li>
             <li class="nav-overlay__item"><a href="#skills" class="nav-overlay__link">Skills</a></li>
             <li class="nav-overlay__item"><a href="#about" class="nav-overlay__link">About</a></li>
-            <li class="nav-overlay__item"><a href="#contact" class="nav-overlay__link">Contact</a></li>
+            <li class="nav-overlay__item"><a href="mailto:makoto.okawa.0418@gmail.com?subject=ポートフォリオサイトからのお問い合わせ&body=お名前：%0D%0Aご用件：%0D%0A" class="nav-overlay__link">Contact</a></li>
           </ul>
         </div>
       </nav>
