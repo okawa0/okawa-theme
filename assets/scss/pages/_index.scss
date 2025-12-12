@@ -34,7 +34,7 @@
 // メインビジュアル
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   display: grid;
   place-items: center;
   background: linear-gradient(
@@ -53,20 +53,25 @@
     background: url("../images/hemp-leaf.webp") repeat;
     background-size: 800px;
     opacity: 0.2;
-    z-index: 1;
+    z-index: -1;
     @include media(sp) {
       background-size: 500px;
     }
   }
   .hero__inner {
+    display: grid;
+    place-items: center;
     @include media(sp-b) {
       margin-top: 7rem;
     }
+    .hero-titles{
+    z-index: 3;
+    grid-area: 1 / 1;}
     // タイトル"Portfolio"
     .hero__title {
       color: #ccc;
-      letter-spacing: 0.1em;
-      font-size: 6rem;
+      letter-spacing: clamp(0em, 0.1vw, 0.1em);
+      font-size: clamp(1.5rem, 4vw, 6rem);
       text-shadow: 2px 2px 2px #111;
       text-align: center;
       margin: 0;
@@ -74,23 +79,6 @@
       z-index: 2;
       position: relative;
       font-weight: 400;
-
-      @media (min-width: 1367px) and (max-width: 1919px) {
-        font-size: 5rem;
-      }
-      @include media(pc) {
-        font-size: 4rem;
-      }
-      @include media(sp) {
-        font-size: 3rem;
-        letter-spacing: 0;
-      }
-      @media (max-width: 540px) {
-        font-size: 1.5rem;
-      }
-      @include media(sp-b) {
-        font-size: 2.5rem;
-      }
       // 文字のアニメーション
       .char {
         display: inline-block;
@@ -107,27 +95,13 @@
   // サブタイトル"by Web Coder Okawa"
   &__subtitle {
     color: #ccc;
-    font-size: 3.5rem;
-    letter-spacing: 0.05em;
+    font-size: clamp(1rem, 2.2vw, 3.5rem);
+    letter-spacing: clamp(0em, 0.05vw, 0.05em);
     text-align: center;
     margin-top: 0.5rem;
     white-space: nowrap;
     z-index: 2;
     position: relative;
-    @include media(pc) {
-      font-size: 2.5rem;
-      letter-spacing: 0;
-    }
-    @include media(sp) {
-      font-size: 2rem;
-      letter-spacing: 0;
-    }
-    @media (max-width: 540px) {
-      font-size: 1rem;
-    }
-    @include media(sp-b) {
-      font-size: 1.5rem;
-    }
     // 文字のアニメーション
     .char {
       display: inline-block;
@@ -143,56 +117,38 @@
   }
   // 墨跡
   .hero__brush-image {
-    position: absolute;
-    top: 20%;
-    left: 40%;
-    transform: translate(-50%, -20%);
-    z-index: 1;
+    z-index: 2;
     opacity: 1;
     height: 560px;
     position: block;
-    @media (min-width: 1920px) {
-      top: 30%;
-    }
-    @media (min-width: 1536px) and (max-width: 1919px) {
-      top: 25%;
-    }
+    grid-area: 1 / 1;
+    margin-bottom: 8rem;
+    margin-right: 20rem;
     @include media(pc) {
       display: none;
-    }
-    @include media(pc-l) {
-      top: 35%;
     }
   }
   // 墨跡(1366px以下)
   .hero__brush-image--sp {
     display: none;
+    grid-area: 1 / 1;
+ 
     @include media(pc) {
       display: block;
-      position: absolute;
-      top: 34%;
-      left: 35%;
-      transform: translate(-50%, -20%);
-      z-index: 1;
+      z-index: 2;
       opacity: 1;
       height: 300px;
-    }
-    @include media(tb) {
-      top: 36%;
+      margin-right: 15rem;
+      margin-bottom: 4rem;
     }
     @include media(sp) {
-      top: 42%;
-      height: 240px;
-      left: 39%;
-    }
-    @include media(sp-mini) {
-      top: 43%;
-      left: 37%;
-      height: 160px;
-    }
+
+   height: 200px;
+    margin-bottom: 1rem;
+    margin-right: 3rem;
   }
 }
-
+}
 .section {
   padding: 5rem 0;
   color: $color-ink;
@@ -259,7 +215,7 @@
         line-height: 1;
         z-index: 0;
         @include media(pc-l) {
-          top:-240px ;
+          top: -240px;
         }
         @include media(pc-m) {
           font-size: 160px;
