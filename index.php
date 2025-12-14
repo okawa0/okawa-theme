@@ -132,12 +132,12 @@
           <div class="skill-tree">
             <div class="skill-tree__wrapper">
               <ul class="skill-tree__branches">
-                <li class="skill-tree__item" data-skill="HTML" data-desc="BEMやセマンティックHTMLを意識して構造を組める。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="SassやBEM設計を使って、保守性の高いCSSを書ける。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="JavaScript" data-desc="DOM操作やイベント処理を使って簡単な動きを実装できる。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="WordPress" data-desc="パーマリンク設定やメニュー、ウィジェットを操作できる。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="Figma / XD" data-desc="デザインデータを正確に読み取り、構造やスタイルを理解してHTML/CSSに落とし込める"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"></li>
-                <li class="skill-tree__item" data-skill="GitHub" data-desc="コミットやプッシュなどの基本操作をVSCode経由で行い、GitHub Pagesで作品を公開できる。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="HTML" data-desc="セマンティックな構造理解と基本的なマークアップは問題なし。ただし、設計意図を言語化したHTML（保守・拡張前提）はまだ甘い。。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="レスポンシブ・レイアウト・モダンCSS（grid / flex / clamp）は実務水準に近い。一方で、設計ルールの一貫性と再利用性はまだ発展途上。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="JavaScript" data-desc="DOM操作や簡単なUI制御は理解して使えている段階。設計・状態管理・非同期処理は「使える」より「触ったことがある」寄り。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="WordPress" data-desc="テーマ編集・既存構造のカスタマイズは実務対応可能。ゼロからの設計やPHP理解は浅く、仕組み理解は途中段階。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="Figma / XD" data-desc="基本操作と構成理解はでき、コーディング前提で扱える。デザイン意図の読み取り・設計提案までは未到達。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="GitHub" data-desc="push・commit・Pages公開など個人利用は問題なし。チーム開発（PR・レビュー・運用フロー）の理解はこれから。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>"></li>
               </ul>
             </div>
             <!-- 右：説明パネル -->
