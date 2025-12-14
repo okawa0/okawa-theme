@@ -65,9 +65,9 @@
             </a>
             <div class="works__info">
               <p><strong>My Work</strong><br>フォトグラファーのポートフォリオ</p>
-              <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
-              <p>使用スキル：HTML / Sass<br>ツール：VS Code / Figma / GitHub</p>
-              <p>制作期間：1日(約8時間)<br>制作時期：2025年6月</p>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS（Sass）<br>ツール：VS Code / Figma / GitHub<br>環境：macOS / Chrome</p>
+              <p>制作期間：2日（約16時間）<br>制作時期：2025年6月</p>
               <p>
             </div>
           </article>
@@ -83,9 +83,9 @@
             </a>
             <div class="works__info">
               <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
-              <p>コーディングを担当<br>デザインはCodeJump提供の模写課題<br></p>
-              <p>使用スキル：HTML / Sass / JavaScript<br>ツール：VS Code / Figma / GitHub</p>
-              <p>制作期間：4日(約30時間)<br>制作時期：2025年7月</p>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>環境：macOS / Chrome</p>
+              <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
               <p>
             </div>
           </article>
@@ -101,9 +101,9 @@
             </a>
             <div class="works__info">
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
-              <p>デザインとコーディングを担当</p>
-              <p>使用スキル：HTML / Sass / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla</p>
-              <p>制作期間：10日(約80時間)<br>制作時期：2025年9月</p>
+              <p>実装：デザイン、コーディング</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>環境：macOS / Chrome</p>
+              <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
               <p>
             </div>
           </article>
@@ -195,7 +195,7 @@
         <div class="about__info reveal">
           <p class="about__info__name">大川 誠（Okawa Makoto）|　Webコーダー</p>
           <p>1992年10月生まれ。愛知県在住。趣味は登山。猫飼い。</p>
-          <p>現在Web制作の現場でコーディングを担当しています。</p>
+          <p>現在Web制作の現場でコーディング業務に取り組んでいます。</p>
           <p>コードでデザインを正確に再現し、見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
           <p>日々、より良いコードを書くために学びを重ね、実案件や模写を通して実装力を高めています。</p>
           <div class="social-links">
