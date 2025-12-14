@@ -66,7 +66,7 @@
             <div class="works__info">
               <p><strong>My Work</strong><br>フォトグラファーのポートフォリオ</p>
               <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS（Sass）<br>ツール：VS Code / Figma / GitHub<br>環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS（Sass）<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：2日（約16時間）<br>制作時期：2025年6月</p>
               <p>
             </div>
@@ -84,7 +84,7 @@
             <div class="works__info">
               <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
               <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
               <p>
             </div>
@@ -102,7 +102,7 @@
             <div class="works__info">
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
               <p>実装：デザイン、コーディング</p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
               <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
               <p>
             </div>
