@@ -132,7 +132,7 @@
           <div class="skill-tree">
             <div class="skill-tree__wrapper">
               <ul class="skill-tree__branches">
-                <li class="skill-tree__item" data-skill="HTML" data-desc="セマンティックな構造理解と基本的なマークアップは問題なし。ただし、設計意図を言語化したHTML（保守・拡張前提）はまだ甘い。。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="HTML" data-desc="セマンティックな構造理解と基本的なマークアップは問題なし。ただし、設計意図を言語化したHTML（保守・拡張前提）はまだ甘い。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="レスポンシブ・レイアウト・モダンCSS（grid / flex / clamp）は実務水準に近い。一方で、設計ルールの一貫性と再利用性はまだ発展途上。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="JavaScript" data-desc="DOM操作や簡単なUI制御は理解して使えている段階。設計・状態管理・非同期処理は「使える」より「触ったことがある」寄り。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="WordPress" data-desc="テーマ編集・既存構造のカスタマイズは実務対応可能。ゼロからの設計やPHP理解は浅く、仕組み理解は途中段階。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"></li>
