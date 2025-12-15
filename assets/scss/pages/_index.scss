@@ -154,6 +154,7 @@
   color: $color-ink;
   @include media(sp) {
     padding: 3rem 0;
+    scroll-margin-top: 80px; 
   }
   &--texture {
     background-image: url("../images/washi.webp");
