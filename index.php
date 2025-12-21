@@ -219,6 +219,28 @@
     </svg>
   </div>
 
+  <!-- お問い合わせセクション -->
+  <section class="section section--texture" id="contact">
+    <div class="container contact-container">
+      <div class="section__head reveal contact-head">
+        <div class="section__title-wrapper">
+          <h2 class="section__title jp">お問い合わせ</h2>
+          <p class="section__subtitle en">Contact</p>
+        </div>
+        <p>お気軽にご相談ください</p>
+      </div>
+      <div class="contact-form"><?php echo do_shortcode('[contact-form-7 id="11456e1" title="コンタクトフォーム 1"]'); ?></div>
+    </div>
+  </section>
+
+  <!-- 区切り -->
+  <div class="section-divider">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
+      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
+      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
+    </svg>
+  </div>
+
 </main>
 
 <!-- フッタ -->

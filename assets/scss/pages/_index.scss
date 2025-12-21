@@ -64,9 +64,10 @@
     @include media(sp-b) {
       margin-top: 7rem;
     }
-    .hero-titles{
-    z-index: 3;
-    grid-area: 1 / 1;}
+    .hero-titles {
+      z-index: 3;
+      grid-area: 1 / 1;
+    }
     // タイトル"Portfolio"
     .hero__title {
       color: #ccc;
@@ -132,7 +133,7 @@
   .hero__brush-image--sp {
     display: none;
     grid-area: 1 / 1;
- 
+
     @include media(pc) {
       display: block;
       z-index: 2;
@@ -142,19 +143,18 @@
       margin-bottom: 4rem;
     }
     @include media(sp) {
-
-   height: 200px;
-    margin-bottom: 1rem;
-    margin-right: 3rem;
+      height: 200px;
+      margin-bottom: 1rem;
+      margin-right: 3rem;
+    }
   }
-}
 }
 .section {
   padding: 5rem 0;
   color: $color-ink;
   @include media(sp) {
     padding: 3rem 0;
-    scroll-margin-top: 80px; 
+    scroll-margin-top: 80px;
   }
   &--texture {
     background-image: url("../images/washi.webp");
@@ -162,10 +162,14 @@
     background-repeat: repeat;
     background-position: top left;
   }
+  &#contact {
+    overflow-x: hidden;
+  }
   .container {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 16px;
+    // overflow-x: hidden;
     @include media(pc-l) {
       max-width: 1900px;
     }
@@ -591,6 +595,51 @@
         @include media(sp) {
           width: 90%;
         }
+      }
+    }
+    .contact-head {
+      flex-direction: column;
+      gap: 0;
+      align-items: center;
+      // バックグラウンドテキスト
+      &::before {
+        content: "CONTACT";
+        font-family: "Playfair Display", serif;
+        font-weight: 400;
+        letter-spacing: 20px;
+        font-size: 260px;
+        color: #ccc;
+        position: absolute;
+        top: 0px;
+        right: -700px;
+        line-height: 1;
+        z-index: 0;
+        @include media(pc-m) {
+          font-size: 160px;
+          right: -422px;
+        }
+        @include media(pc) {
+          font-size: 120px;
+          right: -277px;
+        }
+        @include media(tb) {
+          font-size: 70px;
+          right: -200px;
+        }
+        @include media(sp) {
+          top: -55px;
+        }
+        @include media(sp-mini) {
+          right: -130px;
+        }
+      }
+      .section__title-wrapper {
+        display: flex;
+        align-items: baseline;
+        gap: 1rem;
+        justify-content: center;
+        position: relative;
+        z-index: 1;
       }
     }
   }
