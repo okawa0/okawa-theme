@@ -9,10 +9,9 @@
 @use "pages/index";
 
 // 管理バー非表示
-#wpadminbar {
-  display: none !important;
-}
+// #wpadminbar {
+//   display: none !important;
+// }
 html {
-  margin-top: 0 !important;
   scroll-behavior: smooth;
 }
