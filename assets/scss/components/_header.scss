@@ -1,7 +1,5 @@
 @use "../base/mixin" as *;
-html {
-  scroll-behavior: smooth;
-}
+
 .site-header {
   position: fixed;
   top: 0;
