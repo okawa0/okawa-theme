@@ -9,8 +9,10 @@ $breakpoints: (
   sp-b: "(max-height:500px)",
   sp-mini: "(max-width:480px)",
 );
+@use "sass:map";
+
 @mixin media($breakpoint) {
-  @media #{map-get($breakpoints,$breakpoint)} {
+  @media #{map.get($breakpoints, $breakpoint)} {
     @content;
   }
 }
