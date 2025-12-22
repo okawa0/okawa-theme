@@ -601,6 +601,7 @@
       flex-direction: column;
       gap: 0;
       align-items: center;
+      margin-bottom: 3rem;
       // バックグラウンドテキスト
       &::before {
         content: "CONTACT";
@@ -640,6 +641,180 @@
         justify-content: center;
         position: relative;
         z-index: 1;
+      }
+    }
+    /* フォームコンテナ */
+    .cf7-custom-form {
+      width: min(100%, 1000px);
+      margin: 0 auto;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    }
+
+    /* フォーム行 */
+    .cf7-custom-form .form-row {
+      margin-bottom: 25px;
+    }
+
+    /* ラベル */
+    .cf7-custom-form label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    /* 必須マーク */
+    .cf7-custom-form .required {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 3px 10px;
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      border-radius: 12px;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+    }
+
+    /* 入力フィールド共通 */
+    .cf7-custom-form input[type="text"],
+    .cf7-custom-form input[type="email"],
+    .cf7-custom-form input[type="tel"],
+    .cf7-custom-form textarea,
+    .cf7-custom-form select {
+      width: 100%;
+      padding: 12px 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    /* フォーカス時 */
+    .cf7-custom-form input[type="text"]:focus,
+    .cf7-custom-form input[type="email"]:focus,
+    .cf7-custom-form input[type="tel"]:focus,
+    .cf7-custom-form textarea:focus,
+    .cf7-custom-form select:focus {
+      outline: none;
+      border-color: #1a7a4f;
+      box-shadow: 0 4px 12px rgba(4, 101, 53, 0.18);
+    }
+
+    /* テキストエリア */
+    .cf7-custom-form textarea {
+      resize: vertical;
+      min-height: 150px;
+    }
+
+    /* セレクトボックス */
+    .cf7-custom-form select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23333' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 40px;
+    }
+
+    /* チェックボックス行 */
+    .cf7-custom-form .checkbox-row {
+      display: flex;
+      align-items: center;
+    }
+
+    .cf7-custom-form .checkbox-row .wpcf7-list-item {
+      margin: 0;
+    }
+
+    .cf7-custom-form .checkbox-row input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .cf7-custom-form .checkbox-row .wpcf7-list-item-label {
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    /* 送信ボタン */
+    .cf7-custom-form .button-group {
+      margin-top: 30px;
+    }
+
+    .cf7-custom-form .submit-btn {
+      width: 100%;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      background-color: #2f8f66;
+      color: white;
+      border: 2px solid #1a7a4f;
+    }
+
+    .cf7-custom-form .submit-btn:hover {
+      background: #fff;
+      color: #1a7a4f;
+      border: 2px solid #1a7a4f;
+    }
+
+    .cf7-custom-form .submit-btn:active {
+      transform: translateY(5px);
+    }
+
+    /* Contact Form 7のデフォルトスタイルを上書き */
+    .cf7-custom-form .wpcf7-form-control-wrap {
+      display: block;
+    }
+
+    .cf7-custom-form .wpcf7-not-valid-tip {
+      color: #e74c3c;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+
+    .cf7-custom-form .wpcf7-validation-errors,
+    .cf7-custom-form .wpcf7-acceptance-missing {
+      border: 2px solid #e74c3c;
+      background: #ffe8e8;
+      color: #e74c3c;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+
+    .cf7-custom-form .wpcf7-response-output {
+      border: 2px solid #1a7a4f;
+      background: #d4edda;
+      color: #155724;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      max-width: 1000px;
+      margin-inline: auto;
+    }
+
+    /* スピナー（送信中） */
+    .cf7-custom-form .wpcf7-spinner {
+      margin-left: 10px;
+    }
+
+    /* レスポンシブ */
+    @media (max-width: 600px) {
+      .cf7-custom-form {
+        padding: 30px 20px;
       }
     }
   }

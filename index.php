@@ -223,7 +223,7 @@
     <div class="container contact-container">
       <div class="section__head reveal contact-head">
         <div class="section__title-wrapper">
-          <h2 class="section__title jp">お問い合わせ</h2>
+          <h2 class="section__title jp">お問合わせ</h2>
           <p class="section__subtitle en">Contact</p>
         </div>
         <p>お気軽にご相談ください</p>
