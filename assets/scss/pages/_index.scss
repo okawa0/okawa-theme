@@ -116,36 +116,48 @@
       opacity: 1;
     }
   }
-  // 墨跡
-  .hero__brush-image {
+  // 墨跡（共通）
+  .hero__brush {
+    grid-area: 1 / 1;
     z-index: 2;
-    opacity: 1;
-    height: 560px;
-    position: block;
-    grid-area: 1 / 1;
-    margin-bottom: 8rem;
-    margin-right: 20rem;
-    @include media(pc) {
-      display: none;
-    }
   }
-  // 墨跡(1366px以下)
-  .hero__brush-image--sp {
-    display: none;
-    grid-area: 1 / 1;
+
+  .hero__brush-image {
+    opacity: 1;
+    display: block;
+    width: 90vw;
+    height: 600px;
+    margin-right: 15rem;
+    margin-bottom: 5rem;
+
+    @include media(pc-m) {
+      height: 400px;
+      margin-bottom: 4rem;
+      margin-right: 10rem;
+    }
 
     @include media(pc) {
-      display: block;
-      z-index: 2;
-      opacity: 1;
-      height: 300px;
-      margin-right: 15rem;
-      margin-bottom: 4rem;
+      height: 400px;
+      margin-bottom: 3rem;
+      margin-right: 10rem;
     }
+
     @include media(sp) {
+      height: 250px;
+      margin-bottom: 2rem;
+      margin-right: 6rem;
+    }
+
+    @include media(sp-b) {
       height: 200px;
-      margin-bottom: 1rem;
-      margin-right: 3rem;
+      margin-right: 6rem;
+      margin-bottom: 2rem;
+    }
+
+    @include media(sp-mini) {
+      height: 180px;
+      margin-bottom: 2rem;
+      margin-right: 4rem;
     }
   }
 }

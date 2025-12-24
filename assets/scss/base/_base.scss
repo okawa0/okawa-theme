@@ -1,9 +1,8 @@
 @use "../base/mixin" as *;
 
 body {
-  // font-family: "Playfair Display", "Shippori Mincho";
   color: #333;
-  font-family: "さくらぎ蛍雪", "Georgia","Shippori Mincho" !important;
+  font-family: "さくらぎ蛍雪", "Shippori Mincho", Georgia, serif !important;
 }
 
 // ヘッダーナビゲーションのアンダーライン

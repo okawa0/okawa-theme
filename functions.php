@@ -7,15 +7,15 @@ add_theme_support('title-tag');
 add_theme_support('/assets/images/thumbnail.webp');
 
 // Googleフォントの読み込み
-function my_theme_enqueue_fonts()
-{
+add_action('wp_enqueue_scripts', function () {
   wp_enqueue_style(
     'google-fonts',
     'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Shippori+Mincho:wght@400;700&display=swap',
-    false
+    [],
+    null
   );
-}
-add_action('wp_enqueue_scripts', 'my_theme_enqueue_fonts');
+});
+
 
 // ページ読み込み後スクリプト実行
 function add_defer_attribute($tag, $handle, $src)
@@ -48,3 +48,9 @@ function my_theme_enqueue_assets(){
   );
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
+
+// jQueryの読み込み解除
+add_action('wp_enqueue_scripts', function () {
+  wp_deregister_script('jquery');
+  wp_deregister_script('jquery-migrate');
+}, 100);

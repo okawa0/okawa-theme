@@ -33,8 +33,25 @@
       </div>
 
       <!-- 墨跡 -->
-      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>" alt="筆跡" class="hero__brush-image">
-      <img src="<?php echo esc_url(get_theme_file_uri('assets/images/brush--sp.webp')); ?>" alt="筆跡" class="hero__brush-image--sp">
+      <picture class="hero__brush">
+        <!-- SP -->
+        <source
+          srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush--sp.webp')); ?>"
+          media="(max-width: 767px)">
+        <!-- PC -->
+        <source
+          srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>"
+          media="(min-width: 768px)">
+        <!-- フォールバック -->
+        <img
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>"
+          alt="筆跡"
+          class="hero__brush-image"
+          width="1600"
+          height="400"
+          decoding="async">
+      </picture>
+
     </div>
   </section>
 
