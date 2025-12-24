@@ -15,6 +15,32 @@
 <main>
   <!-- ヒーロー -->
   <section class="hero">
+    <!-- LCP画像（最優先） -->
+    <picture class="hero__bg">
+      <!-- SP -->
+      <source
+        srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp.webp')); ?>"
+        media="(max-width: 767px)">
+      <!-- PC -->
+      <source
+        srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero.webp')); ?>"
+        media="(min-width: 768px)">
+      <img
+        src="<?php echo esc_url(get_theme_file_uri('assets/images/hero.webp')); ?>"
+        alt=""
+        width="1920"
+        height="1080"
+        fetchpriority="high"
+        decoding="async"
+        class="hero__bg-image">
+    </picture>
+
+    <!-- グラデーション -->
+    <div class="hero__overlay"></div>
+
+    <!-- 麻の葉（装飾レイヤー） -->
+    <div class="hero__pattern" aria-hidden="true"></div>
+
     <div class="hero__inner">
       <!-- タイトル -->
       <div class="hero-titles">

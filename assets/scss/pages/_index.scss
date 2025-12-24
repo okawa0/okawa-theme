@@ -20,7 +20,9 @@
 }
 
 @include media(sp) {
-  #loading { display: none; }
+  #loading {
+    display: none;
+  }
 }
 
 .loaded {
@@ -31,33 +33,49 @@
 // メインビジュアル
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: 100vh;
+  overflow: hidden;
   display: grid;
-  place-items: center;
-  background: linear-gradient(
+  .hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    .hero__bg-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  .hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.2) 30%,
       rgba(0, 0, 0, 0.2) 70%,
-      rgba(220, 231, 232) 100%
-    ),
-    url("../images/hero.webp") center/cover no-repeat;
-  z-index: 0;
-  // 麻の葉模様
-  &::before {
-    content: "";
+      rgba(220, 231, 232, 1) 100%
+    );
+  }
+  .hero__pattern {
     position: absolute;
     inset: 0;
+    z-index: 2;
     background: url("../images/hemp-leaf.webp") repeat;
     background-size: 800px;
     opacity: 0.2;
-    z-index: -1;
+    pointer-events: none;
+
     @include media(sp) {
       background-size: 500px;
     }
   }
   .hero__inner {
-    display: grid;
-    place-items: center;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  place-items: center;
     @include media(sp-b) {
       margin-top: 7rem;
     }
