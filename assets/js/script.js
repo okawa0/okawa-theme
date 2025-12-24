@@ -2,21 +2,29 @@
 window.addEventListener("load", () => {
   const loading = document.getElementById("loading");
   const video = document.getElementById("loading-video");
-  //動画の再生補助
-  if (video) {
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch(() => {
-        // 自動再生がブロックされたときの保険
-        video.muted = true;
-        video.load();
-        video.play();
-      });
-    }
-  }
-  setTimeout(() => {
+  if (!loading || !video) return; // SPはセクション自体が無い想定
+
+  const isPC = window.matchMedia("(min-width: 900px)").matches;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+
+  if (!isPC || reduceMotion || saveData) {
     loading.classList.add("loaded");
-  }, 400);
+    return;
+  }
+
+  const hide = () => loading.classList.add("loaded");
+
+  // 早めに閉じる（動画が読み込めなくても詰まらない）
+  const fallbackTimer = setTimeout(hide, 800);
+
+  video.addEventListener("loadeddata", () => {
+    clearTimeout(fallbackTimer);
+    setTimeout(hide, 400);
+  }, { once: true });
+
+  const p = video.play();
+  if (p) p.catch(() => hide());
 });
 
 

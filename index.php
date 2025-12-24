@@ -1,19 +1,16 @@
 <!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
-<!-- ローディング -->
-<section id="loading" aria-label="ローディングアニメーション">
-  <video id="loading-video" autoplay muted playsinline preload="auto">
-    <source
-      src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves--sp.mp4')); ?>"
-      type="video/mp4"
-      media="(max-width: 768px)">
-    <source
-      src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves.mp4')); ?>"
-      type="video/mp4"
-      media="(min-width: 769px)">
-  </video>
-</section>
+<?php if (! wp_is_mobile()) : ?>
+  <!-- ローディング（PCのみ） -->
+  <section id="loading" aria-label="ローディングアニメーション">
+    <video id="loading-video" autoplay muted playsinline preload="none">
+      <source
+        src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves.mp4')); ?>"
+        type="video/mp4">
+    </video>
+  </section>
+<?php endif; ?>
 
 <main>
   <!-- ヒーロー -->
