@@ -32,6 +32,7 @@
         height="1080"
         fetchpriority="high"
         decoding="async"
+        sizes="100vw"
         class="hero__bg-image">
     </picture>
 

@@ -10,7 +10,7 @@ add_theme_support('/assets/images/thumbnail.webp');
 add_action('wp_enqueue_scripts', function () {
   wp_enqueue_style(
     'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Shippori+Mincho:wght@400;700&display=swap',
+    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Shippori+Mincho:wght@700&display=swap',
     [],
     null
   );
@@ -28,7 +28,8 @@ function add_defer_attribute($tag, $handle, $src)
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 3);
 
 
-function my_theme_enqueue_assets(){
+function my_theme_enqueue_assets()
+{
 
   // CSS
   wp_enqueue_style(
