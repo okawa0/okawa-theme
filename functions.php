@@ -6,17 +6,6 @@ add_theme_support('title-tag');
 // サムネイル
 add_theme_support('/assets/images/thumbnail.webp');
 
-// Googleフォントの読み込み
-add_action('wp_enqueue_scripts', function () {
-  wp_enqueue_style(
-    'google-fonts',
-    'https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Shippori+Mincho:wght@700&display=swap',
-    [],
-    null
-  );
-});
-
-
 // ページ読み込み後スクリプト実行
 function add_defer_attribute($tag, $handle, $src)
 {
