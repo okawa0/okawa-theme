@@ -35,13 +35,13 @@
       <!-- タイトル -->
       <div class="hero-titles">
         <h1 id="hero-title" class="hero__title">
-          <span class="char" style="--char-index: 10">P</span><span class="char" style="--char-index: 11">o</span><span class="char" style="--char-index: 12">r</span><span class="char" style="--char-index: 13">t</span><span class="char" style="--char-index: 14">f</span><span class="char" style="--char-index: 15">o</span><span class="char" style="--char-index: 16">l</span><span class="char" style="--char-index: 17">i</span><span class="char" style="--char-index: 18">o</span>
+          <span class="char" style="--char-index: 1">P</span><span class="char" style="--char-index: 1">o</span><span class="char" style="--char-index: 1">r</span><span class="char" style="--char-index: 1">t</span><span class="char" style="--char-index: 1">f</span><span class="char" style="--char-index: 1">o</span><span class="char" style="--char-index: 1">l</span><span class="char" style="--char-index: 1">i</span><span class="char" style="--char-index: 1">o</span>
         </h1>
         <!-- サブタイトル -->
         <p id="hero-subtitle" class="hero__subtitle">
-          <span class="char" style="--char-index: 19">b</span><span class="char" style="--char-index: 20">y</span>
-          <span class="char" style="--char-index: 21"> </span><span class="char" style="--char-index: 22">W</span><span class="char" style="--char-index: 23">e</span><span class="char" style="--char-index: 24">b</span><span class="char" style="--char-index: 25"> </span><span class="char" style="--char-index: 26">C</span><span class="char" style="--char-index: 27">o</span><span class="char" style="--char-index: 28">d</span><span class="char" style="--char-index: 29">e</span><span class="char" style="--char-index: 30">r</span>
-          <span class="char" style="--char-index: 31"> </span><span class="char" style="--char-index: 32">O</span><span class="char" style="--char-index:33">k</span><span class="char" style="--char-index: 34">a</span><span class="char" style="--char-index: 35">w</span><span class="char" style="--char-index: 36">a</span>
+          <span class="char" style="--char-index: 2">b</span><span class="char" style="--char-index: 2">y</span>
+          <span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">W</span><span class="char" style="--char-index: 2">e</span><span class="char" style="--char-index: 2">b</span><span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">C</span><span class="char" style="--char-index: 2">o</span><span class="char" style="--char-index: 2">d</span><span class="char" style="--char-index: 2">e</span><span class="char" style="--char-index: 2">r</span>
+          <span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">O</span><span class="char" style="--char-index:2">k</span><span class="char" style="--char-index: 2">a</span><span class="char" style="--char-index: 2">w</span><span class="char" style="--char-index: 2">a</span>
         </p>
       </div>
 
