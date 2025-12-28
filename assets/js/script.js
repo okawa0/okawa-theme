@@ -39,20 +39,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// タイトルのアニメーション
-document.addEventListener('DOMContentLoaded', () => {
-  const title = document.getElementById('hero-title');
-  requestAnimationFrame(() => {
-    title.classList.add('is-active');
-  });
-});
-// サブタイトルのアニメーション
-document.addEventListener('DOMContentLoaded', () => {
-  const title = document.getElementById('hero-subtitle');
-  requestAnimationFrame(() => {
-    title.classList.add('is-active');
-  });
-});
+// // タイトルのアニメーション
+// document.addEventListener('DOMContentLoaded', () => {
+//   const title = document.getElementById('hero-title');
+//   requestAnimationFrame(() => {
+//     title.classList.add('is-active');
+//   });
+// });
+// // サブタイトルのアニメーション
+// document.addEventListener('DOMContentLoaded', () => {
+//   const title = document.getElementById('hero-subtitle');
+//   requestAnimationFrame(() => {
+//     title.classList.add('is-active');
+//   });
+// });
 
 // 下からふわっと表示
   const io = new IntersectionObserver((entries, obs) => {
