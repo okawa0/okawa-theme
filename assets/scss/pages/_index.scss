@@ -43,10 +43,10 @@
     }
   }
   .hero__inner {
-  position: relative;
-  z-index: 3;
-  display: grid;
-  place-items: center;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    place-items: center;
     @include media(sp-b) {
       margin-top: 7rem;
     }
@@ -648,7 +648,7 @@
 
     /* フォーム行 */
     .cf7-custom-form .form-row {
-      margin-bottom: 25px;
+      // margin-bottom: 25px;
     }
 
     /* ラベル */

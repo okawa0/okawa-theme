@@ -4,19 +4,21 @@
   background-size: 500px 500px;
   background-repeat: repeat;
   background-position: top left;
-  padding:3rem 0;
+  padding: 3rem 0;
   .footer__inner {
-    .footer__nav{
+    .footer__nav {
       margin: 0;
       padding: 1rem 0;
       text-align: center;
-      li{
+      li {
         display: inline-block;
         margin: 0.5rem 2rem;
         font-size: 1.2rem;
-        a{
+        a {
+          color: inherit;
+          text-decoration: none;
           transition: opacity 0.5s ease;
-          &:hover{
+          &:hover {
             opacity: 0.5;
           }
         }

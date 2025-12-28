@@ -94,7 +94,7 @@
                 loading="lazy" decoding="async" width="600" height="340">
             </a>
             <div class="works__info">
-              <p><strong>Aqua horizon</strong><br>ダイビングショップ公式サイト</p>
+              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
