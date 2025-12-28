@@ -1,33 +1,3 @@
-// ローディングアニメーション
-window.addEventListener("load", () => {
-  const loading = document.getElementById("loading");
-  const video = document.getElementById("loading-video");
-  if (!loading || !video) return; // SPはセクション自体が無い想定
-
-  const isPC = window.matchMedia("(min-width: 900px)").matches;
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const saveData = navigator.connection && navigator.connection.saveData;
-
-  if (!isPC || reduceMotion || saveData) {
-    loading.classList.add("loaded");
-    return;
-  }
-
-  const hide = () => loading.classList.add("loaded");
-
-  // 早めに閉じる（動画が読み込めなくても詰まらない）
-  const fallbackTimer = setTimeout(hide, 800);
-
-  video.addEventListener("loadeddata", () => {
-    clearTimeout(fallbackTimer);
-    setTimeout(hide, 400);
-  }, { once: true });
-
-  const p = video.play();
-  if (p) p.catch(() => hide());
-});
-
-
 // ハンバーガーメニュー
 document.addEventListener('DOMContentLoaded', () => {
   const hamburger = document.querySelector('.hamburger-overlay');

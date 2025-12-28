@@ -1,35 +1,6 @@
 @use "../base/variables" as *;
 @use "../base/mixin" as *;
 
-// ローディングアニメーション
-#loading {
-  width: 100vw;
-  height: 100vh;
-  background-color: #000;
-  transition: opacity 1s, visibility 1s;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-
-  video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-@include media(sp) {
-  #loading {
-    display: none;
-  }
-}
-
-.loaded {
-  opacity: 0;
-  visibility: hidden;
-}
-
 // メインビジュアル
 .hero {
   position: relative;

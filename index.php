@@ -1,17 +1,6 @@
 <!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
-<?php if (! wp_is_mobile()) : ?>
-  <!-- ローディング（PCのみ） -->
-  <section id="loading" aria-label="ローディングアニメーション">
-    <video id="loading-video" autoplay muted playsinline preload="none">
-      <source
-        src="<?php echo esc_url(get_theme_file_uri('assets/videos/fallen-leaves.mp4')); ?>"
-        type="video/mp4">
-    </video>
-  </section>
-<?php endif; ?>
-
 <main>
   <!-- ヒーロー -->
   <section class="hero">
