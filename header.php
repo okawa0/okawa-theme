@@ -11,7 +11,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
   <header class="site-header">
     <div class="site-header__inner container">
       <h1 class="site-header__logo">
