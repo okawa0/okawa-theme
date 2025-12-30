@@ -4,24 +4,17 @@
 <main>
   <!-- ヒーロー -->
   <section class="hero">
-    <!-- LCP画像（最優先） -->
     <picture class="hero__bg">
-      <!-- SP -->
-      <source
-        srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp.webp')); ?>"
-        media="(max-width: 767px)">
-      <!-- PC -->
       <source
         srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero.webp')); ?>"
         media="(min-width: 768px)">
       <img
-        src="<?php echo esc_url(get_theme_file_uri('assets/images/hero.webp')); ?>"
+        src="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp.webp')); ?>"
         alt=""
-        width="1920"
-        height="1080"
+        width="750"
+        height="1334"
         fetchpriority="high"
         decoding="async"
-        sizes="100vw"
         class="hero__bg-image">
     </picture>
 
