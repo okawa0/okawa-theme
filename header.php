@@ -7,7 +7,6 @@
   <!-- LCP対策 -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <style></style>
   <!-- CSSやJSをhead内に挿入するWordPressのフック関数 -->
   <?php wp_head(); ?>
 </head>

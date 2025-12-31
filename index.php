@@ -27,35 +27,27 @@
     <div class="hero__inner">
       <!-- タイトル -->
       <div class="hero-titles">
-        <h1 id="hero-title" class="hero__title">
-          <span class="char" style="--char-index: 1">P</span><span class="char" style="--char-index: 1">o</span><span class="char" style="--char-index: 1">r</span><span class="char" style="--char-index: 1">t</span><span class="char" style="--char-index: 1">f</span><span class="char" style="--char-index: 1">o</span><span class="char" style="--char-index: 1">l</span><span class="char" style="--char-index: 1">i</span><span class="char" style="--char-index: 1">o</span>
-        </h1>
+        <h1 id="hero-title" class="hero__title">Portfolio</h1>
         <!-- サブタイトル -->
-        <p id="hero-subtitle" class="hero__subtitle">
-          <span class="char" style="--char-index: 2">b</span><span class="char" style="--char-index: 2">y</span>
-          <span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">W</span><span class="char" style="--char-index: 2">e</span><span class="char" style="--char-index: 2">b</span><span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">C</span><span class="char" style="--char-index: 2">o</span><span class="char" style="--char-index: 2">d</span><span class="char" style="--char-index: 2">e</span><span class="char" style="--char-index: 2">r</span>
-          <span class="char" style="--char-index: 2"> </span><span class="char" style="--char-index: 2">O</span><span class="char" style="--char-index:2">k</span><span class="char" style="--char-index: 2">a</span><span class="char" style="--char-index: 2">w</span><span class="char" style="--char-index: 2">a</span>
-        </p>
+        <p id="hero-subtitle" class="hero__subtitle">by WebCoder Okawa</p>
       </div>
 
-      <!-- 墨跡 -->
       <picture class="hero__brush">
-        <!-- SP -->
-        <source
-          srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush--sp.webp')); ?>"
-          media="(max-width: 767px)">
         <!-- PC -->
         <source
           srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>"
           media="(min-width: 768px)">
-        <!-- フォールバック -->
+
+        <!-- SP（LCP確定用） -->
         <img
-          src="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>"
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/brush--sp.webp')); ?>"
           alt="筆跡"
-          class="hero__brush-image"
-          width="1600"
-          height="400"
-          decoding="async">
+          width="750"
+          height="188"
+          decoding="async"
+          loading="lazy"
+          fetchpriority="high"
+          class="hero__brush-image">
       </picture>
 
     </div>
