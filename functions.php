@@ -44,3 +44,17 @@ add_action('wp_enqueue_scripts', function () {
   wp_deregister_script('jquery');
   wp_deregister_script('jquery-migrate');
 }, 100);
+
+// 制作実績カスタム投稿タイプ
+function register_works_post_type()
+{
+  register_post_type('works', [
+    'label' => '制作実績',
+    'public' => true,
+    'has_archive' => true,
+    'menu_position' => 5,
+    'supports' => ['title', 'editor', 'thumbnail'],
+    'rewrite' => ['slug' => 'works'],
+  ]);
+}
+add_action('init', 'register_works_post_type');
