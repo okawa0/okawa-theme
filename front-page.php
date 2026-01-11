@@ -71,12 +71,17 @@
       <ul class="works">
         <li class="works__item reveal">
           <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/aqua-horizon/'); ?>" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url('https://okawa0.github.io/aqua-horizon/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
               <img
                 class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon.webp')); ?>"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon-v2.webp')); ?>"
                 alt="ダイビングショップのモックアップ"
                 loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon--sp-v2.webp')); ?>"
+                alt="ダイビングショップのモックアップ"
+                loading="lazy" decoding="async">
             </a>
             <div class="works__info">
               <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
@@ -89,12 +94,17 @@
         </li>
         <li class="works__item reveal">
           <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
               <img
                 class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design.webp')); ?>"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design-v2.webp')); ?>"
                 alt="模写サイトfurniture designのモックアップ"
                 loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design--sp-v2.webp')); ?>"
+                alt="模写サイトfurniture designのモックアップ"
+                loading="lazy" decoding="async">
             </a>
             <div class="works__info">
               <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
@@ -107,12 +117,17 @@
         </li>
         <li class="works__item reveal">
           <article>
-            <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer">
+            <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
               <img
                 class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio.webp')); ?>"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio-v2.webp')); ?>"
                 alt="ポートフォリオサイトのモックアップ"
                 loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio--sp-v2.webp')); ?>"
+                alt="ポートフォリオサイトのモックアップ"
+                loading="lazy" decoding="async">
             </a>
             <div class="works__info">
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
