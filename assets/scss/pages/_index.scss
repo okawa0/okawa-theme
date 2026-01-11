@@ -57,7 +57,7 @@
     // タイトル"Portfolio"
     .hero__title {
       color: #ccc;
-      font-size: clamp(1.8rem, 5vw, 7rem);
+      font-size: clamp(2rem, 6vw, 7rem);
       text-shadow: 2px 2px 2px #111;
       text-align: center;
       margin: 0;
@@ -93,7 +93,7 @@
     margin-bottom: 5rem;
 
     @include media(pc-m) {
-      height: 400px;
+      height: 600px;
       margin-bottom: 4rem;
       margin-right: 10rem;
     }
@@ -111,7 +111,7 @@
     }
 
     @include media(sp-b) {
-      height: 200px;
+      height: 300px;
       margin-right: 6rem;
       margin-bottom: 2rem;
     }

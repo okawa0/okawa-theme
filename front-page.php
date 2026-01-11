@@ -6,10 +6,10 @@
   <section class="hero">
     <picture class="hero__bg">
       <source
-        srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero.webp')); ?>"
+        srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero-v2.webp')); ?>"
         media="(min-width: 768px)">
       <img
-        src="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp.webp')); ?>"
+        src="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp-v2.webp')); ?>"
         alt=""
         width="750"
         height="1334"
@@ -35,7 +35,7 @@
       <picture class="hero__brush">
         <!-- PC -->
         <source
-          srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush.webp')); ?>"
+          srcset="<?php echo esc_url(get_theme_file_uri('assets/images/brush-v2.webp')); ?>"
           media="(min-width: 768px)">
 
         <!-- SP（LCP確定用） -->

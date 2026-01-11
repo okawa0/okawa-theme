@@ -16,7 +16,6 @@ function add_defer_attribute($tag, $handle, $src)
 }
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 3);
 
-
 function my_theme_enqueue_assets()
 {
 
