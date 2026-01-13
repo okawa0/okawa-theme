@@ -7,10 +7,10 @@
     <picture class="hero__bg">
       <source
         srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero-v2.webp')); ?>"
-        media="(min-width: 768px)">
+        media="(min-width: 768px)" alt="青みがかった山と川の風景">
       <img
         src="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp-v2.webp')); ?>"
-        alt=""
+        alt="青みがかった山と川の風景"
         width="750"
         height="1334"
         fetchpriority="high"
@@ -81,7 +81,7 @@
                 class="works__image--sp"
                 src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon--sp-v2.webp')); ?>"
                 alt="ダイビングショップのモックアップ"
-                loading="lazy" decoding="async">
+                loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
               <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
@@ -104,7 +104,7 @@
                 class="works__image--sp"
                 src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design--sp-v2.webp')); ?>"
                 alt="模写サイトfurniture designのモックアップ"
-                loading="lazy" decoding="async">
+                loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
               <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
@@ -127,7 +127,7 @@
                 class="works__image--sp"
                 src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio--sp-v2.webp')); ?>"
                 alt="ポートフォリオサイトのモックアップ"
-                loading="lazy" decoding="async">
+                loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
@@ -162,7 +162,7 @@
           <div class="skill-tree">
             <div class="skill-tree__wrapper">
               <ul class="skill-tree__branches">
-                <li class="skill-tree__item" data-skill="HTML" data-desc="セマンティックな構造理解と基本的なマークアップは問題なし。ただし、設計意図を言語化したHTML（保守・拡張前提）はまだ甘い。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"></li>
+                <li class="skill-tree__item" data-skill="HTML" data-desc="【できること】<br>•	hタグ・section などを適切に使い、divに依存しないセマンティックなマークアップ<br>•	画像の内容を正しく伝える alt 属性、ページごとの title 要素など、SEOを意識したマークアップ<br>•	CSSに頼らなくても、HTMLだけで情報の構造が伝わる整理されたマークアップ<br>•	カードやCTAなど、再利用を前提としたコンポーネント設計<br>【課題】<br>•	文字数の増減を想定した崩れにくいコーディング<br>•	他人が見ても内容や役割が一目で分かるクラス命名"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>" alt="htmlのロゴ"></li>
                 <li class="skill-tree__item" data-skill="CSS / Sass" data-desc="レスポンシブ・レイアウト・モダンCSS（grid / flex / clamp）は実務水準に近い。一方で、設計ルールの一貫性と再利用性はまだ発展途上。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="JavaScript" data-desc="DOM操作や簡単なUI制御は理解して使えている段階。設計・状態管理・非同期処理は「使える」より「触ったことがある」寄り。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"></li>
                 <li class="skill-tree__item" data-skill="WordPress" data-desc="テーマ編集・既存構造のカスタマイズは実務対応可能。ゼロからの設計やPHP理解は浅く、仕組み理解は途中段階。"><img src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"></li>
@@ -232,7 +232,7 @@
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" class="social-links__icon">
             </a>
             <a href="https://x.com/okawa_0" target="_blank">
-              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.png')); ?>" alt="X" class="social-links__icon">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.webp')); ?>" alt="X" class="social-links__icon">
             </a>
           </div>
         </div>
