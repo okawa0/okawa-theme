@@ -301,6 +301,7 @@
       align-items: center;
       gap: 60px;
       width: 100%;
+      position: relative;
       @include media(sp) {
         flex-direction: column;
       }
@@ -431,22 +432,28 @@
 
     /* 説明パネル */
     .skill-info {
-      flex-shrink: 0;
-      width: 450px;
+      position: absolute;
+      left: calc(100% - 28rem);
+      top: 50%;
+      transform: translateY(calc(-50% + 10px));
+      width: 550px;
       min-height: 160px;
       border-radius: 12px;
       padding: 24px;
       opacity: 0;
-      transform: translateY(10px);
       transition: all 0.3s ease;
-      margin-left: 8rem;
       @include media(sp) {
+        position: static;
+        transform: translateY(10px);
         width: 100%;
-        margin: 0;
+        left: auto;
       }
       &.visible {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(-50%);
+        @include media(sp) {
+          transform: translateY(0);
+        }
       }
 
       &__name {
