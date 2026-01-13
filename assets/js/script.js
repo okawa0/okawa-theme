@@ -76,7 +76,7 @@ const skillDesc = document.querySelector('.skill-info__desc');
 items.forEach(item => {
   item.addEventListener('mouseenter', () => {
     skillName.textContent = item.dataset.skill;
-    skillDesc.textContent = item.dataset.desc;
+    skillDesc.innerHTML = item.dataset.desc;
     infoBox.classList.add('visible');
   });
 
@@ -88,7 +88,7 @@ items.forEach(item => {
   item.addEventListener('click', e => {
     e.stopPropagation();
     skillName.textContent = item.dataset.skill;
-    skillDesc.textContent = item.dataset.desc;
+    skillDesc.innerHTML = item.dataset.desc;
     infoBox.classList.add('visible');
   });
 });
