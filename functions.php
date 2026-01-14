@@ -1,10 +1,10 @@
 <?php
 
-// タイトルタグの自動生成
+// タイトルタグの自動生成
 add_theme_support('title-tag');
 
 // サムネイル
-add_theme_support('/assets/images/thumbnail.webp');
+add_theme_support('post-thumbnails');
 
 // ページ読み込み後スクリプト実行
 function add_defer_attribute($tag, $handle, $src)
@@ -16,9 +16,9 @@ function add_defer_attribute($tag, $handle, $src)
 }
 add_filter('script_loader_tag', 'add_defer_attribute', 10, 3);
 
+// CSS・JSの読み込み
 function my_theme_enqueue_assets()
 {
-
   // CSS
   wp_enqueue_style(
     'main-style',

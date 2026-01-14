@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.querySelector('.nav-overlay');
   const navLinks = document.querySelectorAll('.nav-overlay__link');
 
+  if (!hamburger || !nav) return;
+
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     nav.classList.toggle('active');
@@ -16,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
 
-  // ✅ メニュー内リンクをクリックしたら閉じる
+  // メニュー内リンクをクリックしたら閉じる
   navLinks.forEach(link => {
     link.addEventListener('click', () => {
       hamburger.classList.remove('active');
@@ -39,23 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// // タイトルのアニメーション
-// document.addEventListener('DOMContentLoaded', () => {
-//   const title = document.getElementById('hero-title');
-//   requestAnimationFrame(() => {
-//     title.classList.add('is-active');
-//   });
-// });
-// // サブタイトルのアニメーション
-// document.addEventListener('DOMContentLoaded', () => {
-//   const title = document.getElementById('hero-subtitle');
-//   requestAnimationFrame(() => {
-//     title.classList.add('is-active');
-//   });
-// });
-
-// 下からふわっと表示
-  const io = new IntersectionObserver((entries, obs) => {
+// 下からふわっと表示（IntersectionObserver）
+document.addEventListener('DOMContentLoaded', () => {
+  const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('is-inview');
@@ -65,34 +53,41 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.15,
     rootMargin: '0px 0px -10% 0px'
   });
-  document.querySelectorAll('.reveal').forEach(el => io.observe(el)); 
 
-// スキルセクション
-const items = document.querySelectorAll('.skill-tree__item');
-const infoBox = document.querySelector('.skill-info');
-const skillName = document.querySelector('.skill-info__name');
-const skillDesc = document.querySelector('.skill-info__desc');
-
-items.forEach(item => {
-  item.addEventListener('mouseenter', () => {
-    skillName.textContent = item.dataset.skill;
-    skillDesc.innerHTML = item.dataset.desc;
-    infoBox.classList.add('visible');
-  });
-
-  item.addEventListener('mouseleave', () => {
-    infoBox.classList.remove('visible');
-  });
-
-  // スマホ用：タップで表示
-  item.addEventListener('click', e => {
-    e.stopPropagation();
-    skillName.textContent = item.dataset.skill;
-    skillDesc.innerHTML = item.dataset.desc;
-    infoBox.classList.add('visible');
-  });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 });
 
-document.addEventListener('click', () => {
-  infoBox.classList.remove('visible');
+// スキルセクション
+document.addEventListener('DOMContentLoaded', () => {
+  const items = document.querySelectorAll('.skill-tree__item');
+  const infoBox = document.querySelector('.skill-info');
+  const skillName = document.querySelector('.skill-info__name');
+  const skillDesc = document.querySelector('.skill-info__desc');
+
+  if (!items.length || !infoBox || !skillName || !skillDesc) return;
+
+  items.forEach(item => {
+    item.addEventListener('mouseenter', () => {
+      skillName.textContent = item.dataset.skill;
+      skillDesc.innerHTML = item.dataset.desc;
+      infoBox.classList.add('visible');
+    });
+
+    item.addEventListener('mouseleave', () => {
+      infoBox.classList.remove('visible');
+    });
+
+    // スマホ用：タップで表示
+    item.addEventListener('click', e => {
+      e.stopPropagation();
+      skillName.textContent = item.dataset.skill;
+      skillDesc.innerHTML = item.dataset.desc;
+      infoBox.classList.add('visible');
+    });
+  });
+
+  // クリックでスキル情報を閉じる
+  document.addEventListener('click', () => {
+    infoBox.classList.remove('visible');
+  });
 });
