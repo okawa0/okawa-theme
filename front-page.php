@@ -165,9 +165,7 @@
                   data-desc="【できること】<br>• hタグ・section などを適切に使い、divに依存しないセマンティックなマークアップ<br>• 画像の内容を正しく伝える alt 属性、ページごとの title 要素など、SEOを意識したマークアップ<br>• CSSに頼らなくても、HTMLだけで情報の構造が伝わる整理されたマークアップ<br>• カードやCTAなど、再利用を前提としたコンポーネント設計<br>【課題】<br>• 文字数の増減を想定した崩れにくいコーディング<br>• 他人が見ても内容や役割が一目で分かるクラス命名">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/html-logo.png')); ?>"
-                    alt="htmlのロゴ"
-                    width="90"
-                    height="90">
+                    alt="htmlのロゴ">
                 </li>
                 <li
                   class="skill-tree__item"
@@ -175,9 +173,7 @@
                   data-desc="【できること】<br>• ボックスモデルの理解を前提にした堅実なレイアウト設計<br>• position に過度に依存しないレイアウト<br>• 行間・字間・文字サイズを意識した丁寧なタイポグラフィー<br>• 小型スマホ〜ワイドスクリーンまで対応したレスポンシブ設計<br>• 移動・透過を中心とした控えめなアニメーション実装<br>• BEM に則ったクラス命名による可読性・保守性の確保<br>• 影響範囲を想定したセレクタ設計<br>• clamp / min を用いた柔軟なサイズ設計<br>• モバイルファーストを前提としたコーディング<br>【課題】<br>• 不要なセレクタを増やさない設計<br>• ブラウザの再描画・再計算コストを意識したスタイル記述<br>• カスタムプロパティ（CSS変数）の活用">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"
-                    alt="CSSのロゴ"
-                    width="90"
-                    height="90">
+                    alt="CSSのロゴ">
                 </li>
                 <li
                   class="skill-tree__item"
@@ -185,9 +181,7 @@
                   data-desc="【できること】<br>• 条件分岐・繰り返し処理など、言語仕様の基礎理解<br>• 要素取得、クラス操作、属性操作、イベント登録などの基本的な DOM 操作<br>• ハンバーガーメニューやモーダル表示など、UI 制御の基礎実装<br>【課題】<br>• 複雑な DOM 構造を前提とした UI 制御<br>• forEach などを用いた配列操作<br>• setTimeout 等の非同期処理の理解と実装">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/javascript-logo.png')); ?>"
-                    alt="JavaScriptのロゴ"
-                    width="90"
-                    height="90">
+                    alt="JavaScriptのロゴ">
                 </li>
                 <li
                   class="skill-tree__item"
@@ -195,9 +189,7 @@
                   data-desc="【できること】<br>• テンプレート階層を含むテーマ構造の理解<br>• オリジナルテーマの構築経験<br>• <?php ?> の役割など、PHP の基礎的な文法理解<br>【課題】<br>• 配列・ループ処理の理解と実装<br>• カスタム投稿タイプ / カスタムタクソノミー / カスタムフィールドの活用<br>• テンプレート設計力（拡張・保守を前提とした構造）<br>• 顧客運用でも壊れないテーマ設計">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"
-                    alt="WordPressのロゴ"
-                    width="90"
-                    height="90">
+                    alt="WordPressのロゴ">
                 </li>
                 <li
                   class="skill-tree__item"
@@ -205,9 +197,7 @@
                   data-desc="【できること】<br>• 基本操作と構成理解<br>【課題】<br>• デザイン意図の読み取り<br>• 設計提案">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"
-                    alt="Figmaのロゴ"
-                    width="90"
-                    height="90">
+                    alt="Figmaのロゴ">
                 </li>
                 <li
                   class="skill-tree__item"
@@ -215,9 +205,7 @@
                   data-desc="【できること】<br>• リポジトリ作成・クローンなどの基本操作<br>• 変更内容が追えるよう意識した、粒度の細かいコミット<br>• ブランチ運用の基本理解<br>【課題】<br>• プルリクエストの運用<br>• 差分（diff）を読む力<br>• コンフリクト発生時の対応">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>"
-                    alt="GitHubのロゴ"
-                    width="90"
-                    height="90">
+                    alt="GitHubのロゴ">
                 </li>
               </ul>
             </div>
@@ -272,8 +260,6 @@
         <img
           src="<?php echo esc_url(get_theme_file_uri('assets/images/profile-img.webp')); ?>"
           alt="大川誠のプロフィール画像"
-          width="400"
-          height="400"
           class="about__image reveal">
         <div class="about__info reveal">
           <p class="about__info__name">おおかわ　|　Webコーダー</p>
