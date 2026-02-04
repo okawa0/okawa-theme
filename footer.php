@@ -7,7 +7,7 @@
         <li><a href="#about" class="u-underline u-underline--whiteshadow">About</a></li>
         <li><a href="#contact" class="u-underline u-underline--whiteshadow">Contact</a></li>
       </ul>
-      <p class="footer__copy">&copy; 2025 Okawa Web</p>
+      <p class="footer__copy">&copy; 2026 Okawa Web</p>
     </div>
   </footer>
 
