@@ -147,7 +147,7 @@
                 <li
                   class="skill-tree__item"
                   data-skill="Figma / XD"
-                  data-desc="【できること】<br>• 基本操作と構成理解<br>【課題】<br>• デザイン意図の読み取り<br>• 設計提案">
+                  data-desc="【できること】<br>• ブレンドモードやエフェクト等の加工<br>• オートレイアウト<br>• ホバーやループ等のアニメーション<br>• コンポーネントの活用<br>【課題】<br>• デザイン意図の読み取り<br>• 設計提案">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/figma-logo.png')); ?>"
                     alt="Figmaのロゴ">
