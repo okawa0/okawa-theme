@@ -123,7 +123,7 @@
                 <li
                   class="skill-tree__item"
                   data-skill="CSS / Sass"
-                  data-desc="【できること】<br>• ボックスモデルの理解を前提にした堅実なレイアウト設計<br>• position に過度に依存しないレイアウト<br>• 行間・字間・文字サイズを意識した丁寧なタイポグラフィー<br>• 小型スマホ〜ワイドスクリーンまで対応したレスポンシブ設計<br>• 移動・透過を中心とした控えめなアニメーション実装<br>• BEM に則ったクラス命名による可読性・保守性の確保<br>• 影響範囲を想定したセレクタ設計<br>• clamp / min を用いた柔軟なサイズ設計<br>• モバイルファーストを前提としたコーディング<br>【課題】<br>• 不要なセレクタを増やさない設計<br>• ブラウザの再描画・再計算コストを意識したスタイル記述<br>• カスタムプロパティ（CSS変数）の活用">
+                  data-desc="【できること】<br>• position に過度に依存しないレイアウト<br>• 行間・字間・文字サイズを意識したタイポグラフィー<br>• 小型スマホ〜ワイドスクリーンまで対応したレスポンシブ設計<br>• 移動・透過を中心とした控えめなアニメーション実装<br>• BEM に則ったクラス命名による可読性・保守性の確保<br>• 影響範囲を想定したセレクタ設計<br>• clamp / min を用いた柔軟なサイズ設計<br>• モバイルファーストを前提としたコーディング<br>【課題】<br>• 不要なセレクタを増やさない設計<br>• ブラウザの再描画・再計算コストを意識したスタイル記述<br>• カスタムプロパティ（CSS変数）の活用">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/css-logo.png')); ?>"
                     alt="CSSのロゴ">
@@ -188,6 +188,11 @@
             <td>2025年9月</td>
             <td>2級ウェブデザイン技能士 合格</td>
           </tr>
+          <tr>
+            <th class="mobile-hidden"></th>
+            <td>2026年2月</td>
+            <td>Webクリエイター能力認定試験スタンダード 合格</td>
+          </tr>
         </table>
       </div>
     </div>
@@ -246,7 +251,7 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Lumina-production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
+              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
@@ -317,7 +322,7 @@
           <h2 class="section__title jp">お問合わせ</h2>
           <p class="section__subtitle en">Contact</p>
         </div>
-        <p>お気軽にご相談ください</p>
+        <p class='contact-message'>お気軽にご相談ください</p>
       </div>
       <div class="contact-form"><?php echo do_shortcode('[contact-form-7 id="5ef3a3a" title="お問い合わせ"]'); ?></div>
     </div>
