@@ -240,6 +240,7 @@
         .works__info {
           margin-top: 2rem;
           margin-left: 2rem;
+          font-family: $font-family-base;
           @include media(sp) {
             margin-left: 1rem;
           }
@@ -442,6 +443,7 @@
       padding: 24px;
       opacity: 0;
       transition: all 0.3s ease;
+      font-family: $font-family-base;
       @include media(sp) {
         position: static;
         transform: translateY(10px);
@@ -488,9 +490,10 @@
         }
       }
       .skill-qualification-table {
-        width: 500px;
+        width: 700px;
         margin: 3rem auto 0;
         table-layout: fixed;
+        font-family: $font-family-base;
         @include media(sp) {
           width: 100%;
           margin: 0 auto;
@@ -504,6 +507,7 @@
           width: 20%;
           @include media(sp) {
             width: 20%;
+            font-size: 14px;
           }
         }
         td:nth-child(3) {
@@ -582,6 +586,7 @@
       }
       .about__info {
         width: 50%;
+        font-family: $font-family-base;
         @include media(sp) {
           width: 90%;
         }
@@ -631,6 +636,13 @@
         position: relative;
         z-index: 1;
       }
+    }
+
+    .contact-message {
+      font-family: $font-family-base;
+    }
+    .contact-form {
+      font-family: $font-family-base;
     }
     /* フォームコンテナ */
     .cf7-custom-form {
