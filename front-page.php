@@ -66,7 +66,7 @@
     <div class="container">
       <div class="section__head reveal">
         <h2 class="section__title">自己紹介</h2>
-        <p class="section__subtitle">About</p>
+        <p class="section__subtitle">Who I am</p>
       </div>
 
       <div class="about reveal">
@@ -105,7 +105,7 @@
     <div class="container">
       <div class="section__head reveal">
         <h2 class="section__title jp">技術</h2>
-        <p class="section__subtitle en">Skills</p>
+        <p class="section__subtitle en">What I can do</p>
       </div>
       <section class="skill-section reveal">
         <div class="skill-section__inner">
@@ -211,7 +211,7 @@
     <div class="container">
       <div class="section__head reveal">
         <h2 class="section__title">作品</h2>
-        <p class="section__subtitle">Works</p>
+        <p class="section__subtitle">What I can make</p>
       </div>
       <ul class="works">
         <li class="works__item reveal">
@@ -320,7 +320,7 @@
       <div class="section__head reveal contact-head">
         <div class="section__title-wrapper">
           <h2 class="section__title jp">お問合わせ</h2>
-          <p class="section__subtitle en">Contact</p>
+          <p class="section__subtitle en">What do you want?</p>
         </div>
         <p class='contact-message'>お気軽にご相談ください</p>
       </div>
