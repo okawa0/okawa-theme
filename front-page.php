@@ -27,9 +27,9 @@
     <div class="hero__inner">
       <!-- タイトル -->
       <div class="hero-titles">
-        <h1 id="hero-title" class="hero__title">Portfolio</h1>
+        <h1 id="hero-title" class="hero__title">-Contribution-</h1>
         <!-- サブタイトル -->
-        <p id="hero-subtitle" class="hero__subtitle">by WebCoder Okawa</p>
+        <p id="hero-subtitle" class="hero__subtitle">コーディングを通してクライアントの収益を上げる</p>
       </div>
 
       <picture class="hero__brush">
@@ -61,103 +61,34 @@
     </svg>
   </div>
 
-  <!-- 作品セクション -->
-  <section class="section section--texture" id="works">
+    <!-- 自己紹介セクション -->
+  <section class="section section--texture" id="about">
     <div class="container">
       <div class="section__head reveal">
-        <h2 class="section__title">作品</h2>
-        <p class="section__subtitle">Works</p>
+        <h2 class="section__title">自己紹介</h2>
+        <p class="section__subtitle">About</p>
       </div>
-      <ul class="works">
-        <li class="works__item reveal">
-          <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/aqua-horizon/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
-              <img
-                class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon-v2.webp')); ?>"
-                alt="ダイビングショップのモックアップ"
-                loading="lazy" decoding="async" width="600" height="340">
-              <img
-                class="works__image--sp"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon--sp-v2.webp')); ?>"
-                alt="ダイビングショップのモックアップ"
-                loading="lazy" decoding="async" width="375" height="667">
+
+      <div class="about reveal">
+        <img
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/profile-img.webp')); ?>"
+          alt="大川誠のプロフィール画像"
+          class="about__image reveal">
+        <div class="about__info reveal">
+          <p class="about__info__name">おおかわ　|　Webコーダー</p>
+          <p>現在Web制作の現場でコーディング業務に取り組んでいます。</p>
+          <p>コードでデザインを正確に再現し、<br>見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
+          <p>日々、より良いコードを書くために学びを重ね、<br>実案件や仮想案件を通して実装力を高めています。</p>
+          <div class="social-links">
+            <a href="https://github.com/okawa0" target="_blank">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
             </a>
-            <div class="works__info">
-              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
-              <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
-            </div>
-          </article>
-        </li>
-        <li class="works__item reveal">
-          <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/lumina-production/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
-              <img
-                class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/lumina-production.webp')); ?>"
-                alt="芸能プロダクションのモックアップ"
-                loading="lazy" decoding="async" width="600" height="340">
-              <img
-                class="works__image--sp"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/lumina-production--sp.webp')); ?>"
-                alt="芸能プロダクションのモックアップ"
-                loading="lazy" decoding="async" width="375" height="667">
+            <a href="https://x.com/okawa_0" target="_blank">
+              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.webp')); ?>" alt="X" width="32" height="32" class="social-links__icon">
             </a>
-            <div class="works__info">
-              <p><strong>Lumina-production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
-              <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
-            </div>
-          </article>
-        </li>
-        <li class="works__item reveal">
-          <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
-              <img
-                class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design-v2.webp')); ?>"
-                alt="模写サイトfurniture designのモックアップ"
-                loading="lazy" decoding="async" width="600" height="340">
-              <img
-                class="works__image--sp"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design--sp-v2.webp')); ?>"
-                alt="模写サイトfurniture designのモックアップ"
-                loading="lazy" decoding="async" width="375" height="667">
-            </a>
-            <div class="works__info">
-              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
-              <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
-            </div>
-          </article>
-        </li>
-        <li class="works__item reveal">
-          <article>
-            <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
-              <img
-                class="works__image"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio-v2.webp')); ?>"
-                alt="ポートフォリオサイトのモックアップ"
-                loading="lazy" decoding="async" width="600" height="340">
-              <img
-                class="works__image--sp"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio--sp-v2.webp')); ?>"
-                alt="ポートフォリオサイトのモックアップ"
-                loading="lazy" decoding="async" width="375" height="667">
-            </a>
-            <div class="works__info">
-              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
-              <p>実装：デザイン、コーディング</p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
-            </div>
-          </article>
-        </li>
-      </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -270,34 +201,103 @@
     </svg>
   </div>
 
-  <!-- 自己紹介セクション -->
-  <section class="section section--texture" id="about">
+  <!-- 作品セクション -->
+  <section class="section section--texture" id="works">
     <div class="container">
       <div class="section__head reveal">
-        <h2 class="section__title">自己紹介</h2>
-        <p class="section__subtitle">About</p>
+        <h2 class="section__title">作品</h2>
+        <p class="section__subtitle">Works</p>
       </div>
-
-      <div class="about reveal">
-        <img
-          src="<?php echo esc_url(get_theme_file_uri('assets/images/profile-img.webp')); ?>"
-          alt="大川誠のプロフィール画像"
-          class="about__image reveal">
-        <div class="about__info reveal">
-          <p class="about__info__name">おおかわ　|　Webコーダー</p>
-          <p>現在Web制作の現場でコーディング業務に取り組んでいます。</p>
-          <p>コードでデザインを正確に再現し、<br>見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
-          <p>日々、より良いコードを書くために学びを重ね、<br>実案件や仮想案件を通して実装力を高めています。</p>
-          <div class="social-links">
-            <a href="https://github.com/okawa0" target="_blank">
-              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
+      <ul class="works">
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/aqua-horizon/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon-v2.webp')); ?>"
+                alt="ダイビングショップのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon--sp-v2.webp')); ?>"
+                alt="ダイビングショップのモックアップ"
+                loading="lazy" decoding="async" width="375" height="667">
             </a>
-            <a href="https://x.com/okawa_0" target="_blank">
-              <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.webp')); ?>" alt="X" width="32" height="32" class="social-links__icon">
+            <div class="works__info">
+              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
+            </div>
+          </article>
+        </li>
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/lumina-production/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/lumina-production.webp')); ?>"
+                alt="芸能プロダクションのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/lumina-production--sp.webp')); ?>"
+                alt="芸能プロダクションのモックアップ"
+                loading="lazy" decoding="async" width="375" height="667">
             </a>
-          </div>
-        </div>
-      </div>
+            <div class="works__info">
+              <p><strong>Lumina-production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
+            </div>
+          </article>
+        </li>
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design-v2.webp')); ?>"
+                alt="模写サイトfurniture designのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design--sp-v2.webp')); ?>"
+                alt="模写サイトfurniture designのモックアップ"
+                loading="lazy" decoding="async" width="375" height="667">
+            </a>
+            <div class="works__info">
+              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
+            </div>
+          </article>
+        </li>
+        <li class="works__item reveal">
+          <article>
+            <a href="<?php echo esc_url('https://okawa-web.com/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio-v2.webp')); ?>"
+                alt="ポートフォリオサイトのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/portfolio--sp-v2.webp')); ?>"
+                alt="ポートフォリオサイトのモックアップ"
+                loading="lazy" decoding="async" width="375" height="667">
+            </a>
+            <div class="works__info">
+              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
+              <p>実装：デザイン、コーディング</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
+              <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
+            </div>
+          </article>
+        </li>
+      </ul>
     </div>
   </section>
 
