@@ -86,8 +86,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // クリックでスキル情報を閉じる
-  document.addEventListener('click', () => {
-    infoBox.classList.remove('visible');
-  });
+  // クリックでスキル情報を閉じる（PC のみ）
+  const isTouchDevice = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+  if (!isTouchDevice) {
+    document.addEventListener('click', () => {
+      infoBox.classList.remove('visible');
+    });
+  }
 });
