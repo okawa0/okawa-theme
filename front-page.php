@@ -299,6 +299,7 @@
               <p>実装：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
               <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
+              <p>Lighthouseスコア：PC 100点 / SP 93点</p>
             </div>
           </article>
         </li>
