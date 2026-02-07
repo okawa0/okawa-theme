@@ -1,4 +1,5 @@
 @use "../base/mixin" as *;
+@use "../base/variables" as *;
 
 .site-header {
   position: fixed;
@@ -28,7 +29,7 @@
       .site-header__logo-title {
         display: inline-block;
         font-size: 20px;
-        text-shadow: 1px 1px 2px #333;
+        text-shadow: 1px 1px 2px $color-text-dark;
         font-weight: 700 !important;
         color: #fff;
       }
@@ -62,7 +63,7 @@
       margin: 0;
       padding: 0;
       font-size: 1.3rem;
-      color: #111;
+      color: $color-text-dark;
       @include media(sp) {
         flex-direction: column;
         padding: 40px 20px;
@@ -92,32 +93,33 @@
       left: 13px;
       width: 26px;
       height: 2px;
-      background-color: #333;
-      transition: all 0.6s;
       background-color: #ddd;
-      box-shadow: 1px 1px 2px #111 !important;
+      transition: all 0.6s;
+      box-shadow: 1px 1px 2px $color-text-dark !important;
+
+      &:nth-of-type(1) {
+        top: 1px;
+      }
+      &:nth-of-type(2) {
+        top: 10px;
+      }
+      &:nth-of-type(3) {
+        top: 19px;
+      }
     }
-  }
-  .hamburger-overlay__line:nth-of-type(1) {
-    top: 1px;
-  }
-  .hamburger-overlay__line:nth-of-type(2) {
-    top: 10px;
-  }
-  .hamburger-overlay__line:nth-of-type(3) {
-    top: 19px;
   }
   .hamburger-overlay.active .hamburger-overlay__line {
     background-color: #fff;
-  }
-  .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(1) {
-    transform: translateY(9px) rotate(-45deg);
-  }
-  .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(2) {
-    opacity: 0;
-  }
-  .hamburger-overlay.active .hamburger-overlay__line:nth-of-type(3) {
-    transform: translateY(-9px) rotate(45deg);
+
+    &:nth-of-type(1) {
+      transform: translateY(9px) rotate(-45deg);
+    }
+    &:nth-of-type(2) {
+      opacity: 0;
+    }
+    &:nth-of-type(3) {
+      transform: translateY(-9px) rotate(45deg);
+    }
   }
   .nav-overlay {
     position: fixed;
@@ -178,6 +180,6 @@
     transition: color 0.3s;
   }
   .nav-overlay__link:hover {
-    color: #4a90e2;
+    color: $color-accent;
   }
 }
