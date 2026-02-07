@@ -69,8 +69,10 @@
         <div class="about__info reveal">
           <p class="about__info__name">おおかわ　|　Webコーダー</p>
           <p>現在Web制作の現場でコーディング業務に取り組んでいます。</p>
-          <p>コードでデザインを正確に再現し、<br>見る人に心地よさを感じてもらえるサイトづくりを目指しています。</p>
-          <p>日々、より良いコードを書くために学びを重ね、<br>実案件や仮想案件を通して実装力を高めています。</p>
+          <p>他者貢献を人生の指針としており、仕事において会社の売り上げを上げる、クライアントの売り上げを上げる、エンドユーザーに快適にサイトを見てもらうことなどで貢献できると考えました。</p>
+          <p>そのためにWebコーダーの自分ができることを考えると、報連相の厳守、納期の厳守、読み込みスピードを上昇などが考えられ、これらを徹底していきたいと思います。</p>
+          <p>得意なのはレスポンシブ対応、Lighthouseのスコア獲得です。</p>
+          <p>現状に満足することなく、JavaScriptやWordPressなどを含めたスキルの習得、また新しいスキルのキャッチアップ、仕事の品質向上をしていきます。</p>
           <div class="social-links">
             <a href="https://github.com/okawa0" target="_blank">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
@@ -211,7 +213,7 @@
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
-              <p>GitHub：<a href="https://github.com/okawa0/aqua-horizon" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/aqua-horizon</a></p>
+              <p>README：<a href="https://github.com/okawa0/aqua-horizon" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/aqua-horizon</a></p>
             </div>
           </article>
         </li>
@@ -234,7 +236,7 @@
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
-              <p>GitHub：<a href="https://github.com/okawa0/lumina-production" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/lumina-production</a></p>
+              <p>README：<a href="https://github.com/okawa0/lumina-production" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/lumina-production</a></p>
             </div>
           </article>
         </li>
@@ -257,7 +259,7 @@
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
-              <p>GitHub：<a href="https://github.com/okawa0/furniture-design" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/furniture-design</a></p>
+              <p>README：<a href="https://github.com/okawa0/furniture-design" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/furniture-design</a></p>
             </div>
           </article>
         </li>
@@ -279,9 +281,9 @@
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p><br>
               <p>実装：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
+              <p>制作期間：13日（約104時間）<br>制作時期：2025年9月</p>
               <p>Lighthouseスコア：PC 100点 / SP 93点</p>
-              <p>GitHub：<a href="https://github.com/okawa0/okawa-theme" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/okawa-theme</a></p>
+              <p>README：<a href="https://github.com/okawa0/okawa-theme" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/okawa-theme</a></p>
             </div>
           </article>
         </li>
