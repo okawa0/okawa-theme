@@ -1,7 +1,9 @@
 @use "../base/mixin" as *;
 
+@use "variables" as *;
+
 body {
-  color: #333;
+  color: $color-text;
   font-family: Georgia, serif;
 }
 
