@@ -207,10 +207,11 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
+              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p><br>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
+              <p>GitHub：<a href="https://github.com/okawa0/aqua-horizon" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/aqua-horizon</a></p>
             </div>
           </article>
         </li>
@@ -229,10 +230,11 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
+              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p><br>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
+              <p>GitHub：<a href="https://github.com/okawa0/lumina-production" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/lumina-production</a></p>
             </div>
           </article>
         </li>
@@ -251,10 +253,11 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
+              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p><br>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
+              <p>GitHub：<a href="https://github.com/okawa0/furniture-design" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/furniture-design</a></p>
             </div>
           </article>
         </li>
@@ -273,11 +276,12 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
+              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p><br>
               <p>実装：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
               <p>制作期間：12日（約96時間）<br>制作時期：2025年9月</p>
               <p>Lighthouseスコア：PC 100点 / SP 93点</p>
+              <p>GitHub：<a href="https://github.com/okawa0/okawa-theme" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/okawa-theme</a></p>
             </div>
           </article>
         </li>
