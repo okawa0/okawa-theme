@@ -1,7 +1,16 @@
 // 変数ファイル
 
-// カラーバリエーション
+// カラー
 $color-ink: #1f1f1f; // 墨色
+$color-text: #333;
+$color-text-dark: #111;
+$color-accent: #4a90e2;
+$color-success: #1a7a4f;
+$color-success-bg: #2f8f66;
+$color-error: #e74c3c;
+
+// セクション背景テキスト
+$color-section-bg-text: #ccc;
 
 // Zen Kaku Gothicに近い標準フォントスタック
 $font-family-base: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "YuGothic", "Noto Sans CJK JP", sans-serif;
