@@ -1,13 +1,12 @@
-<!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
 <main>
-  <!-- ヒーロー -->
   <section class="hero">
     <picture class="hero__bg">
       <source
         srcset="<?php echo esc_url(get_theme_file_uri('assets/images/hero-v2.webp')); ?>"
-        media="(min-width: 768px)" alt="青みがかった山と川の風景">
+        media="(min-width: 768px)"
+        alt="青みがかった山と川の風景">
       <img
         src="<?php echo esc_url(get_theme_file_uri('assets/images/hero--sp-v2.webp')); ?>"
         alt="青みがかった山と川の風景"
@@ -53,15 +52,8 @@
     </div>
   </section>
 
-  <!-- 区切り -->
-  <div class="section-divider">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
-      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
-    </svg>
-  </div>
+  <?php get_template_part('template-parts/section-divider'); ?>
 
-    <!-- 自己紹介セクション -->
   <section class="section section--texture" id="about">
     <div class="container">
       <div class="section__head reveal">
@@ -92,15 +84,8 @@
     </div>
   </section>
 
-  <!-- 区切り -->
-  <div class="section-divider">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
-      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
-    </svg>
-  </div>
+  <?php get_template_part('template-parts/section-divider'); ?>
 
-  <!-- 技術セクション -->
   <section class="section section--texture" id="skills">
     <div class="container">
       <div class="section__head reveal">
@@ -198,15 +183,8 @@
     </div>
   </section>
 
-  <!-- 区切り -->
-  <div class="section-divider">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
-      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
-    </svg>
-  </div>
+  <?php get_template_part('template-parts/section-divider'); ?>
 
-  <!-- 作品セクション -->
   <section class="section section--texture" id="works">
     <div class="container">
       <div class="section__head reveal">
@@ -307,15 +285,8 @@
     </div>
   </section>
 
-  <!-- 区切り -->
-  <div class="section-divider">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
-      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
-    </svg>
-  </div>
+  <?php get_template_part('template-parts/section-divider'); ?>
 
-  <!-- お問い合わせセクション -->
   <section class="section section--texture" id="contact">
     <div class="container contact-container">
       <div class="section__head reveal contact-head">
@@ -329,13 +300,7 @@
     </div>
   </section>
 
-  <!-- 区切り -->
-  <div class="section-divider">
-    <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
-      <path d="M0,0 L1440,0 L1440,150 L0,150 Z" fill="rgba(123, 169, 173, 0.25)"></path>
-      <path d="M0,0 C480,120 960,-40 1440,100 L1440,150 L0,150 Z" fill="rgba(250, 244, 240, 0.5)"></path>
-    </svg>
-  </div>
+  <?php get_template_part('template-parts/section-divider'); ?>
 
 </main>
 
