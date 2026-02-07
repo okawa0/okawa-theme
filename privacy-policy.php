@@ -1,4 +1,3 @@
-<!-- ヘッダーの読み込み -->
 <?php get_header(); ?>
 
 <div class="container__privacy-policy">
@@ -62,5 +61,4 @@
 
 </div>
 
-<!-- フッタ -->
 <?php get_footer(); ?>
