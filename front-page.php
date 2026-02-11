@@ -70,9 +70,9 @@
           <p class="about__info__name">おおかわ　|　Webコーダー</p>
           <p>現在、Web制作の現場でコーディング業務に従事しております。</p><br>
           <p>私は他者貢献を人生の指針としており、仕事においては、会社やクライアント様の売り上げを向上させることや、エンドユーザーにとって快適な閲覧体験を提供することなどで貢献できると考えました。</p>
-          <p>そのためにWebコーダーの自分ができることを考えると、報連相や納期の厳守、読み込みスピードの上昇などが考えられ、これらを日々の業務で徹底していきます。</p><br>
+          <p>そのためにWebコーダーの自分ができることを考えると、報連相や納期の厳守、GEO対策、読み込みスピードの上昇などが考えられ、これらを日々の業務で徹底していきます。</p><br>
           <p>強みはレスポンシブ対応、Lighthouseのスコア改善への意識です。</p>
-          <p>現状に満足することなく、JavaScriptやWordPressなどを含めたスキルの習得、また新しいスキルのキャッチアップ、仕事の品質向上をしていきます。</p>
+          <p>現状に満足することなく、JavaScriptやWordPressなどを含めたスキルの習得、新しいスキルのキャッチアップ、仕事の品質向上をしていきます。</p>
           <div class="social-links">
             <a href="https://github.com/okawa0" target="_blank">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
@@ -211,7 +211,7 @@
             <div class="works__info">
               <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p><br>
               <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
               <p>README：<a href="https://github.com/okawa0/aqua-horizon" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/aqua-horizon</a></p>
             </div>
@@ -234,7 +234,7 @@
             <div class="works__info">
               <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p><br>
               <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Cursor / Figma / GitHub / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
               <p>README：<a href="https://github.com/okawa0/lumina-production" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/lumina-production</a></p>
             </div>
@@ -257,7 +257,7 @@
             <div class="works__info">
               <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p><br>
               <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub<br>開発環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
               <p>README：<a href="https://github.com/okawa0/furniture-design" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/furniture-design</a></p>
             </div>
@@ -280,7 +280,7 @@
             <div class="works__info">
               <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p><br>
               <p>実装：デザイン、コーディング</p>
-              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Figma / GitHub / Local / FileZilla<br>開発環境：macOS / Chrome</p>
+              <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Cursor / Figma / GitHub / Local / FileZilla / ChatGPT / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：13日（約104時間）<br>制作時期：2025年9月</p>
               <p>Lighthouseスコア：PC 100点 / SP 93点</p>
               <p>README：<a href="https://github.com/okawa0/okawa-theme" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/okawa-theme</a></p>
