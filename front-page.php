@@ -242,7 +242,7 @@
         </li>
         <li class="works__item reveal">
           <article>
-            <a href="<?php echo esc_url('https://okawa0.github.io/interior-store/index.html'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+            <a href="<?php echo esc_url('https://okawa0.github.io/furniture-design/index.html'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
               <img
                 class="works__image"
                 src="<?php echo esc_url(get_theme_file_uri('assets/images/furniture-design-v2.webp')); ?>"
