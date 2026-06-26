@@ -135,6 +135,9 @@
     background-size: 500px 500px;
     background-repeat: repeat;
     background-position: top left;
+    @media (min-width: 1024px) {
+      overflow: hidden;
+    }
   }
   &#contact {
     overflow-x: hidden;
@@ -168,6 +171,20 @@
         margin: 0 0 1rem;
       }
     }
+
+    .works__intro {
+      max-width: 860px;
+      margin: 0 auto 3rem;
+      text-align: center;
+      line-height: 1.9;
+      font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+      z-index: 1000;
+      @include media(sp) {
+        margin-bottom: 2rem;
+        padding: 0 0.5rem;
+      }
+    }
+
     // 作品セクション
     .works {
       display: grid;
@@ -187,7 +204,7 @@
         font-size: 260px;
         color: $color-section-bg-text;
         position: absolute;
-        top: -150px;
+        top: -300px;
         left: -248px;
         line-height: 1;
         z-index: 0;
@@ -200,7 +217,7 @@
         }
         @include media(pc) {
           font-size: 120px;
-          left: -7px;
+          left: -60px;
         }
         @include media(tb) {
           font-size: 70px;

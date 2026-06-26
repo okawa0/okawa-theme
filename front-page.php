@@ -57,9 +57,11 @@
   <section class="section section--texture" id="works">
     <div class="container">
       <div class="section__head reveal">
-        <h2 class="section__title">作品</h2>
+        <h2 class="section__title">制作実績</h2>
         <p class="section__subtitle">What I can make</p>
       </div>
+      <p class="works__intro">これまでに制作したWebサイト・ランディングページ・テーマ制作などの実績です。
+        コーディングの再現性・保守性・パフォーマンスを意識して制作しています。</p>
       <ul class="works">
         <li class="works__item reveal">
           <article>
