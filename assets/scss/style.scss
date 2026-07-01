@@ -8,7 +8,7 @@
 
 @use "pages/index";
 @use "pages/privacy-policy";
-@use "pages/works-fudosan";
+@use "pages/works-otogawa-fudosan";
 
 // 管理バー非表示
 // #wpadminbar {
@@ -16,4 +16,11 @@
 // }
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/washi.webp");
+  background-size: 500px 500px;
+  background-repeat: repeat;
+  background-position: top left;
 }
