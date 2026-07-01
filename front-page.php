@@ -88,6 +88,29 @@
         </li>
         <li class="works__item reveal">
           <article>
+            <a href="<?php echo esc_url('https://okawa0.github.io/aqua-horizon/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
+              <img
+                class="works__image"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon-v2.webp')); ?>"
+                alt="ダイビングショップのモックアップ"
+                loading="lazy" decoding="async" width="600" height="340">
+              <img
+                class="works__image--sp"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/aqua-horizon--sp-v2.webp')); ?>"
+                alt="ダイビングショップのモックアップ"
+                loading="lazy" decoding="async" width="375" height="667">
+            </a>
+            <div class="works__info">
+              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p><br>
+              <p>実装：コーディング<br></p>
+              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
+              <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
+              <p>README：<a href="https://github.com/okawa0/aqua-horizon" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/aqua-horizon</a></p>
+            </div>
+          </article>
+        </li>
+        <li class="works__item reveal">
+          <article>
             <a href="<?php echo esc_url('https://okawa0.github.io/lumina-production/'); ?>" target="_blank" rel="noopener noreferrer" class="works__link">
               <img
                 class="works__image"
