@@ -259,6 +259,11 @@
               width: 160px;
               bottom: 20px;
               right: -20px;
+              @include media(sp) {
+                width: 80px;
+                bottom: 10px;
+                right: -10px;
+              }
             }
           }
         }
@@ -275,6 +280,23 @@
           strong {
             font-weight: 700;
             font-size: 1.2em;
+          }
+          &-link {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            width: 100%;
+            text-align: center;
+            background-color: #1a7a4f;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid #1a7a4f;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            &:hover {
+              color:#1a7a4f;
+              background-color: #fff;
+            }
           }
         }
       }

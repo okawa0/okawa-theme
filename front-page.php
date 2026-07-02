@@ -61,7 +61,8 @@
         <p class="section__subtitle">What I can make</p>
       </div>
       <p class="works__intro">これまでに制作したWebサイト・ランディングページ・テーマ制作などの実績です。
-        コーディングの再現性・保守性・パフォーマンスを意識して制作しています。</p>
+        <br>コーディングの再現性・保守性・パフォーマンスを意識して制作しています。
+      </p>
       <ul class="works">
         <li class="works__item reveal works__item--otogawa-fudosan">
           <article>
@@ -78,11 +79,8 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info works__info--otogawa-fudosan">
-              <p><strong>乙川不動産</strong><br>不動産サイト</p><br>
-              <p>実装：コーディング<br></p>
-              <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
-              <p>制作期間：7日（約56時間）<br>制作時期：2026年6月</p>
-              <p>README：<a href="https://github.com/okawa0/otogawa-fudosan" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/otogawa-fudosan</a></p>
+              <p><strong>乙川不動産</strong><br>不動産サイト</p>
+              <a href="<?php echo esc_url('https://okawa-web.com/works-otogawa-fudosan//'); ?>" target="_blank" rel="noopener noreferrer" class="works__info-link">詳細ページ</a>
             </div>
           </article>
         </li>
@@ -101,7 +99,7 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p><br>
+              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
@@ -124,7 +122,7 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p><br>
+              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Cursor / Figma / GitHub / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
@@ -147,7 +145,7 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p><br>
+              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
@@ -170,7 +168,7 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p><br>
+              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
               <p>実装：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Cursor / Figma / GitHub / Local / FileZilla / ChatGPT / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：13日（約104時間）<br>制作時期：2025年9月</p>
