@@ -312,6 +312,7 @@
       @include media(sp) {
         padding: 80px 20px 0;
         margin-top: -2rem;
+        scroll-margin-top: 80px;
       }
       // バックグラウンドテキスト
       &::before {
@@ -529,9 +530,33 @@
         gap: 40px;
       }
     }
+    .skill-section__back-to-top {
+      display: none;
+      @include media(sp) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4em;
+        width: fit-content;
+        margin: 1.5rem auto 2rem;
+        padding: 0.6em 1.2em;
+        font-size: 14px;
+        color: #36563c;
+        border: 1px solid #36563c;
+        border-radius: 999px;
+        text-decoration: none;
+        background-color: rgba(255, 255, 255, 0.6);
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #36563c;
+          color: #fff;
+        }
+      }
+    }
     .skill-qualification {
       @include media(sp) {
-        width: 350px;
+        width: 100%;
+        max-width: 350px;
         margin: 0 auto 1rem;
       }
       .pc-hidden {

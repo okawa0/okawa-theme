@@ -75,6 +75,9 @@ function initSkillSection() {
 
   if (!items.length || !infoBox || !skillName || !skillDesc) return;
 
+  const isTouchDevice =
+    window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
+
   const showSkillInfo = (item) => {
     skillName.textContent = item.dataset.skill;
     skillDesc.innerHTML = item.dataset.desc;
@@ -91,11 +94,12 @@ function initSkillSection() {
     item.addEventListener('click', (e) => {
       e.stopPropagation();
       showSkillInfo(item);
+      if (isTouchDevice) {
+        infoBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     });
   });
 
-  const isTouchDevice =
-    window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
   if (!isTouchDevice) {
     document.addEventListener('click', hideSkillInfo);
   }
