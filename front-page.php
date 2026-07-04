@@ -295,7 +295,7 @@
 
       <div class="about reveal">
         <img
-          src="<?php echo esc_url(get_theme_file_uri('assets/images/profile-img.webp')); ?>"
+          src="<?php echo esc_url(get_theme_file_uri('assets/images/profile-img-v2.webp')); ?>"
           alt="大川誠のプロフィール画像"
           class="about__image reveal">
         <div class="about__info reveal">
