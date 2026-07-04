@@ -74,9 +74,9 @@
                 loading="lazy" decoding="async" width="600" height="340">
               <img
                 class="works__image--sp  works__image--sp--otogawa-fudosan"
-                src="<?php echo esc_url(get_theme_file_uri('assets/images/works-otogawa-fudosan/main-sp.webp')); ?>"
+                src="<?php echo esc_url(get_theme_file_uri('assets/images/works-otogawa-fudosan/main-sp-thumb.webp')); ?>"
                 alt="不動産サイトのモックアップ"
-                loading="lazy" decoding="async" width="375" height="667">
+                loading="lazy" decoding="async" width="320" height="400">
             </a>
             <div class="works__info works__info--otogawa-fudosan">
               <p><strong>乙川不動産</strong><br>不動産サイト</p>
