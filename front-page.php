@@ -221,7 +221,7 @@
                 <li
                   class="skill-tree__item"
                   data-skill="WordPress"
-                  data-desc="• テンプレート階層を含むテーマ構造の理解<br>• オリジナルテーマの構築経験<br>• <?php ?> の役割など、PHP の基礎的な文法理解<br>• 配列・ループ処理の理解と実装<br>• カスタム投稿タイプ / カスタムタクソノミー / カスタムフィールドの活用<br>• テンプレート設計力（拡張・保守を前提とした構造）<br>• 顧客運用でも壊れないテーマ設計">
+                  data-desc="• テンプレート階層を含むテーマ構造の理解<br>• オリジナルテーマの構築経験<br>• &lt;?php ?&gt; の役割など、PHP の基礎的な文法理解<br>• 配列・ループ処理の理解と実装<br>• カスタム投稿タイプ / カスタムタクソノミー / カスタムフィールドの活用<br>• テンプレート設計力（拡張・保守を前提とした構造）<br>• 顧客運用でも壊れないテーマ設計">
                   <img
                     src="<?php echo esc_url(get_theme_file_uri('assets/images/wordpress-logo.png')); ?>"
                     alt="WordPressのロゴ">
@@ -250,6 +250,7 @@
               <p class="skill-info__desc">ここに説明文が表示されます。</p>
             </div>
           </div>
+        </div>
       </section>
 
       <a href="#skill-section-top" class="skill-section__back-to-top">
@@ -306,10 +307,10 @@
           <p>強みはレスポンシブ対応、Lighthouseのスコア改善への意識です。</p>
           <p>現状に満足することなく、JavaScriptやWordPressなどを含めたスキルの習得、新しいスキルのキャッチアップ、仕事の品質向上をしていきます。</p>
           <div class="social-links">
-            <a href="https://github.com/okawa0" target="_blank">
+            <a href="https://github.com/okawa0" target="_blank" rel="noopener noreferrer">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
             </a>
-            <a href="https://x.com/okawa_0" target="_blank">
+            <a href="https://x.com/okawa_0" target="_blank" rel="noopener noreferrer">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/x-logo.webp')); ?>" alt="X" width="32" height="32" class="social-links__icon">
             </a>
           </div>
