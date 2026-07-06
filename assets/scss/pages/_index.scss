@@ -561,9 +561,11 @@
         max-width: 350px;
         margin: 0 auto 1rem;
       }
-      .pc-hidden {
+      .skill-qualification__heading {
+        font-family: $font-family-mincho;
         font-size: 1.2em;
-        margin-bottom: 0.4em;
+        font-weight: 700;
+        margin: 0 0 0.4em;
         @media (min-width: 900px) {
           display: none;
         }
@@ -581,6 +583,12 @@
           width: 20%;
           text-align: left;
           font-size: 1.2em;
+        }
+        .skill-qualification-table__heading {
+          font-family: $font-family-mincho;
+          font-size: 1em;
+          font-weight: 700;
+          margin: 0;
         }
         td:nth-child(2) {
           width: 20%;

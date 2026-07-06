@@ -266,7 +266,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">表示速度の最適化</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">画像のWebP化・遅延読み込み・不要なCSS/JSの削減など、LCP改善を意識した実装を行いました。</p>
+        <p class="works-otogawa-fudosan__coding-card-text">【PSI】モバイル：52→96点。デスクトップ：64→82点。主な改善対策：フォントを制限+セルフホスト+タイトルのみ、MVはAVIFを用意</p>
         <div class="works-otogawa-fudosan__coding-card-points">
           <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
           <span class="works-otogawa-fudosan__coding-card-points-dots">
