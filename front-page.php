@@ -61,7 +61,7 @@
         <p class="section__subtitle">What I can make</p>
       </div>
       <p class="works__intro">これまでに制作したWebサイト・ランディングページ・テーマ制作などの実績です。
-        <br>コーディングの再現性・保守性・パフォーマンスを意識して制作しています。
+        <br>パフォーマンス・保守性・レスポンシブ対応を意識して制作しています。
       </p>
       <ul class="works">
         <li class="works__item reveal works__item--otogawa-fudosan">
@@ -79,7 +79,8 @@
                 loading="lazy" decoding="async" width="320" height="400">
             </a>
             <div class="works__info works__info--otogawa-fudosan">
-              <p><strong>乙川不動産</strong><br>不動産サイト</p>
+              <h3 class="works__title">乙川不動産</h3>
+              <p>不動産サイト</p>
               <a href="<?php echo esc_url('https://okawa-web.com/works-otogawa-fudosan//'); ?>" target="_blank" rel="noopener noreferrer" class="works__info-link">詳細ページ</a>
             </div>
           </article>
@@ -99,7 +100,8 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Aqua Horizon</strong><br>ダイビングショップ公式サイト</p>
+              <h3 class="works__title">Aqua Horizon</h3>
+              <p>ダイビングショップ公式サイト</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2025年12月</p>
@@ -122,7 +124,8 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Lumina Production</strong><br>芸能プロダクション スタッフ紹介ページ</p>
+              <h3 class="works__title">Lumina Production</h3>
+              <p>芸能プロダクション スタッフ紹介ページ</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS / JavaScript<br>ツール：VS Code / Cursor / Figma / GitHub / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：7日（約56時間）<br>制作時期：2026年1月</p>
@@ -145,7 +148,8 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Furniture Design</strong><br>インテリアショップのストアサイト</p>
+              <h3 class="works__title">Furniture Design</h3>
+              <p>インテリアショップのストアサイト</p>
               <p>実装：コーディング<br></p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript<br>ツール：VS Code / Figma / GitHub / ChatGPT<br>開発環境：macOS / Chrome</p>
               <p>制作期間：5日（約40時間）<br>制作時期：2025年7月</p>
@@ -168,7 +172,8 @@
                 loading="lazy" decoding="async" width="375" height="667">
             </a>
             <div class="works__info">
-              <p><strong>Okawa Web</strong><br>自身のポートフォリオ</p>
+              <h3 class="works__title">Okawa Web</h3>
+              <p>自身のポートフォリオ</p>
               <p>実装：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress<br>ツール：VS Code / Cursor / Figma / GitHub / Local / FileZilla / ChatGPT / Gemini<br>開発環境：macOS / Chrome</p>
               <p>制作期間：13日（約104時間）<br>制作時期：2025年9月</p>
@@ -301,7 +306,7 @@
           class="about__image reveal">
         <div class="about__info reveal">
           <p class="about__info__name">おおかわ　|　Webコーダー</p>
-          <p>現在、Web制作の現場でコーディング業務に従事しております。</p><br>
+          <p>Web制作の現場でコーディング業務に1.5年従事してきました。</p><br>
           <p>私は他者貢献を人生の指針としており、仕事においては、会社やクライアント様の売り上げを向上させることや、エンドユーザーにとって快適な閲覧体験を提供することなどで貢献できると考えました。</p>
           <p>そのためにWebコーダーの自分ができることを考えると、報連相や納期の厳守、GEO対策、読み込みスピードの上昇などが考えられ、これらを日々の業務で徹底していきます。</p><br>
           <p>強みはレスポンシブ対応、Lighthouseのスコア改善への意識です。</p>
