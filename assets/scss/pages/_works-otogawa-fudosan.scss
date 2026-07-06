@@ -10,6 +10,10 @@ $font-family-base:
   "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "YuGothic",
   "Noto Sans CJK JP", sans-serif;
 
+$font-family-mincho:
+  "BIZ UDPMincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN",
+  "MS PMincho", serif;
+
 $color-bg: #f8f5ef; // 全体の背景（和紙のようなクリーム色）
 $color-bg-card: #ffffff; // カード背景
 $color-border: #e6e0d4; // ボーダー（薄いベージュ）
@@ -55,6 +59,7 @@ $breakpoint-sp: 768px;
 
   // 共通：セクション見出し
   &__section-title {
+    font-family: $font-family-mincho;
     font-size: 1.5rem;
     font-weight: 700;
     color: $color-navy;
@@ -87,7 +92,7 @@ $breakpoint-sp: 768px;
   }
 
   &__title {
-    font-family: "BIZ UDPMincho", "Yu Mincho", "YuMincho", "Hiragino Mincho ProN", "MS PMincho", serif;
+    font-family: $font-family-mincho;
     font-size: 2.5rem;
     font-weight: 700;
     color: $color-navy;
@@ -202,6 +207,7 @@ $breakpoint-sp: 768px;
   }
 
   &__overview-title {
+    font-family: $font-family-mincho;
     font-size: 1.5rem;
     font-weight: 700;
     color: $color-navy;
@@ -329,6 +335,7 @@ $breakpoint-sp: 768px;
   }
 
   &__intro-card-title {
+    font-family: $font-family-mincho;
     font-size: 1.05rem;
     font-weight: 700;
     color: $color-navy;
@@ -423,6 +430,7 @@ $breakpoint-sp: 768px;
   }
 
   &__coding-card-title {
+    font-family: $font-family-mincho;
     font-size: 0.95rem;
     font-weight: 700;
     color: $color-navy;
@@ -533,6 +541,7 @@ $breakpoint-sp: 768px;
   }
 
   &__summary-card-title {
+    font-family: $font-family-mincho;
     font-size: 1rem;
     font-weight: 700;
     color: $color-navy;
