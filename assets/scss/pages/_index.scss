@@ -179,7 +179,7 @@
       text-align: center;
       line-height: 1.9;
       font-size: clamp(0.95rem, 1.5vw, 1.05rem);
-      z-index: 1000;
+      z-index: 999;
       @include media(sp) {
         margin-bottom: 2rem;
         padding: 0 0.5rem;
@@ -297,7 +297,7 @@
             border-radius: 4px;
             transition: background-color 0.3s ease;
             &:hover {
-              color:#1a7a4f;
+              color: #1a7a4f;
               background-color: #fff;
             }
           }

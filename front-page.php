@@ -177,8 +177,8 @@
               <p>担当：デザイン、コーディング</p>
               <p>使用スキル：HTML / CSS（Sass） / JavaScript / WordPress</p>
               <p>制作期間：4週間<br>制作時期：2025年9月</p>
-              <p>パフォーマンス：SP 93点 / PC 100点</p>
               <p>READ ME：<a href="https://github.com/okawa0/okawa-theme" target="_blank" rel="noopener noreferrer">https://github.com/okawa0/okawa-theme</a></p>
+              <p>パフォーマンス：SP 93点 / PC 100点</p>
             </div>
           </article>
         </li>
@@ -307,9 +307,9 @@
           alt="大川誠のプロフィール画像"
           class="about__image reveal">
         <div class="about__info reveal">
-          <p class="about__info__name">1992年生まれ。Webコーダーの大川と申します。</p>
-          <p>Web制作の現場でコーディング業務に1年6ヶ月従事してきました。</p><br>
-          <p></p>
+          <p class="about__info__name">はじめまして。名古屋のWeb制作会社でコーダーとして働くことを目指している大川です。<br><br>
+            制作現場で約1年半、WordPressサイト制作や既存サイトの修正、自作テーマ制作などを経験してきました。HTML / CSS / JavaScript / WordPressを中心に、レスポンシブ対応や表示速度改善、PSIを意識したコーディングを大切にしています。<br><br>
+            丁寧な実装とスピード感のある修正対応で、制作チームに安心して任せてもらえるコーダーを目指しています。</p>
           <div class="social-links">
             <a href="https://github.com/okawa0" target="_blank" rel="noopener noreferrer">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">

@@ -20,7 +20,7 @@ get_header();
 
     <p class="works-otogawa-fudosan__lead">
       地域密着の不動産会社を想定したコーポレートサイト。<br>
-      信頼感と見やすさを重視したデザインと、更新しやすいWordPress構築を行いました。
+      信頼感と動線を重視したデザインと、更新しやすいWordPress構築を行いました。
     </p>
 
     <div class="works-otogawa-fudosan__actions">
@@ -68,7 +68,7 @@ get_header();
           </svg>
         </span>
         <span class="works-otogawa-fudosan__overview-label">制作形態</span>
-        <span class="works-otogawa-fudosan__overview-value">自主制作（架空案件）</span>
+        <span class="works-otogawa-fudosan__overview-value">自主制作（リニューアル案件）</span>
       </li>
       <li class="works-otogawa-fudosan__overview-item">
         <span class="works-otogawa-fudosan__overview-icon" aria-hidden="true">
@@ -77,7 +77,7 @@ get_header();
           </svg>
         </span>
         <span class="works-otogawa-fudosan__overview-label">使用技術</span>
-        <span class="works-otogawa-fudosan__overview-value">HTML / SCSS / JavaScript / PHP / WordPress（オリジナルテーマ）</span>
+        <span class="works-otogawa-fudosan__overview-value">HTML / SCSS・CSS / JavaScript / PHP / WordPress（オリジナルテーマ）</span>
       </li>
       <li class="works-otogawa-fudosan__overview-item">
         <span class="works-otogawa-fudosan__overview-icon" aria-hidden="true">
@@ -86,7 +86,7 @@ get_header();
           </svg>
         </span>
         <span class="works-otogawa-fudosan__overview-label">担当範囲</span>
-        <span class="works-otogawa-fudosan__overview-value">デザイン再現 / コーディング / WordPress構築 / 保守・最適化</span>
+        <span class="works-otogawa-fudosan__overview-value">デザイン / コーディング / WordPress構築 / 保守・最適化</span>
       </li>
       <li class="works-otogawa-fudosan__overview-item">
         <span class="works-otogawa-fudosan__overview-icon" aria-hidden="true">
@@ -106,7 +106,7 @@ get_header();
           </svg>
         </span>
         <span class="works-otogawa-fudosan__overview-label">対応デバイス</span>
-        <span class="works-otogawa-fudosan__overview-value">PC / SP（レスポンシブ対応）</span>
+        <span class="works-otogawa-fudosan__overview-value">PC / SP（画面幅320px ~ 2560px想定）</span>
       </li>
     </ul>
   </section>
@@ -120,7 +120,8 @@ get_header();
       <div class="works-otogawa-fudosan__intro-card">
         <h3 class="works-otogawa-fudosan__intro-card-title">制作背景</h3>
         <p class="works-otogawa-fudosan__intro-card-text">
-          地元・岡崎エリアで不動産を探すユーザーに向けて、信頼感・安心感を感じてもらえるサイトを目指し制作しました。更新性・保守性を意識し、WordPressで構築しています。
+          既存の不動産サイトを題材に、リニューアル案として制作した自主制作物です。
+          （実際に該当の不動産会社様へお電話し、リニューアルのご提案をさせていただきました。その際、「制作自体への関与は難しいが、現サイトは社長のご友人が手がけられたものであるため、採用することはできない」とのご回答をいただきました。）
         </p>
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/works-otogawa-fudosan/icon-house.webp')); ?>" alt="" class="works-otogawa-fudosan__intro-card-icon" aria-hidden="true">
       </div>
@@ -128,10 +129,11 @@ get_header();
       <div class="works-otogawa-fudosan__intro-card">
         <h3 class="works-otogawa-fudosan__intro-card-title">ターゲット</h3>
         <ul class="works-otogawa-fudosan__intro-card-list">
-          <li>30〜50代のファミリー層</li>
+          <li>40代〜70代の中高年〜高齢層</li>
           <li>岡崎市・豊田市周辺に在住</li>
-          <li>初めて住宅を探している方</li>
-          <li>スマホで情報収集をする方</li>
+          <li>賃貸より土地の売買・相続・解体の相談</li>
+          <li>年収400万〜800万円前後</li>
+          <li>ネットに強すぎない層</li>
         </ul>
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/works-otogawa-fudosan/icon-man.webp')); ?>" alt="" class="works-otogawa-fudosan__intro-card-icon" aria-hidden="true">
       </div>
@@ -139,10 +141,9 @@ get_header();
       <div class="works-otogawa-fudosan__intro-card">
         <h3 class="works-otogawa-fudosan__intro-card-title">デザインで意識したこと</h3>
         <ul class="works-otogawa-fudosan__intro-card-list">
-          <li>信頼感のある配色と余白設計</li>
-          <li>情報を探しやすいナビゲーション</li>
-          <li>視線の流れを意識したレイアウト</li>
-          <li>CTAを目立たせて行動を促す設計</li>
+          <li>濃紺と水色を基調に、明朝体をアクセントとして使い、信頼感と誠実さを出しています。</li>
+          <li>ユーザーが、必要としている情報にほぼ1クリック以内にアクセスできるナビゲーションを配置しました。</li>
+          <li>機能性を重視し、演出を抑えシンプルでテキストベースのデザインにしました。</li>
         </ul>
         <img src="<?php echo esc_url(get_theme_file_uri('assets/images/works-otogawa-fudosan/icon-design.webp')); ?>" alt="" class="works-otogawa-fudosan__intro-card-icon" aria-hidden="true">
       </div>
@@ -165,17 +166,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">HTML</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">セマンティックなHTML構造を意識し、見出し構造・alt属性・aria属性を適切に設定しました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">section、nav、article、dl、フォームラベルなどを使い、情報構造を整理しました。</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -185,17 +176,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">SCSS</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">BEM設計やmixin・変数を活用し、再利用性と保守性の高いCSS設計を行いました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">SCSSを variables、reset、base、styles に分割し、CSS変数で色やフォントを管理。Grid/Flex、aspect-ratio、object-fit でカード崩れを防止しました。</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -205,17 +186,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">JavaScript</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">タブ切替・モーダル・スライダーなどのUI実装を行い、ユーザビリティの向上を図りました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">Vanilla JSで物件絞り込み、セクション切替、FAQ開閉、質問ナビ、ダミーフォーム送信を実装</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -226,17 +197,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">WordPress</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">オリジナルテーマを作成し、カスタム投稿・カスタムフィールドで更新しやすい構造を実現しました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">カスタム投稿・タクソノミー・メタボックス・アイキャッチ対応により、物件情報を管理画面から更新可能にしました。</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -246,17 +207,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">レスポンシブ対応</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">モバイルファーストで設計し、ブレークポイントごとに最適なレイアウトに調整しました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">モバイルファーストで、768px・1025px付近を中心にレイアウトを切替。ヒーロー画像もPC/SPで出し分けました。</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -267,16 +218,6 @@ get_header();
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">表示速度の最適化</h3>
         <p class="works-otogawa-fudosan__coding-card-text">【PSI】モバイル：52→96点。デスクトップ：64→82点。主な改善対策：フォントを制限+セルフホスト+タイトルのみ、MVはAVIFを用意</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -286,17 +227,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">保守性・拡張性</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">ファイル構成・命名規則を統一し、将来的な機能追加や修正がしやすい構成にしました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">物件カード出力を関数化し、メタ項目も配列で一元管理。おすすめ物件もメタ値で出し分け可能にしました。</p>
       </div>
 
       <div class="works-otogawa-fudosan__coding-card">
@@ -306,17 +237,7 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__coding-card-title">アクセシビリティ</h3>
-        <p class="works-otogawa-fudosan__coding-card-text">コントラスト比の確保やキーボード操作への対応など、アクセシビリティに配慮しました。</p>
-        <div class="works-otogawa-fudosan__coding-card-points">
-          <span class="works-otogawa-fudosan__coding-card-points-label">ポイント</span>
-          <span class="works-otogawa-fudosan__coding-card-points-dots">
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot works-otogawa-fudosan__dot--active"></span>
-            <span class="works-otogawa-fudosan__dot"></span>
-          </span>
-        </div>
+        <p class="works-otogawa-fudosan__coding-card-text">lang="ja"、画像alt、フォームのlabel、required、電話リンク、チャット閉じるボタンの aria-label を設定しました。</p>
       </div>
 
     </div>
@@ -348,12 +269,9 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__summary-card-title">苦労した点</h3>
-        <ul class="works-otogawa-fudosan__summary-card-list">
-          <li>Gridレイアウトの調整（画像とテキストの配置）</li>
-          <li>画像サイズの最適化とLCP改善</li>
-          <li>WordPressのカスタム投稿の設計</li>
-          <li>SPでのメニュー開閉アニメーション</li>
-        </ul>
+        <p class="works-otogawa-fudosan__summary-card-text">
+          不動産サイトに必要な情報量が多く、物件、サービス、会社概要、FAQ、問い合わせ、法務表記を1ページ内で見やすく整理する点。静的なLP風の見た目とWordPressで更新できる構造を両立する点。
+        </p>
       </div>
 
       <div class="works-otogawa-fudosan__summary-card">
@@ -399,12 +317,9 @@ get_header();
           </svg>
         </span>
         <h3 class="works-otogawa-fudosan__summary-card-title">解決方法</h3>
-        <ul class="works-otogawa-fudosan__summary-card-list">
-          <li>grid-template-areasを活用して柔軟に対応</li>
-          <li>WebP変換・srcset・遅延読み込みを実装</li>
-          <li>カスタム投稿＋カスタムフィールドで管理</li>
-          <li>transformを使ったスライドアニメーション実装</li>
-        </ul>
+        <p class="works-otogawa-fudosan__summary-card-text">
+          情報をセクションごとに分け、JSで画面遷移のように切り替える構成にしました。物件はカスタム投稿として管理し、カード表示は共通関数化。検索条件は data-* 属性に持たせ、JavaScript側で種別・価格・キーワードを絞り込む形にしています。
+        </p>
       </div>
 
       <div class="works-otogawa-fudosan__summary-card">
@@ -468,7 +383,7 @@ get_header();
         </span>
         <h3 class="works-otogawa-fudosan__summary-card-title">AIの活用について</h3>
         <p class="works-otogawa-fudosan__summary-card-text">
-          レイアウト案の壁打ちやエラーの原因調査、コードレビューにAI（ChatGPT）を活用しました。最終的な実装・設計・判断はすべて自分で行っています。
+          不動産サイトの構成案、文章案、画像、ベースコードの作成。実装時のコードの追加・修正、エラーの原因調査、リファクタリングにAI（ChatGPT・Claude・Gemini）を活用しました。最終的な実装・設計・判断はすべて自分で行っています。
         </p>
       </div>
 
@@ -532,9 +447,9 @@ get_header();
         </span>
         <h3 class="works-otogawa-fudosan__summary-card-title">学んだこと</h3>
         <ul class="works-otogawa-fudosan__summary-card-list">
-          <li>WordPressでのテーマ開発の流れを理解できた</li>
-          <li>パフォーマンス改善の重要性を実感した</li>
-          <li>設計を意識することで保守性が大きく向上すること</li>
+          <li>WordPressでカスタム投稿・メタ情報・一覧表示を組み合わせる実装</li>
+          <li>物件検索のような簡易インタラクション</li>
+          <li>フォント・メインビジュアルの最適化によるパフォーマンス改善方法</li>
         </ul>
       </div>
 
@@ -568,9 +483,10 @@ get_header();
         </span>
         <h3 class="works-otogawa-fudosan__summary-card-title">今後改善したいこと</h3>
         <ul class="works-otogawa-fudosan__summary-card-list">
-          <li>Vue.jsを使ったフロント実装</li>
-          <li>モジュール化・コンポーネント設計の強化</li>
-          <li>アニメーション・インタラクションの拡充</li>
+          <li>実際に送信できる問い合わせフォーム</li>
+          <li>物件詳細ページ</li>
+          <li>並び替え・ページネーション</li>
+          <li>FAQやスタッフ紹介のCMS化</li>
         </ul>
       </div>
 
@@ -602,11 +518,10 @@ get_header();
           </svg></span>
         <h3 class="works-otogawa-fudosan__summary-card-title">この作品で見てほしいポイント</h3>
         <ul class="works-otogawa-fudosan__summary-card-list">
-          <li>デザイン再現力と細部へのこだわり</li>
-          <li>保守性・拡張性を意識したコーディング</li>
-          <li>WordPressでの実装力と更新のしやすさ</li>
+          <li>地域密着型の不動産会社らしい信頼感のあるデザイン</li>
+          <li>WordPressで物件を更新できる実装</li>
+          <li>物件検索・FAQ・質問ナビまで含めた実用的な導線設計</li>
           <li>表示速度の改善への取り組み</li>
-          <li>ユーザビリティ・アクセシビリティへの配慮</li>
         </ul>
       </div>
 
