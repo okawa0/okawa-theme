@@ -307,7 +307,7 @@
           alt="大川誠のプロフィール画像"
           class="about__image reveal">
         <div class="about__info reveal">
-          <p class="about__info__name">はじめまして。名古屋のWeb制作会社でコーダーとして働くことを目指している大川です。<br><br>
+          <p class="about__info__name">はじめまして。1992年生まれ。Webコーダーの大川と申します。<br><br>
             制作現場で約1年半、WordPressサイト制作や既存サイトの修正、自作テーマ制作などを経験してきました。HTML / CSS / JavaScript / WordPressを中心に、レスポンシブ対応や表示速度改善、PSIを意識したコーディングを大切にしています。<br><br>
             丁寧な実装とスピード感のある修正対応で、制作チームに安心して任せてもらえるコーダーを目指しています。</p>
           <div class="social-links">
