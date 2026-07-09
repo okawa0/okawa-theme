@@ -524,6 +524,9 @@
       &__desc {
         font-size: 16px;
       }
+      .skill-info__name{
+        font-family: $font-family-mincho;
+      }
     }
 
     @media (max-width: 768px) {
