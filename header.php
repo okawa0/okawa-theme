@@ -16,7 +16,7 @@
     <div class="site-header__inner container">
       <h1 class="site-header__logo">
         <a href="<?php echo esc_url(home_url('/')); ?>" class="site-header__logo-link">
-          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/okawa-logo.png')); ?>" alt="" class="site-header__logo-image">
+          <img src="<?php echo esc_url(get_theme_file_uri('assets/images/logo-mark.png')); ?>" alt="" class="site-header__logo-image">
           <span class="site-header__logo-title u-underline">Okawa Web</span>
         </a>
       </h1>
