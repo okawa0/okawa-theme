@@ -307,9 +307,11 @@
           alt="大川誠のプロフィール画像"
           class="about__image reveal">
         <div class="about__info reveal">
-          <p class="about__info__name">はじめまして。Webコーダーの大川と申します。<br><br>
-            制作現場で約1年半、WordPressサイト制作や既存サイトの修正、自作テーマ制作などを経験してきました。HTML / CSS / JavaScript / WordPressを中心に、レスポンシブ対応や表示速度を意識したコーディングを大切にしています。<br><br>
-            丁寧な実装とスピード感のある修正対応で、制作チームに安心して任せてもらえるコーダーを目指しています。</p>
+          <p class="about__info__name">初めまして。Webコーダーの大川と申します。<br><br>
+            Web制作の現場で約1年半、HTML / CSS / JavaScript / WordPressを用いたサイト制作に携わり、既存サイトの修正から新規サイトのコーディング、WordPress化、自作テーマ制作、表示速度の改善まで経験してきました。<br><br>
+            コーディングでは、デザインを忠実に再現するだけでなく、レスポンシブ対応や表示速度、更新・運用のしやすさまで考えて実装することを大切にしています。また、実際にサイトを利用するユーザーが迷わず、ストレスなく目的の情報へたどり着けることを意識しています。<br><br>
+            分からないことも自分で調べ、必要に応じて周囲に確認しながら仕事を前に進めることが強みです。<br><br>
+            丁寧な実装とスピード感のある対応で、制作チームから安心して任せてもらえるコーダーを目指しています。</p>
           <div class="social-links">
             <a href="https://github.com/okawa0" target="_blank" rel="noopener noreferrer">
               <img src="<?php echo esc_url(get_theme_file_uri('assets/images/github-logo.png')); ?>" alt="GitHub" width="32" height="32" class="social-links__icon">
